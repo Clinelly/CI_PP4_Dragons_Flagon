@@ -2,18 +2,24 @@
 
 {% block content %}
 
-<div class="container-fluid">
+<!--Hero Image Container-->
+<div class="container-fluid bg-warning">
+    <img src="#" class="img-fluid" alt="#">
+</div>
+<div class="container">
     <div class="row">
-
-        <!-- Blog Entries Column -->
-        <div class="col-12 mt-3 left">
-            <div class="row">
-                {% for comment in comment_list %}
-                {%endfor%}
-            </div>
+        <!-- Introduction Section-->
+        <div class="col-6 bg-success">
+            <h2>Welcome to the Dragon's Flagon!</h2>
+            <br>
+            <p> Intro Text here</p>
+        </div>
+        <!--Public Post Section-->
+        <div class="col-6 bg-danger">
+            <h2>What People Say About Us:</h2>
+            <br>
+            <p>Comment Posts to go here.</p>
         </div>
     </div>
 
-</div>
-
-{%endblock%}
+    {%endblock%}
