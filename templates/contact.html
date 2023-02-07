@@ -2,5 +2,33 @@
 
 {% block content %}
 
-
+<form class="row g-3 bg-warning">
+    <div class="col-md-6">
+      <label for="firstname" class="form-label">First Name</label>
+      <input type="txt" class="form-control" id="firstname" placeholder="First Name">
+    </div>
+    <div class="col-md-6">
+      <label for="lastname" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+    </div>
+    <div class="col-4">
+      <label for="emailaddress" class="form-label">Address</label>
+      <input type="email" class="form-control" id="emailaddress" placeholder="Email Address">
+    </div>
+    <div class="col-12">
+      <label for="comments" class="form-label">Your Feedback or Comments</label>
+      <input type="textarea" class="form-control" id="comments" placeholder="Your comments.">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Keep me updated with the latest news and offers!
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
 {%endblock%}
