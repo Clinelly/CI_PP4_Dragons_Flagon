@@ -22,3 +22,15 @@ def gallery(request):
 
 def contact(request):
     return render(request, '../templates/contact.html')
+
+
+def FoodMenu(request):
+    return render(request, '../templates/food_menu.html')
+
+
+def GameList(request):
+    return render(request, '../templates/game_list.html')
+
+
+def EventPage(request):
+    return render(request, '../templates/event_page.html')
