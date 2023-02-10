@@ -9,6 +9,7 @@ class CommentList(generic.ListView):
     model = Comment
     queryset = Comment.objects.filter(approved=True).order_by('created_on')
     template_name = 'index.html'
+    paginate_by = 12
 
 
 class AboutPage(generic.ListView):
