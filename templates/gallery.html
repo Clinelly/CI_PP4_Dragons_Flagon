@@ -3,25 +3,28 @@
 {% block content %}
 
 <!-- Image Gallery -->
-<div class="row ">
-    {% for gallery in gallery_list %}
-    <div class="card" style="width: 18rem;">
-        {% if "placeholder" in gallery.featured_image.url %}
-        <img class="card-img-top" src="">
-        {% else %}
-        <img class="card-img-top" src=" {{ gallery.featured_image.url }}">
-        {% endif %}
-        <div class="card-body">
-            <h3>{{ gallery.title }}</h3>
-            <p class="card-text">{{ gallery.content }}
-                <hr />
-            {{ gallery.author }}
-            </p>
-            <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
-                {{ post.number_of_likes }}</p>
+<div class="container-fluid bg-warning">
+    <div class="row bg-success">
+        {% for gallery in gallery_list %}
+        <div class="card" style="width: 18rem;">
+            {% if "placeholder" in gallery.featured_image.url %}
+            <img class="card-img-top" src="">
+            {% else %}
+            <img class="card-img-top" src="{{ gallery.featured_image.url }}">
+            {% endif %}
+            <div class="card-body">
+                <p class="card-text">
+                    {{ gallery.title }}
+                    <br>
+                    {{ gallery.content }}
+                    <hr />
+                    {{ gallery.author }}
+                    <hr />
+                </p>
+            </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
 
 {%endblock%}
