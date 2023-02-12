@@ -1,24 +1,26 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from .models import Comment
+from .models import Review, Gallery
 from django.http import HttpResponseRedirect
 # Create your views here.
 
 
-class CommentList(generic.ListView):
-    model = Comment
-    queryset = Comment.objects.filter(approved=True).order_by('created_on')
+class ReviewList(generic.ListView):
+    model = Review
+    queryset = Review.objects.order_by('created_on')
     template_name = 'index.html'
     paginate_by = 12
 
 
-class AboutPage(generic.ListView):
-    def get(self, request):
-        return render(request, '../templates/about.html')
+def about(request):
+    return render(request, '../templates/about.html')
 
 
-def gallery(request):
-    return render(request, '../templates/gallery.html')
+class GalleryList(generic.ListView):
+    model = Gallery
+    queryset = Review.objects.order_by('created_on')
+    template_name = 'gallery.html'
+    paginate_by = 16
 
 
 def contact(request):

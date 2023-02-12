@@ -4,21 +4,24 @@
 
 <!-- Image Gallery -->
 <div class="row ">
-    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 bg-warning">
-        <img src="#">
-        <img src="#">
-        <img src="#">
+    {% for gallery in gallery_list %}
+    <div class="card" style="width: 18rem;">
+        {% if "placeholder" in gallery.featured_image.url %}
+        <img class="card-img-top" src="">
+        {% else %}
+        <img class="card-img-top" src=" {{ gallery.featured_image.url }}">
+        {% endif %}
+        <div class="card-body">
+            <h3>{{ gallery.title }}</h3>
+            <p class="card-text">{{ gallery.content }}
+                <hr />
+            {{ gallery.author }}
+            </p>
+            <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
+                {{ post.number_of_likes }}</p>
+        </div>
     </div>
-    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 bg-success">
-        <img src="#">
-        <img src="#">
-        <img src="#">
-    </div>
-    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 bg-danger">
-        <img src="#">
-        <img src="#">
-        <img src="#">
-    </div>
+    {% endfor %}
 </div>
 
 {%endblock%}
