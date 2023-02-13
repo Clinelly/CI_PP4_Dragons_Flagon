@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from .models import Review, Gallery
+from .models import Review, Gallery, Comment
 from django.http import HttpResponseRedirect
 # Create your views here.
 
@@ -18,7 +18,7 @@ def about(request):
 
 class GalleryList(generic.ListView):
     model = Gallery
-    queryset = Review.objects.order_by('created_on')
+    queryset = Gallery.objects.order_by('created_on')
     template_name = 'gallery.html'
     paginate_by = 16
 
