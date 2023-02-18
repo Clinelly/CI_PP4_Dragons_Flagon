@@ -12,7 +12,6 @@ class ReviewList(generic.ListView):
     template_name = 'index.html'
     paginate_by = 12
 
-
 def about(request):
     return render(request, '../templates/about.html')
 
@@ -75,6 +74,18 @@ class GalleryDetail(View):
                 "comment_form": CommentForm()
             },
         )
+
+
+class GalleryLike(View):
+    def post(self, request, slug):
+        post = get_object_or_404(Gallery, slug=slug)
+
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)
+
+        return HttpResponseRedirect(reverse('gallery_detail', args=[slug]))
 
 
 def contact(request):

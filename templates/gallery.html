@@ -21,7 +21,11 @@
                     </a>
                     <hr />
                     {{ gallery.author }} 
-                    <p><i class="far fa-heart"></i>{{ gallery.likes }}</p>
+                    <p><i class="far fa-heart"></i>{{ gallery.number_of_likes }}</p>
+                    {% with gallery.comments.count as total_comments %}
+                    <i class="far fa-comments"></i>
+                    {{ total_comments }}
+                    {% endwith %}
                     <hr />
                 </p>
             </div>

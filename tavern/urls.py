@@ -9,5 +9,6 @@ urlpatterns = [
     path('fooddrink', views.FoodMenu, name='fooddrink'),
     path('games', views.GameList, name='games'),
     path('events', views.EventPage, name='events'),
-    path('<slug:slug>/', views.GalleryDetail.as_view(), name="gallery_detail")
+    path('<slug:slug>/', views.GalleryDetail.as_view(), name="gallery_detail"),
+    path('like/<slug:slug>/', views.GalleryLike.as_view(), name="gallery_like")
 ]
