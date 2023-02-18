@@ -14,11 +14,14 @@
             {% endif %}
             <div class="card-body">
                 <p class="card-text">
-                    {{ gallery.title }}
+                    <a href="{% url 'gallery_detail' gallery.slug %}"> 
+                    <h3>{{ gallery.title }}</h3>
                     <br>
                     {{ gallery.content }}
+                    </a>
                     <hr />
-                    {{ gallery.author }}
+                    {{ gallery.author }} 
+                    <p><i class="far fa-heart"></i>{{ gallery.likes }}</p>
                     <hr />
                 </p>
             </div>

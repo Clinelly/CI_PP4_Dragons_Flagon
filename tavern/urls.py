@@ -8,5 +8,6 @@ urlpatterns = [
     path('contact', views.contact, name='contact'),
     path('fooddrink', views.FoodMenu, name='fooddrink'),
     path('games', views.GameList, name='games'),
-    path('events', views.EventPage, name='events')
+    path('events', views.EventPage, name='events'),
+    path('<slug:slug>/', views.GalleryDetail.as_view(), name="gallery_detail")
 ]
