@@ -39,7 +39,40 @@ class GalleryDetail(View):
             {
                 "gallery": gallery,
                 "comments": comments,
-                "liked": liked
+                "commented": False,
+                "liked": liked,
+                "comment_form": CommentForm()
+            },
+        )
+
+    def post(self, request, slug, *args, **kwargs):
+        queryset = Gallery.objects.filter(status=1)
+        gallery = get_object_or_404(queryset, slug=slug)
+        comments = gallery.comments.filter(approved=True).order_by('-created_on')
+        liked = False
+        if gallery.likes.filter(id=self.request.user.id).exists():
+            liked = True
+
+        comment_form = CommentForm(data=request.POST)
+
+        if comment_form.is_valid():
+            comment_form.instance.email = request.user.email
+            comment_form.instance.name = request.user.username
+            comment = comment_form.save(commit=False)
+            comment.post = gallery
+            comment.save()
+        else:
+            comment_form = CommentForm()
+
+        return render(
+            request,
+            "gallery_detail.html",
+            {
+                "gallery": gallery,
+                "comments": comments,
+                "commented": True,
+                "liked": liked,
+                "comment_form": CommentForm()
             },
         )
 
