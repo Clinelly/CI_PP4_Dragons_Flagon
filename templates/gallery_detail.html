@@ -38,7 +38,7 @@
                             <form class="d-inline" action="{% url 'gallery_like' gallery.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
-                                <button type="submit" name="gallery_id" value="{{galleryslug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+                                <button type="submit" name="gallery_id" value="{{gallery.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
                                 {% else %}
                                 <button type="submit" name="gallery_id" value="{{gallery.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
                                 {% endif %}

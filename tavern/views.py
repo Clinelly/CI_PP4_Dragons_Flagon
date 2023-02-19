@@ -8,9 +8,22 @@ from .forms import CommentForm
 
 class ReviewList(generic.ListView):
     model = Review
-    queryset = Review.objects.order_by('created_on')
+    queryset = Review.objects.filter(status=1).order_by('created_on')
     template_name = 'index.html'
     paginate_by = 12
+
+
+class ReviewLike(View):
+    def post(self, request, slug):
+        post = get_object_or_404(Review, slug=slug)
+
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)
+
+        return HttpResponseRedirect(reverse('index', args=[slug]))
+
 
 def about(request):
     return render(request, '../templates/about.html')
