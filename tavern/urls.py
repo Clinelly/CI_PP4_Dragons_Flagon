@@ -1,5 +1,6 @@
 from . import views
 from django.urls import path
+from booking import urls
 
 urlpatterns = [
     path('', views.ReviewList.as_view(), name='home'),
