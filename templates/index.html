@@ -2,6 +2,8 @@
 
 {% block content %}
 
+{% load crispy_forms_tags %}
+
 <!--Hero Image Container-->
 <div class="container-fluid bg-warning">
     <img src="#" class="img-fluid" alt="#">
@@ -29,7 +31,6 @@
                             <p> {{review.created_on}} </p>
                             <div class="col-1">
                                 <strong>
-                                    {% if user.is_authenticated %}
                                     <form class="d-inline" action="{% url 'review_like' review.slug %}" method="POST">
                                         {% csrf_token %}
                                         {% if liked %}
@@ -38,22 +39,30 @@
                                         <button type="submit" name="review_id" value="{{review.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
                                         {% endif %}
                                     </form>
-                                    {% else %}
-                                    <span class="text-secondary"><i class="far fa-heart"></i></span>
-                                    {% endif %}
-                                <!-- The number of likes goes before the closing strong tag -->
-                                <span class="text-secondary">{{ review.number_of_likes }} </span>
+                                    <span class="text-secondary"><i class="far fa-heart"></i></span> 
+                                    <span class="text-secondary">{{ review.number_of_likes }} </span>
                                 </strong>
                             </div>
                         </div>
                     </div>
                 </div>
                 {% if forloop.counter|divisibleby:6 %}
-                    </div>
-                    <div class="row">
-                {% endif %}
-            {% endfor %}
             </div>
+                <div class="row">
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                {% if user.is_authenticated %}
+                <div class="col-12">
+                <h3>Leave a Review:</h3>
+                <p>Posting as: {{ user.username }}</p>
+                <form method="post" style="margin-top: 1.3em;" class="bg-success">
+                    {{ review_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-signup btn-lg bg-danger">Submit</button>
+                </form>
+                </div>
+                {% endif %}
         </div>
         {% if is_paginated %}
         <nav aria-label="Page navigation">

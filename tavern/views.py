@@ -2,15 +2,20 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from .models import Review, Gallery, Comment
 from django.http import HttpResponseRedirect
-from .forms import CommentForm
+from .forms import CommentForm, ReviewForm
 # Create your views here.
 
 
 class ReviewList(generic.ListView):
     model = Review
-    queryset = Review.objects.filter(status=1).order_by('created_on')
+    queryset = Review.objects.order_by('created_on')
     template_name = 'index.html'
     paginate_by = 12
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['review_form'] = ReviewForm()
+        return context
 
 
 class ReviewLike(View):
