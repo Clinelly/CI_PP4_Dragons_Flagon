@@ -120,3 +120,6 @@ def GameList(request):
 
 def EventPage(request):
     return render(request, '../templates/event_page.html')
+
+def Booking(request):
+    return render(request, '../templates/booking.html')
