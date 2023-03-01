@@ -59,9 +59,6 @@ def bookingSubmit(request):
         day = dayToWeekday(date)
 
         if service is not None:
-            day <= maxDate and day >= minDate
-            Appointment.objects.filter(day=day).count() < 11
-            Appointment.objects.filter(day=day, time=time).count() < 1
             AppointmentForm = Appointment.objects.get_or_create(
                 user=user,
                 service=service,
@@ -137,9 +134,6 @@ def userUpdateSubmit(request, id):
         time = request.POST.get("time")
         date = dayToWeekday(day)
         if service is not None:
-            day <= maxDate and day >= minDate
-            Appointment.objects.filter(day=day).count() < 11
-            Appointment.objects.filter(day=day, time=time).count() < 1 or userSelectedTime == time
             BookingForm = TableBooking.objects.filter(pk=id).update(
                 user=user,
                 service=service,
