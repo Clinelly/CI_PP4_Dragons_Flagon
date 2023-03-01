@@ -29,9 +29,9 @@ class TableBooking(models.Model):
     email = models.EmailField()
     service = models.CharField(max_length=50, choices=SERVICE_CHOICES, default="Drinks")
     phone = models.IntegerField()
-    Date = models.DateField(default=datetime.now)
+    day = models.DateField(default=datetime.now)
     time = models.CharField(max_length=10, choices=TIME_CHOICES, default="12 PM")
     time_booked = models.DateTimeField(default=datetime.now, blank=True)
 
     def __str__(self):
-        return f"{self.user.username} | Date: {self.Date} | time: {self.time}"
+        return f"{self.user.username} | day: {self.day} | time: {self.time}"
