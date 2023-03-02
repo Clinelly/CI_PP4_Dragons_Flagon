@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'crispy_bootstrap5',
+    'events',
     'booking',
     'tavern',
 ]
