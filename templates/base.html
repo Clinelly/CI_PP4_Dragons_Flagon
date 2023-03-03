@@ -37,6 +37,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'userPanel' %}">Bookings</a>
+                    </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
@@ -71,7 +74,7 @@
         {% endblock content %}
     </main>
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
+    <footer class="footer mt-auto py-3 dark-bg bg-danger fixed-bottom">
         <div class="container text-center">
             <div class="row align-items-start">
                 <div class="col">
@@ -89,7 +92,7 @@
                             <a class="nav-link" href="{% url 'games' %}">Games</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'events' %}">Events</a>
+                            <a class="nav-link" href="{% url 'events:calendar' %}">Events</a>
                         </li>
                     </ul>
                 </div>

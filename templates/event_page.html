@@ -3,11 +3,6 @@
 <div class="row">
     <h2>Events at the Dragon's Flagon</h2>
 </div>
-<div class="container bg-warning">
-    <div class="row">
-        {{ calendar }}
-    </div>
-</div>
 <div class="container bg-success">
     <div class="row">
         <h3>Regular Event 1</h3>
@@ -22,4 +17,15 @@
         <p>Description</p>
     </div>
 </div>
+<div class="container bg-warning">
+    <div class="row">
+        <div class="clearfix">
+            <a class="btn btn-info left" href="{% url 'events:calendar' %}?{{ prev_month }}"> Previous Month </a>
+            <a class="btn btn-info right" href="{% url 'events:calendar' %}?{{ next_month }}"> Next Month </a>
+            <a class="btn btn-info right" href="{% url 'events:event_new' %}"> New Event </a>
+        </div>
+        
+        {{ calendar }}
+</div>
+
 {%endblock%}

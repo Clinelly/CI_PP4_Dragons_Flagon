@@ -27,7 +27,6 @@ def booking(request):
         request.session['service'] = service
 
         return redirect('bookingSubmit')
-
     return render(request, 'booking.html', {
             'weekdays': weekdays,
             'validateWeekdays': validateWeekdays,

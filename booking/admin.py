@@ -6,5 +6,5 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(TableBooking)
 class ReviewAdmin(SummernoteModelAdmin):
-    list_display = ('name', 'day', 'time_booked')
-    search_fields = ['name', 'day', 'time',]
+    list_display = ('user', 'day', 'time_booked')
+    search_fields = ['user', 'day', 'time',]

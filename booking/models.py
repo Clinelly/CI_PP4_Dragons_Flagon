@@ -25,7 +25,7 @@ TIME_CHOICES = (
 
 
 class TableBooking(models.Model):
-    name = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     email = models.EmailField()
     service = models.CharField(max_length=50, choices=SERVICE_CHOICES, default="Drinks")
     phone = models.IntegerField()

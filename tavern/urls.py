@@ -5,14 +5,14 @@ from booking import urls
 
 urlpatterns = [
     path('', views.ReviewList.as_view(), name='home'),
-    path('about', views.about, name='about'),
-    path('gallery', views.GalleryList.as_view(), name='gallery'),
-    path('contact', views.contact, name='contact'),
-    path('fooddrink', views.FoodMenu, name='fooddrink'),
-    path('games', views.GameList, name='games'),
-    path('events', views.EventPage, name='events'),
-    path('booking', views.Booking, name='booking'),
-    path('<slug:slug>/', views.GalleryDetail.as_view(), name="gallery_detail"),
+    path('about/', views.about, name='about'),
+    path('gallery/', views.GalleryList.as_view(), name='gallery'),
+    path('contact/', views.contact, name='contact'),
+    path('fooddrink/', views.FoodMenu, name='fooddrink'),
+    path('games/', views.GameList, name='games'),
+    # path('events/calendar', views.EventPage, name='events'),
+    path('booking/', views.Booking, name='booking'),
+    path('galdet/<slug:slug>/', views.GalleryDetail.as_view(), name="gallery_detail"),
     path('like/<slug:slug>/', views.GalleryLike.as_view(), name="gallery_like"),
-    path('like/<slug:slug>/', views.ReviewLike.as_view(), name="review_like")
+    path('revlik/<slug:slug>/', views.ReviewLike.as_view(), name="review_like")
 ]
