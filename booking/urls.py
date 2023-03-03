@@ -1,8 +1,7 @@
 from . import views
 from django.urls import path
-from tavern import urls
 
-
+app_name = 'booking'
 urlpatterns = [
     path('booking/', views.booking, name='booking'),
     path('booking-submit/', views.bookingSubmit, name='bookingSubmit'),

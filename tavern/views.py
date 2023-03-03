@@ -122,5 +122,5 @@ def GameList(request):
     #return render(request, '../templates/event_page.html')
 
 
-def Booking(request):
-    return render(request, '../templates/booking.html')
+# def Booking(request):
+    #return render(request, '../templates/booking.html')
