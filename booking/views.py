@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from datetime import datetime, timedelta
 from .models import *
 from django.contrib import messages
@@ -20,7 +20,7 @@ def booking(request):
         day = request.POST.get('day')
         if service is None:
             messages.success(request, "Please Select A Service!")
-            return redirect('booking')
+            return redirect('booking:booking')
 
         #Store day and service in django session:
         request.session['day'] = day
@@ -28,7 +28,7 @@ def booking(request):
 
         return redirect('booking:bookingSubmit')
 
-    return render(request, 'booking.html', {
+    return render(request, '../templates/booking.html', {
             'weekdays': weekdays,
             'validateWeekdays': validateWeekdays,
         })
@@ -79,7 +79,7 @@ def bookingSubmit(request):
         else:
             messages.success(request, "Please Select A Service!")
 
-    return render(request, 'bookingSubmit.html', {
+    return render(request, '../templates/bookingSubmit.html', {
         'times': hour,
     })
 
@@ -87,7 +87,7 @@ def bookingSubmit(request):
 def userPanel(request):
     user = request.user
     bookings = TableBooking.objects.filter(user=user).order_by('day', 'time')
-    return render(request, 'userPanel.html', {
+    return render(request, '../templates/userPanel.html', {
         'user': user,
         'bookings': bookings,
     })
@@ -116,9 +116,9 @@ def userUpdate(request, id):
         request.session['day'] = day
         request.session['service'] = service
 
-        return redirect('userUpdateSubmit', id=id)
+        return redirect('booking:userUpdateSubmit', id=id)
 
-    return render(request, 'userUpdate.html', {
+    return render(request, '../templates/userUpdate.html', {
             'weekdays': weekdays,
             'validateWeekdays': validateWeekdays,
             'delta24': delta24,
@@ -171,9 +171,9 @@ def userUpdateSubmit(request, id):
                 messages.success(request, "The Selected Date Isn't In The Correct Time Period!")
         else:
             messages.success(request, "Please Select A Service!")
-        return redirect('userPanel')
+        return redirect('booking:userPanel')
 
-    return render(request, 'userUpdateSubmit.html', {
+    return render(request, '../templates/userUpdateSubmit.html', {
         'times': hour,
         'id': id,
     })
