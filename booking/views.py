@@ -18,6 +18,8 @@ def booking(request):
     if request.method == 'POST':
         service = request.POST.get('service')
         day = request.POST.get('day')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
         if service is None:
             messages.success(request, "Please Select A Service!")
             return redirect('booking:booking')
@@ -25,6 +27,8 @@ def booking(request):
         #Store day and service in django session:
         request.session['day'] = day
         request.session['service'] = service
+        request.session['email'] = email
+        request.session['phone'] = phone
 
         return redirect('booking:submit-booking')
 
@@ -48,6 +52,8 @@ def bookingSubmit(request):
     #Get stored data from django session:
     day = request.session.get('day')
     service = request.session.get('service')
+    email = request.session.get('email')
+    phone = request.session.get('phone')
 
     #Only show the time of the day that has not been selected before:
     hour = checkTime(times, day)
@@ -65,9 +71,11 @@ def bookingSubmit(request):
                                 service=service,
                                 day=day,
                                 time=time,
+                                email=email,
+                                phone=phone,
                             )
                             messages.success(request, "Booking Saved!")
-                            return redirect('index')
+                            return redirect('home')
                         else:
                             messages.success(request, "The Selected Time Has Been Reserved Before!")
                     else:
@@ -94,7 +102,7 @@ def userPanel(request):
 
 
 def userUpdate(request, id):
-    bookings = TableBooking.objects.get(pk=id)
+    booking = TableBooking.objects.get(pk=id)
     userdatepicked = booking.day
     #Copy  booking:
     today = datetime.today()
@@ -111,12 +119,16 @@ def userUpdate(request, id):
     if request.method == 'POST':
         service = request.POST.get('service')
         day = request.POST.get('day')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
 
         #Store day and service in django session:
         request.session['day'] = day
         request.session['service'] = service
+        request.session['email'] = email
+        request.session['phone'] = phone
 
-        return redirect('booking:userUpdateSubmit', id=id)
+        return redirect('booking:user-update-submit', id=id)
 
     return render(request, '../templates/userUpdate.html', {
             'weekdays': weekdays,
@@ -139,6 +151,8 @@ def userUpdateSubmit(request, id):
 
     day = request.session.get('day')
     service = request.session.get('service')
+    email = request.session.get('email')
+    phone = request.session.get('phone')
     
     #Only show the time of the day that has not been selected before and the time he is editing:
     hour = checkEditTime(times, day, id)
@@ -158,9 +172,11 @@ def userUpdateSubmit(request, id):
                                 service=service,
                                 day=day,
                                 time=time,
+                                email=email,
+                                phone=phone,
                             ) 
                             messages.success(request, "Booking Edited!")
-                            return redirect('index')
+                            return redirect('home')
                         else:
                             messages.success(request, "The Selected Time Has Been Reserved Before!")
                     else:
@@ -171,7 +187,7 @@ def userUpdateSubmit(request, id):
                 messages.success(request, "The Selected Date Isn't In The Correct Time Period!")
         else:
             messages.success(request, "Please Select A Service!")
-        return redirect('booking:userPanel')
+        return redirect('booking:user-panel')
 
     return render(request, '../templates/userUpdateSubmit.html', {
         'times': hour,

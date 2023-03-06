@@ -24,15 +24,25 @@
                 <option value="Food, Drinks and Games">Food, Drinks and Games</option>
             </select>
         </div>
-            <!--input day-->
-            <div class="mt-3">
-                <h3 class="">Select Day:</h3>
-                <select class="form-select fs-3" name="day">
-                    {% for validateWeekday in validateWeekdays %}
-                        <option value="{{ validateWeekday }}">{{ validateWeekday }}</option>
-                    {% endfor %}
-                </select>
-            </div>
+        <!--input day-->
+        <div class="mt-3">
+            <h3 class="">Select Day:</h3>
+            <select class="form-select fs-3" name="day">
+                {% for validateWeekday in validateWeekdays %}
+                    <option value="{{ validateWeekday }}">{{ validateWeekday }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <!--input email-->
+        <div class="mt-3">
+            <h3 class="">Enter Your Email:</h3>
+            <input type="email" class="form-control" id="booking_email" aria-describedby="emaillHelp" placeholder="Enter email" name="email">
+        </div>
+        <!--input phone-->
+        <div class="mt-3">
+            <h3 class="">Enter Your Phone:</h3>
+            <input type="number" class="form-control" id="booking_phone" aria-describedby="phoneHelp" placeholder="Enter phone" name="phone">
+        </div>
 
             <br/>
             <button type="submit" class="btn btn-primary text-white">Continue</button>
