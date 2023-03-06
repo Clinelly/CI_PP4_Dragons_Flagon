@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from datetime import datetime, timedelta
 from .models import *
 from django.contrib import messages
@@ -193,6 +193,17 @@ def userUpdateSubmit(request, id):
         'times': hour,
         'id': id,
     })
+
+
+def deleteBooking(request, id):
+    booking = TableBooking.objects.get(id=id)
+    context = {
+        'booking': booking
+    }
+    if request.method == "POST":
+        booking.delete()
+        return redirect('booking:user-panel')
+    return render(request, '../templates/booking_delete.html', context)
 
 
 def dayToWeekday(x):
