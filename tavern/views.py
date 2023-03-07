@@ -116,11 +116,3 @@ def FoodMenu(request):
 
 def GameList(request):
     return render(request, '../templates/game_list.html')
-
-
-# def EventPage(request):
-    #return render(request, '../templates/event_page.html')
-
-
-# def Booking(request):
-    #return render(request, '../templates/booking.html')
