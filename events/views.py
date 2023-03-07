@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta, date
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.views import generic
 from django.urls import reverse
@@ -59,4 +59,21 @@ def event(request, event_id=None):
     if request.POST and form.is_valid():
         form.save()
         return HttpResponseRedirect(reverse('events:calendar'))
-    return render(request, 'new_event.html', {'form': form})
+    context = {
+        'form': form,
+        'event': instance
+    }
+    return render(request, 'new_event.html', context)
+
+
+def event_delete(request, event_id):
+    event = get_object_or_404(Event, id=event_id)
+
+    if request.method == 'POST':
+        event.delete()
+        return redirect('events:calendar')
+
+    context = {
+        'event': event
+    }
+    return render(request, 'delete_event.html', context)
