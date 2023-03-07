@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+{% if user.is_authenticated %}
+<div class="col-12">
+<h3>Leave a Review:</h3>
+<p>Posting as: {{ user.username }}</p>
+<form method="post" style="margin-top: 1.3em;" class="bg-success">
+    {{ review_form | crispy }}
+    {% csrf_token %}
+    <button type="submit" class="btn btn-signup btn-lg bg-danger">Submit</button>
+</form>
+</div>
+{% endif %}
+
+{%endblock%}

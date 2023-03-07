@@ -12,10 +12,10 @@ class ReviewList(generic.ListView):
     template_name = 'index.html'
     paginate_by = 12
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['review_form'] = ReviewForm()
-        return context
+
+def ReviewPage(request):
+
+    return render(request, 'review_page.html', {"review_form": ReviewForm()})
 
 
 class ReviewLike(View):
