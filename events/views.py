@@ -47,6 +47,22 @@ def next_month(d):
     month = 'month=' + str(next_month.year) + '-' + str(next_month.month)
     return month
 
+def event_new(request, event_id=None):
+    instance = Event()
+    if event_id:
+        instance = get_object_or_404(Event, pk=event_id)
+    else:
+        instance = Event()
+
+    form = EventForm(request.POST or None, instance=instance)
+    if request.POST and form.is_valid():
+        form.save()
+        return HttpResponseRedirect(reverse('events:calendar'))
+    context = {
+        'form': form,
+        'event': instance
+    }
+    return render(request, 'new_event.html', context)
 
 def event(request, event_id=None):
     instance = Event()
@@ -63,7 +79,7 @@ def event(request, event_id=None):
         'form': form,
         'event': instance
     }
-    return render(request, 'new_event.html', context)
+    return render(request, 'edit_event.html', context)
 
 
 def event_delete(request, event_id):
