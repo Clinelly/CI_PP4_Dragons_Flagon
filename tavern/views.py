@@ -3,6 +3,7 @@ from django.views import generic, View
 from .models import Review, Gallery, Comment
 from django.http import HttpResponseRedirect
 from .forms import CommentForm, ReviewForm
+from django.utils.text import slugify
 # Create your views here.
 
 
@@ -14,20 +15,29 @@ class ReviewList(generic.ListView):
 
 
 def ReviewPage(request):
-
+    review_form = ReviewForm(data=request.POST)
+    if review_form.is_valid():
+        review = Review()
+        review.slug = slugify(review_form.cleaned_data['title'])
+        review.author = request.user
+        review.title = request.POST.get('title')
+        review.content = request.POST.get('content')
+        review.save()
+    else:
+        review_form = ReviewForm()
     return render(request, 'review_page.html', {"review_form": ReviewForm()})
 
 
-class ReviewLike(View):
-    def post(self, request, slug):
-        post = get_object_or_404(Review, slug=slug)
+#class ReviewLike(View):
+    #def post(self, request, slug):
+        #post = get_object_or_404(Review, slug=slug)
 
-        if post.likes.filter(id=request.user.id).exists():
-            post.likes.remove(request.user)
-        else:
-            post.likes.add(request.user)
+        #if post.likes.filter(id=request.user.id).exists():
+            #post.likes.remove(request.user)
+        #else:
+            #post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('index', args=[slug]))
+        #return HttpResponseRedirect(reverse('index', args=[slug]))
 
 
 def about(request):

@@ -30,16 +30,7 @@
                             <p> {{review.created_on}} </p>
                             <div class="col-1">
                                 <strong>
-                                    <form class="d-inline" action="{% url 'review_like' review.slug %}" method="POST">
-                                        {% csrf_token %}
-                                        {% if liked %}
-                                        <button type="submit" name="review_id" value="{{review.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
-                                        {% else %}
-                                        <button type="submit" name="review_id" value="{{review.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
-                                        {% endif %}
-                                    </form>
-                                    <span class="text-secondary"><i class="far fa-heart"></i></span> 
-                                    <span class="text-secondary">{{ review.number_of_likes }} </span>
+
                                 </strong>
                             </div>
                         </div>
