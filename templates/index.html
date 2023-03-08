@@ -13,7 +13,7 @@
             <h2>Welcome to the Dragon's Flagon!</h2>
             <br>
             <p> Intro Text here</p>
-            <a href="{% url 'booking:booking' %}">Book</a>
+            <a class="btn btn-info" href="{% url 'booking:booking' %}">Book Now!</a>
         </div>
         <!--Public Post Section-->
         <div class="col-6 bg-danger">
@@ -24,20 +24,20 @@
                     <div class="card">
                         <div class="card-body">
                             Author: {{ review.author }}
+                            <br>
                             {{ review.title }}
+                            <hr>
                             {{ review.content }}
                             <hr />
                             <p> {{review.created_on}} </p>
                             <div class="col-1">
-                                <strong>
 
-                                </strong>
                             </div>
                         </div>
                     </div>
                 </div>
                 {% if forloop.counter|divisibleby:6 %}
-
+                <form method="POST" action="{% url 'comment_update' post.id comment.id %}"></form>
             </div>
                 <div class="row">
                 {% endif %}

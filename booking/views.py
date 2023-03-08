@@ -63,7 +63,7 @@ def bookingSubmit(request):
 
         if service is not None:
             if day <= maxDate and day >= minDate:
-                if date == 'Monday' or date == 'Saturday' or date == 'Wednesday':
+                if date in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
                     if TableBooking.objects.filter(day=day).count() < 11:
                         if TableBooking.objects.filter(day=day, time=time).count() < 1:
                             BookingForm = TableBooking.objects.get_or_create(
@@ -164,7 +164,7 @@ def userUpdateSubmit(request, id):
 
         if service is not None:
             if day <= maxDate and day >= minDate:
-                if date == 'Monday' or date == 'Saturday' or date == 'Wednesday':
+                if date in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
                     if TableBooking.objects.filter(day=day).count() < 11:
                         if TableBooking.objects.filter(day=day, time=time).count() < 1 or userSelectedTime == time:
                             BookingForm = TableBooking.objects.filter(pk=id).update(
@@ -219,7 +219,7 @@ def validWeekday(days):
     for i in range (0, days):
         x = today + timedelta(days=i)
         y = x.strftime('%A')
-        if y == 'Monday' or y == 'Saturday' or y == 'Wednesday':
+        if y in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
             weekdays.append(x.strftime('%Y-%m-%d'))
     return weekdays
 
