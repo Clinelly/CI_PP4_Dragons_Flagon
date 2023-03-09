@@ -3,20 +3,21 @@
 {% block content %}
 
 <!--Hero Image Container-->
-<div id="hero-image"class="container-fluid bg-warning">
-    <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1678369462/bar_smsovg.jpg" class="img-fluid mx-auto d-block" alt="#">
+<div id="hero-image" class="container-fluid bg-warning">
+    <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1678369462/bar_smsovg.jpg"
+        class="img-fluid mx-auto d-block" alt="#">
 </div>
 <div class="container">
     <div class="row">
         <!-- Introduction Section-->
-        <div class="col-6 bg-success">
+        <div class="col-6 bg-success text-center">
             <h2>Welcome to the Dragon's Flagon!</h2>
             <br>
             <p> Intro Text here</p>
             <a class="btn btn-info" href="{% url 'booking:booking' %}">Book Now!</a>
         </div>
         <!--Public Post Section-->
-        <div class="col-6 bg-danger">
+        <div class="col-6 bg-danger text-center">
             <h2>What People Say About Us:</h2>
             <div class="row">
                 {% for review in review_list %}
@@ -39,12 +40,12 @@
                 {% if forloop.counter|divisibleby:6 %}
                 <form method="POST" action="{% url 'comment_update' post.id comment.id %}"></form>
             </div>
-                <div class="row">
+            <div class="row">
                 {% endif %}
                 {% endfor %}
-                </div>
+            </div>
             {% if user.is_authenticated %}
-                <a class="btn btn-info" href="{% url 'review_page' %}"> Leave a Review </a>
+            <a class="btn btn-info" href="{% url 'review_page' %}"> Leave a Review </a>
             {% endif %}
         </div>
         {% if is_paginated %}

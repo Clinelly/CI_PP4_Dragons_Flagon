@@ -7,16 +7,18 @@
 
 
 {% if user.is_authenticated %}
-<h1 class=" ms-5 mt-5 ">User Panel</h1>
+<h1 class=" ms-5 mt-5 text-center">User Panel</h1>
 
-<div class="shadow p-4 mb-5 bg-body bg-body rounded text-black  m-5 ">
-    <h2 class="">User Info:</h2>
-    <ul class="list-group fs-4 mt-3">
-            <li class="list-group mt-2">First Name: {{ user.first_name }}</li>
-            <li class="list-group mt-2">Last Name: {{ user.last_name }}</li>
-            <li class="list-group mt-2">Username: {{ user.username }}</li>
-            <li class="list-group mt-2">Email Address: {{ user.email }}</li>
-    </ul>
+<div class="container-fluid col-10 bg-body">
+    <div class="container-fluid row bg-body">
+        <h2 class="text-center">User Info:</h2>
+        <ul class="list-group fs-4 mt-3">
+                <li class="list-group mt-2">First Name: {{ user.first_name }}</li>
+                <li class="list-group mt-2">Last Name: {{ user.last_name }}</li>
+                <li class="list-group mt-2">Username: {{ user.username }}</li>
+                <li class="list-group mt-2">Email Address: {{ user.email }}</li>
+        </ul>
+    </div>
 </div>
 
 <!--Appointment Loop-->
