@@ -1,9 +1,10 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from .models import Review, Gallery, Comment
 from django.http import HttpResponseRedirect
-from .forms import CommentForm, ReviewForm
+from .forms import CommentForm, ReviewForm, ContactForm
 from django.utils.text import slugify
+from django.core.mail import send_mail, BadHeaderError
 # Create your views here.
 
 
@@ -117,7 +118,26 @@ class GalleryLike(View):
 
 
 def contact(request):
-    return render(request, '../templates/contact.html')
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = "Website Inquiry"
+            body = {
+                'first_name': form.cleaned_data['first_name'],
+                'last_name': form.cleaned_data['last_name'],
+                'email': form.cleaned_data['email_address'],
+                'message': form.cleaned_data['message'],
+            }
+            message = "\n".join(body.values())
+
+            try:
+                send_mail(subject, message, 'freelancer25@msn.com', ['freelancer25@msn.com']) 
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+        return redirect("home")
+
+    form = ContactForm()
+    return render(request, "../templates/contact.html", {'form': form})
 
 
 def FoodMenu(request):
