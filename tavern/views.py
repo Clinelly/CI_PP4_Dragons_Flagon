@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from .models import Review, Gallery, Comment
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from .forms import CommentForm, ReviewForm, ContactForm
 from django.utils.text import slugify
 from django.core.mail import send_mail, BadHeaderError
