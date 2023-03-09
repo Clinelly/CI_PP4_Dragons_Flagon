@@ -47,6 +47,7 @@ def next_month(d):
     month = 'month=' + str(next_month.year) + '-' + str(next_month.month)
     return month
 
+
 def event_new(request, event_id=None):
     instance = Event()
     if event_id:
@@ -63,6 +64,7 @@ def event_new(request, event_id=None):
         'event': instance
     }
     return render(request, 'new_event.html', context)
+
 
 def event(request, event_id=None):
     instance = Event()

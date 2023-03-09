@@ -1,19 +1,26 @@
 {% extends "base.html" %}
+
 {% block content %}
-<div class="row">
-    <h2>Events at the Dragon's Flagon</h2>
+
+<div class="container-fluid bg-dark">
+    <div class="row text-center text-white">
+        <h2>Events at the Dragon's Flagon</h2>
+    </div>
 </div>
-<div class="container bg-success">
-    <div class="row">
+<div class="bg-warning">
+    {{ calendar }}
+</div>
+<div class="container-fluid d-flex flex-column bg-success justify-content-center">
+    <div class="row text-center ">
         <h3>Regular Event 1</h3>
         <p>Description</p>
     </div>
-    <div class="row">
-        <h3>Regular Event 1</h3>
+    <div class="row text-center">
+        <h3>Regular Event 2</h3>
         <p>Description</p>
     </div>
-    <div class="row">
-        <h3>Regular Event 1</h3>
+    <div class="row text-center">
+        <h3>Regular Event 3</h3>
         <p>Description</p>
     </div>
 </div>
@@ -26,8 +33,7 @@
             <a class="btn btn-info right" href="{% url 'events:event_new' %}"> New Event </a>
             {% endif %}
         </div>
-        
-        {{ calendar }}
+    </div>
 </div>
 
 {%endblock%}
