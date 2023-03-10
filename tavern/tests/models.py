@@ -19,13 +19,13 @@ class TestTavernModels(TestCase):
     def test_review_str(self):
         self.assertEquals(str(self.review), "Title")
 
-    def test_review_like_users(self):
+    def test_review_number_of_likes(self):
         self.assertEquals(self.review.likes.count(), 2)
 
     def test_gallery_str(self):
         self.assertEquals(str(self.gallery), "Title2")
 
-    def test_gallery_like_users(self):
+    def test_gallery_number_of_likes(self):
         self.assertEquals(self.gallery.likes.count(), 2)
 
     def test_comment_str(self):
