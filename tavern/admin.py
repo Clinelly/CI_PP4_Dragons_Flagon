@@ -10,6 +10,7 @@ class ReviewAdmin(SummernoteModelAdmin):
     list_display = ('title', 'slug', 'created_on')
     search_fields = ['title', 'content']
     summernote_fields = ('content')
+    actions = ['approve_reviews']
 
 
 @admin.register(Comment)
