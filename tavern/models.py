@@ -8,13 +8,31 @@ STATUS = ((0, "Hidden"), (1, "Shown"))
 
 
 class Review(models.Model):
-    title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="tavern_reviews")
+    title = models.CharField(
+        max_length=200,
+        unique=True
+        )
+    slug = models.SlugField(
+        max_length=200,
+        unique=True
+        )
+    author = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name="tavern_reviews"
+        )
     content = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
-    likes = models.ManyToManyField(User, related_name='review_likes', blank=True)
+    created_on = models.DateTimeField(
+        auto_now_add=True
+        )
+    status = models.IntegerField(
+        choices=STATUS,
+        default=0
+        )
+    likes = models.ManyToManyField(
+        User,
+        related_name='review_likes',
+        blank=True)
 
     class Meta:
         ordering = ['-created_on']
@@ -27,15 +45,39 @@ class Review(models.Model):
 
 
 class Gallery(models.Model):
-    title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="gallery_posts")
-    updated_on = models.DateTimeField(auto_now=True)
+    title = models.CharField(
+        max_length=200,
+        unique=True
+        )
+    slug = models.SlugField(
+        max_length=200,
+        unique=True
+        )
+    author = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name="gallery_posts"
+        )
+    updated_on = models.DateTimeField(
+        auto_now=True
+        )
     content = models.TextField()
-    featured_image = CloudinaryField('image', default='placeholder')
-    created_on = models.DateTimeField(auto_now_add=True)
-    status = models.IntegerField(choices=STATUS, default=0)
-    likes = models.ManyToManyField(User, related_name='gallery_likes', blank=True)
+    featured_image = CloudinaryField(
+        'image',
+        default='placeholder'
+        )
+    created_on = models.DateTimeField(
+        auto_now_add=True
+        )
+    status = models.IntegerField(
+        choices=STATUS,
+        default=0
+        )
+    likes = models.ManyToManyField(
+        User,
+        related_name='gallery_likes',
+        blank=True
+        )
 
     class Meta:
         ordering = ['-created_on']
@@ -48,11 +90,21 @@ class Gallery(models.Model):
 
 
 class Comment(models.Model):
-    post = models.ForeignKey(Gallery, on_delete=models.CASCADE, related_name='comments')
-    name = models.CharField(max_length=80)
+    post = models.ForeignKey(
+        Gallery,
+        on_delete=models.CASCADE,
+        related_name='comments'
+        )
+    name = models.CharField(
+        max_length=80
+        )
     body = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-    approved = models.BooleanField(default=False)
+    created_on = models.DateTimeField(
+        auto_now_add=True
+        )
+    approved = models.BooleanField(
+        default=False
+        )
 
     class Meta:
         ordering = ['created_on']
