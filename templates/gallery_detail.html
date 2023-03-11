@@ -6,16 +6,21 @@
 
 <div class="masthead">
     <div class="container">
-        <div class="row g-0">
-            <div class="col-md-6 masthead-text">
+        <div class="row g-0 d-flex justify-content-center">
+            <div class="col-md-6 masthead-text ">
+                <div class="row bg-light text-center">
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="post-title">{{ gallery.title }}</h1>
+                <hr>
                 <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ gallery.author }} | {{ gallery.created_on }}</p>
+                </div>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                <!-- The featured image URL goes in the src attribute -->
-                <img src=" {{ post.featured_image.url }}" width="100%">
+            <div class="row bg-light">
+                <div class="d-none d-md-block masthead-image">
+                    <!-- The featured image URL goes in the src attribute -->
+                    <img src=" {{ gallery.featured_image.url }}" width="100%">
+                </div>
             </div>
         </div>
     </div>
@@ -32,7 +37,7 @@
                 </p>
                 <div class="row">
 
-                    <div class="col-1">
+                    <div class="col-1 p-1">
                         <strong>
                             {% if user.is_authenticated %}
                             <form class="d-inline" action="{% url 'gallery_like' gallery.slug %}" method="POST">
@@ -50,11 +55,13 @@
                         <span class="text-secondary">{{ gallery.number_of_likes }} </span>
                         </strong>
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 m-1">
                         {% with comments.count as total_comments %}
-                        <strong class="text-secondary"><i class="far fa-comments"></i>
+                        <strong class="text-secondary">
+                            <i class="far fa-comments"></i>
                             <!-- Our total_comments variable goes before the closing strong tag -->
-                            {{ total_comments }}</strong>
+                            {{ total_comments }}
+                        </strong>
                         {% endwith %}
                     </div>
                 </div>
