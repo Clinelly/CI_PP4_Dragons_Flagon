@@ -12,10 +12,11 @@ class ReviewList(generic.ListView):
     model = Review
     queryset = Review.objects.order_by('created_on')
     template_name = 'index.html'
-    paginate_by = 12
+    paginate_by = 6
 
 
 def ReviewPage(request):
+    queryset = Review.objects.filter(status=1)
     review_form = ReviewForm(data=request.POST)
     if review_form.is_valid():
         review = Review()

@@ -7,21 +7,31 @@
     <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1678369462/bar_smsovg.jpg"
         class="img-fluid mx-auto d-block" alt="#">
 </div>
-<div class="container">
-    <div class="row">
+
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
         <!-- Introduction Section-->
-        <div class="col-6 bg-success text-center">
+        <div class="col-lg-6 col-sm-10 bg-success text-center">
             <h2>Welcome to the Dragon's Flagon!</h2>
+            <hr>
+            <p>The closest place to Nerdvana you can get to on earth! 
+            We are a cafe, lounge, bar, restaurant and gaming den all rolled into one!
+            Packed to the rafters with comics and books; as well as a vast selection of table-top, card and board games - we have something for every geeky occasion.
+            We serve a selection of great local drinks and adventurous cocktails, as well as food hearty enough to satisfy even Thor himself.
             <br>
-            <p> Intro Text here</p>
-            <a class="btn btn-info" href="{% url 'booking:booking' %}">Book Now!</a>
+            What are you waiting for? Book your table today or browse our calendar for one of our regular events!
+            </p>
+            <a class="btn btn-info" href="{% url 'booking:booking' %}">Book Your Table!</a>
+            <a class="btn btn-info" href="{% url 'events:calendar' %}">View Our Events!</a>
         </div>
+    </div>
         <!--Public Post Section-->
-        <div class="col-6 bg-danger text-center">
+    <div class="row row d-flex justify-content-center">
+        <div class="col-lg-6 col-sm-10 bg-danger text-center">
             <h2>What People Say About Us:</h2>
             <div class="row">
                 {% for review in review_list %}
-                <div class="col-4">
+                <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="card">
                         <div class="card-body">
                             Author: {{ review.author }}
@@ -32,7 +42,6 @@
                             <hr />
                             <p> {{review.created_on}} </p>
                             <div class="col-1">
-
                             </div>
                         </div>
                     </div>
@@ -61,5 +70,5 @@
         </nav>
         {% endif %}
     </div>
-
+</div>
     {%endblock%}

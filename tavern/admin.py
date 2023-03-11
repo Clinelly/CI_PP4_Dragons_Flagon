@@ -12,6 +12,9 @@ class ReviewAdmin(SummernoteModelAdmin):
     summernote_fields = ('content')
     actions = ['approve_reviews']
 
+    def approve_reviews(self, request, queryset):
+        queryset.update(approved=True)
+
 
 @admin.register(Comment)
 class CommentAdmin(SummernoteModelAdmin):
