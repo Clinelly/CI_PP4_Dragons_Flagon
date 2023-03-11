@@ -6,7 +6,6 @@ urlpatterns = [
     path('reviewpage/', views.ReviewPage, name='review_page'),
     path('about/', views.about, name='about'),
     path('gallery/', views.GalleryList.as_view(), name='gallery'),
-    path('contact/', views.contact, name='contact'),
     path('fooddrink/', views.FoodMenu, name='fooddrink'),
     path('games/', views.GameList, name='games'),
     path('galllerydetail/<slug:slug>/', views.GalleryDetail.as_view(), name="gallery_detail"),
