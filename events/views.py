@@ -4,6 +4,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.views import generic
 from django.urls import reverse
 from django.utils.safestring import mark_safe
+from django.contrib import messages
 import calendar
 
 from .models import *
@@ -58,6 +59,8 @@ def event_new(request, event_id=None):
     form = EventForm(request.POST or None, instance=instance)
     if request.POST and form.is_valid():
         form.save()
+        messages.success(
+            request, "New event created!")
         return HttpResponseRedirect(reverse('events:calendar'))
     context = {
         'form': form,
@@ -76,6 +79,8 @@ def event(request, event_id=None):
     form = EventForm(request.POST or None, instance=instance)
     if request.POST and form.is_valid():
         form.save()
+        messages.success(
+            request, "Event updated.")
         return HttpResponseRedirect(reverse('events:calendar'))
     context = {
         'form': form,
@@ -89,6 +94,8 @@ def event_delete(request, event_id):
 
     if request.method == 'POST':
         event.delete()
+        messages.success(
+            request, "Event deleted.")
         return redirect('events:calendar')
 
     context = {
