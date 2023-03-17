@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from datetime import date, datetime, timedelta
 from .models import *
 from django.contrib import messages
-from django.utils import timezone
+
 
 def index(request):
     return render(request, "index.html", {})
@@ -77,15 +77,15 @@ def bookingSubmit(request):
                             messages.success(request, "Booking Saved!")
                             return redirect('home')
                         else:
-                            messages.success(request, "The Selected Time Has Been Reserved Before!")
+                            messages.error(request, "The Selected Time Has Been Reserved Before!")
                     else:
-                        messages.success(request, "The Selected Day Is Full!")
+                        messages.warning(request, "The Selected Day Is Full!")
                 else:
-                    messages.success(request, "The Selected Date Is Incorrect")
+                    messages.warning(request, "The Selected Date Is Incorrect")
             else:
-                messages.success(request, "The Selected Date Isn't In The Correct Time Period!")
+                messages.warning(request, "The Selected Date Isn't In The Correct Time Period!")
         else:
-            messages.success(request, "Please Select A Service!")
+            messages.warning(request, "Please Select A Service!")
 
     return render(request, '../templates/bookingSubmit.html', {
         'times': hour,
@@ -178,15 +178,15 @@ def userUpdateSubmit(request, id):
                             messages.success(request, "Booking Edited!")
                             return redirect('home')
                         else:
-                            messages.success(request, "The Selected Time Has Been Reserved Before!")
+                            messages.error(request, "The Selected Time Has Been Reserved Before!")
                     else:
-                        messages.success(request, "The Selected Day Is Full!")
+                        messages.warning(request, "The Selected Day Is Full!")
                 else:
-                    messages.success(request, "The Selected Date Is Incorrect")
+                    messages.warning(request, "The Selected Date Is Incorrect")
             else:
-                messages.success(request, "The Selected Date Isn't In The Correct Time Period!")
+                messages.warning(request, "The Selected Date Isn't In The Correct Time Period!")
         else:
-            messages.success(request, "Please Select A Service!")
+            messages.warning(request, "Please Select A Service!")
         return redirect('booking:user-panel')
 
     return render(request, '../templates/userUpdateSubmit.html', {
