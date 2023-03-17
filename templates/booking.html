@@ -8,15 +8,17 @@
 
 
 {% if user.is_authenticated %}
-<h1 class="text-center  mt-3">Online Booking</h1>
+<div class="row container-fluid d-flex align-items-center text-center bg-light mx-auto">
+    <h1 class="text-center mt-3">Online Booking</h1>
+</div>
 
 <div class="shadow p-4 mb-5 bg-body bg-body rounded text-black  m-5 ">
     <form method="post" action="{% url 'booking:booking' %}" class="me-2 ms-2" required>
         {% csrf_token %}
 
         <!--input service-->
-        <div>
-            <h3 class="">Select Service:</h3>
+        <div class="align-items-center text-center">
+            <h3>Select Service:</h3>
             <select class="form-select fs-3" name="service">
                 <option value="Drinks">Drinks</option>
                 <option value="Food and Drinks">Food and Drinks</option>

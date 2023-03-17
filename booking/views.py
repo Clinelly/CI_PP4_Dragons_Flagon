@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from .models import *
 from django.contrib import messages
-
+from django.utils import timezone
 
 def index(request):
     return render(request, "index.html", {})
@@ -213,14 +213,13 @@ def dayToWeekday(x):
 
 
 def validWeekday(days):
-    #Loop days you want in the next 21 days:
-    today = datetime.now()
-    weekdays = []
-    for i in range (0, days):
-        x = today + timedelta(days=i)
-        y = x.strftime('%A')
-        if y in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
-            weekdays.append(x.strftime('%Y-%m-%d'))
+    # Define a set of valid weekdays
+    valid_weekdays = {'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}
+
+    # Use a list comprehension to generate the list of valid weekdays
+    today = date.today()
+    weekdays = [str(today + timedelta(days=i)) for i in range(days) if (today + timedelta(days=i)).strftime('%A') in valid_weekdays]
+
     return weekdays
 
 
