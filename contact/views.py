@@ -61,7 +61,7 @@ class ContactMessage(View):
             contact.user = request.user
             contact.save()
             messages.success(
-                request, "Message has been sent")
+                request, "Your message has been sent.")
             return render(request, '../templates/contact.html')
 
         return render(request, '../templates/contact.html',

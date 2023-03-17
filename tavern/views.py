@@ -4,7 +4,7 @@ from .models import Review, Gallery, Comment
 from django.http import HttpResponseRedirect, HttpResponse
 from .forms import CommentForm, ReviewForm, ContactForm
 from django.utils.text import slugify
-from django.core.mail import send_mail, BadHeaderError
+from django.contrib import messages
 # Create your views here.
 
 
@@ -25,6 +25,8 @@ def ReviewPage(request):
         review.title = request.POST.get('title')
         review.content = request.POST.get('content')
         review.save()
+        messages.success(
+            request, "Your review has been submitted.")
     else:
         review_form = ReviewForm()
     return render(request, 'review_page.html', {"review_form": ReviewForm()})
