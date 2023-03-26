@@ -35,7 +35,7 @@ class ContactMessage(View):
     email field
     """
     template_name = '../templates/contact.html'
-    success_message = 'Message has been sent.'
+    success_message = 'Your message has been sent.'
 
     def get(self, request, *args, **kwargs):
         """

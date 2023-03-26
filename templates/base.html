@@ -29,9 +29,9 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="https://res.cloudinary.com/dbznc8xql/image/upload/c_scale,h_180/v1675444756/dragons_flagon_logo_q9iwoa.jpg" alt="Dragon Logo">
-              </a>
-            
+                <img src="https://res.cloudinary.com/dbznc8xql/image/upload/c_scale,h_180/v1675444756/dragons_flagon_logo_q9iwoa.jpg"
+                    alt="Dragon Logo">
+            </a>
             <a class="navbar-brand" href="{% url 'home' %}">
                 <h1>The Dragon's Flagon</h1>
             </a>
@@ -41,25 +41,26 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                {% if user.is_authenticated %}
                 <ul class="navbar-nav navbar-left me-auto mb-2 mb-lg-0">
-                    {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'booking:user-panel' %}">Bookings</a>
                     </li>
-                    {% else %}
+                </ul>
+                {% else %}
+                <ul class="navbar-nav navbar-left me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                     </li>
-                    {% endif %}
                 </ul>
-                <br>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-right">
+                {% endif %}
+                <ul class="navbar-nav navbar-right me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
@@ -76,16 +77,7 @@
             </div>
         </div>
     </nav>
-    <!--Messages Start-->
-    {% if messages %}
-    {% for message in messages %}
-        <div class="alert alert-dismissible fade show text-center" role="alert">
-            <h3 class="display-3">{{ message }}</h3>
-            <button type="button" class="btn-close fs-1 position-absolute top-50 start-0 translate-middle-y" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    {% endfor %}
-    {% endif %}
-<!--Messages End-->
+
     <main class="flex-shrink-0 main-bg">
         {% block content %}
         <!-- Content Goes here -->
@@ -131,7 +123,7 @@
                         </a>
                         <a target="blank" href="https://www.youtube.com/@GeekandSundry">
                             <i class="fab fa-youtube-square ms-3"></i></p>
-                        </a>
+                    </a>
                 </div>
             </div>
         </div>

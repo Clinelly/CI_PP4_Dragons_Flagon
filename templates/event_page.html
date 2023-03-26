@@ -8,9 +8,6 @@
         <h2>Events at the Dragon's Flagon</h2>
     </div>
 </div>
-<div class="bg-warning">
-    {{ calendar }}
-</div>
 <div class="container-fluid d-flex flex-column bg-success justify-content-center">
     <div class="row text-center ">
         <h3>Regular Event 1</h3>
@@ -25,7 +22,7 @@
         <p>Description</p>
     </div>
 </div>
-<div class="container bg-warning">
+<div class="container-fluid bg-warning">
     <div class="row">
         <div class="clearfix">
             <a class="btn btn-info left" href="{% url 'events:calendar' %}?{{ prev_month }}"> Previous Month </a>
@@ -35,6 +32,7 @@
             {% endif %}
         </div>
     </div>
+<div class="table-responsive">           
+    {{ calendar }}
 </div>
-
 {%endblock%}
