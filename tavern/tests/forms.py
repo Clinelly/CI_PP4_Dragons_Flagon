@@ -28,9 +28,17 @@ class TestTavernFormSignUp(TestCase):
 class TestTavernFormContactForm(TestCase):
 
     def test_contact_form_first_name(self):
+        form = ContactForm({'first_name': ''})
+        self.assertFalse(form.is_valid())
 
     def test_contact_form_last_name(self):
+        form = ContactForm({'last_name': ''})
+        self.assertFalse(form.is_valid())
 
     def test_contact_form_email_address(self):
+        form = ContactForm({'email_address': ''})
+        self.assertFalse(form.is_valid())
 
     def test_contact_form_message(self):
+        form = ContactForm({'message': ''})
+        self.assertFalse(form.is_valid())
