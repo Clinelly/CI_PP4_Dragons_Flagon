@@ -32,18 +32,6 @@ def ReviewPage(request):
     return render(request, 'review_page.html', {"review_form": ReviewForm()})
 
 
-#class ReviewLike(View):
-    #def post(self, request, slug):
-        #post = get_object_or_404(Review, slug=slug)
-
-        #if post.likes.filter(id=request.user.id).exists():
-            #post.likes.remove(request.user)
-        #else:
-            #post.likes.add(request.user)
-
-        #return HttpResponseRedirect(reverse('index', args=[slug]))
-
-
 def about(request):
     return render(request, '../templates/about.html')
 
@@ -118,29 +106,6 @@ class GalleryLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('gallery_detail', args=[slug]))
-
-
-# def contact(request):
-#     if request.method == 'POST':
-#         form = ContactForm(request.POST)
-#         if form.is_valid():
-#             subject = "Website Inquiry"
-#             body = {
-#                 'first_name': form.cleaned_data['first_name'],
-#                 'last_name': form.cleaned_data['last_name'],
-#                 'email': form.cleaned_data['email_address'],
-#                 'message': form.cleaned_data['message'],
-#             }
-#             message = "\n".join(body.values())
-
-#             try:
-#                 send_mail(subject, message, 'freelancer25@msn.com', ['freelancer25@msn.com']) 
-#             except BadHeaderError:
-#                 return HttpResponse('Invalid header found.')
-#         return redirect("home")
-
-#     form = ContactForm()
-#     return render(request, "../templates/contact.html", {'form': form})
 
 
 def FoodMenu(request):

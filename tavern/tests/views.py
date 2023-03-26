@@ -1,6 +1,7 @@
-from django.test import TestCase
+from django.test import TestCase, Client
 from tavern.models import Review, Gallery, Comment
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 
 class TestTavernViews(TestCase):

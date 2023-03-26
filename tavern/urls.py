@@ -10,5 +10,4 @@ urlpatterns = [
     path('games/', views.GameList, name='games'),
     path('galllerydetail/<slug:slug>/', views.GalleryDetail.as_view(), name="gallery_detail"),
     path('gallerylike/<slug:slug>/', views.GalleryLike.as_view(), name="gallery_like"),
-    #path('reviewlike/<slug:slug>/', views.ReviewLike.as_view(), name="review_like")
 ]
