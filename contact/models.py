@@ -14,7 +14,7 @@ from django.contrib.auth.models import User
 
 class Contact(models.Model):
     """
-    a class for the Contact model
+    A class for the Contact model
     """
     message_id = models.AutoField(primary_key=True)
     created_date = models.DateTimeField(auto_now_add=True)

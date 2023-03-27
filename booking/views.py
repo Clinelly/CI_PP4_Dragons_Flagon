@@ -53,7 +53,16 @@ def booking_submit(request):
     """
     user = request.user
     times = [
-        "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM", "8 PM", "9 PM"
+        "12 PM",
+        "1 PM",
+        "2 PM",
+        "3 PM",
+        "4 PM",
+        "5 PM",
+        "6 PM",
+        "7 PM",
+        "8 PM",
+        "9 PM"
     ]
     today = datetime.now()
     minDate = today.strftime('%Y-%m-%d')
@@ -73,9 +82,16 @@ def booking_submit(request):
 
         if service is not None:
             if day <= maxDate and day >= minDate:
-                if date in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
+                if date in ['Monday',
+                            'Tuesday',
+                            'Wednesday',
+                            'Thursday',
+                            'Friday',
+                            'Saturday',
+                            'Sunday']:
                     if TableBooking.objects.filter(day=day).count() < 11:
-                        if TableBooking.objects.filter(day=day, time=time).count() < 1:
+                        if TableBooking.objects.filter(day=day, time=time)\
+                                .count() < 1:
                             BookingForm = TableBooking.objects.get_or_create(
                                 user=user,
                                 service=service,
@@ -129,7 +145,9 @@ def user_update(request, id):
     today = datetime.today()
     minDate = today.strftime('%Y-%m-%d')
 
-    delta24 = (userdatepicked).strftime('%Y-%m-%d') >= (today + timedelta(days=1)).strftime('%Y-%m-%d')
+    delta24 = (userdatepicked)\
+        .strftime('%Y-%m-%d') >= (today + timedelta(days=1))\
+        .strftime('%Y-%m-%d')
 
     weekdays = validWeekday(22)
 
@@ -165,7 +183,16 @@ def user_update_submit(request, id):
     """
     user = request.user
     times = [
-        "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM", "8 PM", "9 PM"
+        "12 PM",
+        "1 PM",
+        "2 PM",
+        "3 PM",
+        "4 PM",
+        "5 PM",
+        "6 PM",
+        "7 PM",
+        "8 PM",
+        "9 PM"
     ]
     today = datetime.now()
     minDate = today.strftime('%Y-%m-%d')
@@ -187,10 +214,18 @@ def user_update_submit(request, id):
 
         if service is not None:
             if day <= maxDate and day >= minDate:
-                if date in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
+                if date in ['Monday',
+                            'Tuesday',
+                            'Wednesday',
+                            'Thursday',
+                            'Friday',
+                            'Saturday',
+                            'Sunday']:
                     if TableBooking.objects.filter(day=day).count() < 11:
-                        if TableBooking.objects.filter(day=day, time=time).count() < 1 or userSelectedTime == time:
-                            BookingForm = TableBooking.objects.filter(pk=id).update(
+                        if TableBooking.objects.filter(day=day, time=time)\
+                                .count() < 1 or userSelectedTime == time:
+                            BookingForm = TableBooking.objects.filter(pk=id)\
+                                .update(
                                 user=user,
                                 service=service,
                                 day=day,
@@ -248,10 +283,17 @@ def validWeekday(days):
     Use a list comprehension to generate the list of valid weekdays.
     """
 
-    valid_weekdays = {'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}
+    valid_days = {'Monday',
+                  'Tuesday',
+                  'Wednesday',
+                  'Thursday',
+                  'Friday',
+                  'Saturday',
+                  'Sunday'}
 
     today = date.today()
-    weekdays = [str(today + timedelta(days=i)) for i in range(days) if (today + timedelta(days=i)).strftime('%A') in valid_weekdays]
+    weekdays = [str(today + timedelta(days=i)) for i in range(days)
+                if (today + timedelta(days=i)).strftime('%A') in valid_days]
 
     return weekdays
 
@@ -288,6 +330,7 @@ def checkEditTime(times, day, id):
     booking = TableBooking.objects.get(pk=id)
     time = booking.time
     for k in times:
-        if TableBooking.objects.filter(day=day, time=k).count() < 1 or time == k:
+        if TableBooking.objects.filter(day=day, time=k)\
+                .count() < 1 or time == k:
             x.append(k)
     return x
