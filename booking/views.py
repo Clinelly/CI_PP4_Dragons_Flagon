@@ -15,10 +15,12 @@ def index(request):
 
 
 def booking(request):
-    # Calls 'validWeekday' to loop through desired days in the next 21 days
+    """
+    Calls 'validWeekday' to loop through desired days in the next 21 days.
+    Checks if day is valid and shows days that are not full.
+    Stores day and service in django session.
+    """
     weekdays = validWeekday(22)
-
-    # Only shows days that are not full
     validateWeekdays = isWeekdayValid(weekdays)
 
     if request.method == 'POST':
@@ -30,7 +32,6 @@ def booking(request):
             messages.success(request, "Please Select A Service!")
             return redirect('booking:booking')
 
-        # Store day and service in django session:
         request.session['day'] = day
         request.session['service'] = service
         request.session['email'] = email
@@ -44,7 +45,12 @@ def booking(request):
         })
 
 
-def bookingSubmit(request):
+def booking_submit(request):
+    """
+    Gets stored data from django session.
+    Only shows the times of the day that has not been previously selected.
+    Takes the user inputs and creates a booking.
+    """
     user = request.user
     times = [
         "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM", "8 PM", "9 PM"
@@ -55,13 +61,11 @@ def bookingSubmit(request):
     strdeltatime = deltatime.strftime('%Y-%m-%d')
     maxDate = strdeltatime
 
-    # Get stored data from django session:
     day = request.session.get('day')
     service = request.session.get('service')
     email = request.session.get('email')
     phone = request.session.get('phone')
 
-    # Only show the time of the day that has not been selected before:
     hour = checkTime(times, day)
     if request.method == 'POST':
         time = request.POST.get("time")
@@ -93,12 +97,16 @@ def bookingSubmit(request):
         else:
             messages.warning(request, "Select A Service")
 
-    return render(request, '../templates/bookingSubmit.html', {
+    return render(request, '../templates/booking_submit.html', {
         'times': hour,
     })
 
 
 def userPanel(request):
+    """
+    Takes the user data and bookings.
+    Displays to the user in the user panel template.
+    """
     user = request.user
     bookings = TableBooking.objects.filter(user=user).order_by('day', 'time')
     return render(request, '../templates/userPanel.html', {
@@ -108,18 +116,23 @@ def userPanel(request):
 
 
 def userUpdate(request, id):
+    """
+    Copies the user booking.
+    Checks the booking is not 24hrs before the selected time.
+    Calls 'validWeekday' to loop through desired days in the next 21 days.
+    Checks if day is valid and shows days that are not full.
+    Stores day and service in django session.
+    """
     booking = TableBooking.objects.get(pk=id)
     userdatepicked = booking.day
-    # Copy booking:
+
     today = datetime.today()
     minDate = today.strftime('%Y-%m-%d')
 
-    # 24h if statement in template:
     delta24 = (userdatepicked).strftime('%Y-%m-%d') >= (today + timedelta(days=1)).strftime('%Y-%m-%d')
-    # Calls 'validWeekday' to loop through desired days in the next 21 days
+
     weekdays = validWeekday(22)
 
-    # Only shows days that are not full:
     validateWeekdays = isWeekdayValid(weekdays)
 
     if request.method == 'POST':
@@ -128,7 +141,6 @@ def userUpdate(request, id):
         email = request.POST.get('email')
         phone = request.POST.get('phone')
 
-        # Stores day and service in django session
         request.session['day'] = day
         request.session['service'] = service
         request.session['email'] = email
@@ -145,6 +157,12 @@ def userUpdate(request, id):
 
 
 def userUpdateSubmit(request, id):
+    """
+    Gets stored data from django session.
+    Only shows the times of the day that has not been previously selected.
+    Shows time being edited.
+    Takes the user inputs and edits the booking.
+    """
     user = request.user
     times = [
         "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM", "8 PM", "9 PM"
@@ -160,7 +178,6 @@ def userUpdateSubmit(request, id):
     email = request.session.get('email')
     phone = request.session.get('phone')
 
-    # Shows time and day that not selected before and the time being edited
     hour = checkEditTime(times, day, id)
     booking = TableBooking.objects.get(pk=id)
     userSelectedTime = booking.time
@@ -202,6 +219,9 @@ def userUpdateSubmit(request, id):
 
 
 def deleteBooking(request, id):
+    """
+    Takes user input and deletes the selected booking.
+    """
     booking = TableBooking.objects.get(id=id)
     context = {
         'booking': booking
@@ -213,16 +233,22 @@ def deleteBooking(request, id):
 
 
 def dayToWeekday(x):
+    """
+    Takes the day from datetime and returns it as a string.
+    """
     z = datetime.strptime(x, "%Y-%m-%d")
     y = z.strftime('%A')
     return y
 
 
 def validWeekday(days):
-    # Define a set of valid weekdays
+    """
+    Define a set of valid weekdays.
+    Use a list comprehension to generate the list of valid weekdays.
+    """
+
     valid_weekdays = {'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}
 
-    # Use a list comprehension to generate the list of valid weekdays
     today = date.today()
     weekdays = [str(today + timedelta(days=i)) for i in range(days) if (today + timedelta(days=i)).strftime('%A') in valid_weekdays]
 
@@ -230,6 +256,9 @@ def validWeekday(days):
 
 
 def isWeekdayValid(x):
+    """
+    Checks the weekdays are valid for the booking parameters.
+    """
     validateWeekdays = []
     for j in x:
         if TableBooking.objects.filter(day=j).count() < 10:
@@ -238,7 +267,10 @@ def isWeekdayValid(x):
 
 
 def checkTime(times, day):
-    # Shows the time of the day that has not been selected before:
+    """
+    Shows the time of the day that has not been selected before
+    for creating a booking.
+    """
     x = []
     for k in times:
         if TableBooking.objects.filter(day=day, time=k).count() < 1:
@@ -247,7 +279,10 @@ def checkTime(times, day):
 
 
 def checkEditTime(times, day, id):
-    # Shows the time of the day that has not been selected before:
+    """
+    Shows the time of the day that has not been selected before
+    for creating a booking.
+    """
     x = []
     booking = TableBooking.objects.get(pk=id)
     time = booking.time

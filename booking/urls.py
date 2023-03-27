@@ -10,7 +10,7 @@ from . import views
 app_name = 'booking'
 urlpatterns = [
     path('table-booking/', views.booking, name='booking'),
-    path('submit-booking/', views.bookingSubmit, name='submit-booking'),
+    path('submit-booking/', views.booking_submit, name='submit-booking'),
     path('user-panel/', views.userPanel, name='user-panel'),
     path('update-user/<int:id>', views.userUpdate, name='user-update'),
     path('user-update-submit/<int:id>',

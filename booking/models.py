@@ -41,7 +41,7 @@ class TableBooking(models.Model):
         choices=SERVICE_CHOICES,
         default="Drinks"
         )
-    phone = models.IntegerField()
+    phone = models.BigIntegerField()
     day = models.DateField(
         default=datetime.now
         )
