@@ -1,8 +1,8 @@
-# The Diplomat | Bar & Grill
+# The Dragon's Flagon | Gaming Tavern
 
 ![Am I Responsive]()
 
-**Developer: Arron Beale**
+**Developer: Stuart Wall**
 
 💻 [Visit live website]()
 
@@ -160,7 +160,7 @@ The wireframes were created using Balsamiq
   - [WC3 Validator](https://validator.w3.org/)
   - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
   - [JShint](https://jshint.com/)
-  - [Pycodestyle(PEP8)](https://pypi.org/project/pycodestyle/)
+  - [Pycodestyle(PEP8)](https://pep8ci.herokuapp.com/)
   - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
   - [Wave Validator](https://wave.webaim.org/)
 
@@ -198,8 +198,97 @@ JSHint JS Validation Service
 
 
 ### PEP8 Validation
-PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle as PEP8online was down
+Code Institute's Python Linter App was used to check the validation of the Python code, as PEP8online is unavailable.
+All custom python files reported as clear with no errors or issues.
 
+<hr><summary>Tavern</summary><hr>
+
+<details><summary>Admin.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Tavern/tavern-admin-py.png">
+</details>
+
+<details><summary>Models.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Tavern/tavern-models-py.png">
+</details>
+
+<details><summary>Urls.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Tavern/tavern-urls-py.png">
+</details>
+
+<details><summary>Views.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Tavern/tavern-views-py.png">
+</details>
+
+<details><summary>Forms.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Tavern/tavern-forms-py.png">
+</details>
+
+<hr><summary>Booking</summary><hr>
+
+<details><summary>Admin.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Booking/booking-admin-py.png">
+</details>
+
+<details><summary>Models.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Booking/booking-models-py.png">
+</details>
+
+<details><summary>Urls.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Booking/booking-urls-py.png">
+</details>
+
+<details><summary>Views.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Booking/booking-views-py.png">
+</details>
+
+<hr><summary>Contact</summary><hr>
+
+<details><summary>Admin.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Contact/contact-admin-py.png">
+</details>
+
+<details><summary>Models.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Contact/contact-models-py.png">
+</details>
+
+<details><summary>Urls.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Contact/contact-urls-py.png">
+</details>
+
+<details><summary>Views.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Contact/contact-views-py.png">
+</details>
+
+<details><summary>Forms.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Contact/contact-forms-py.png">
+</details>
+
+
+<hr><summary>Events</summary><hr>
+
+<details><summary>Admin.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Events/events-admin-py.png">
+</details>
+
+<details><summary>Models.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Events/events-models-py.png">
+</details>
+
+<details><summary>Urls.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Events/events-urls-py.png">
+</details>
+
+<details><summary>Views.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Events/events-views-py.png">
+</details>
+
+<details><summary>Forms.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Events/events-forms-py.png">
+</details>
+
+<details><summary>Utils.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Events/events-utils-py.png">
+</details>
 
 ### Lighthouse
 
