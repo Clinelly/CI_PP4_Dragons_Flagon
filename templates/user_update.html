@@ -7,7 +7,7 @@
 
 
 {% if user.is_authenticated %}
-<!--if 24hrs before nobat-->
+<!--If 24hrs before booking-->
 {% if delta24 == True %}
 <h1 class="text-center  mt-3">Edit Booking</h1>
 
@@ -15,7 +15,7 @@
     <form method="post" action="{% url 'booking:user-update' id %}" class="me-2 ms-2" required>
         {% csrf_token %}
 
-        <!--input service-->
+        <!--Input Service-->
         <div>
             <h3 class="">Select Service:</h3>
             <select class="form-select fs-3" name="service">
@@ -24,7 +24,7 @@
                 <option value="Board Game Session">Board Game Session</option>
                 <option value="Food, Drinks and Games">Food, Drinks and Games</option>
             </select>
-        <!--input day-->
+        <!--Input Day-->
         <div class="mt-3">
             <h3 class="">Select Day:</h3>
             <select class="form-select fs-3" name="day">
@@ -33,12 +33,12 @@
                 {% endfor %}
             </select>
         </div>
-        <!--input email-->
+        <!--Input Email-->
         <div class="mt-3">
             <h3 class="">Enter Your Email:</h3>
             <input type="email" class="form-control" id="booking_email" aria-describedby="emaillHelp" placeholder="Enter email" name="email">
         </div>
-        <!--input phone-->
+        <!--Input Phone-->
         <div class="mt-3">
             <h3 class="">Enter Your Phone:</h3>
             <input type="number" class="form-control" id="booking_phone" aria-describedby="phoneHelp" placeholder="Enter phone" name="phone">
@@ -48,11 +48,11 @@
         </div>
     </form>
 </div>
-<!--else if its 24hrs before editing-->
+<!--If trying to edit a booking with less than 24hrs notice-->
 {% else %}
 
 <div class="shadow p-4 mb-5 bg-body bg-body rounded text-black m-5 text-center fPersian">
-    <h1 class="text-danger">Editing Appointments Its Only Available 24hrs Before Appointment!</h1>
+    <h1 class="text-danger">You cannot edit your booking online with less than 24hrs notice.</h1>
     <a href="{% url 'booking:user-panel' %}" class="btn btn-primary mt-5">Return To User Panel</a>
 </div>
 
