@@ -11,12 +11,12 @@ app_name = 'booking'
 urlpatterns = [
     path('table-booking/', views.booking, name='booking'),
     path('submit-booking/', views.booking_submit, name='submit-booking'),
-    path('user-panel/', views.userPanel, name='user-panel'),
-    path('update-user/<int:id>', views.userUpdate, name='user-update'),
+    path('user-panel/', views.user_panel, name='user-panel'),
+    path('update-user/<int:id>', views.user_update, name='user-update'),
     path('user-update-submit/<int:id>',
-         views.userUpdateSubmit,
+         views.user_update_submit,
          name='user-update-submit'),
     path('booking-delete/<int:id>',
-         views.deleteBooking,
+         views.delete_booking,
          name='delete-booking'),
 ]

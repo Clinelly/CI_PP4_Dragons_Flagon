@@ -102,20 +102,20 @@ def booking_submit(request):
     })
 
 
-def userPanel(request):
+def user_panel(request):
     """
     Takes the user data and bookings.
     Displays to the user in the user panel template.
     """
     user = request.user
     bookings = TableBooking.objects.filter(user=user).order_by('day', 'time')
-    return render(request, '../templates/userPanel.html', {
+    return render(request, '../templates/user_panel.html', {
         'user': user,
         'bookings': bookings,
     })
 
 
-def userUpdate(request, id):
+def user_update(request, id):
     """
     Copies the user booking.
     Checks the booking is not 24hrs before the selected time.
@@ -148,7 +148,7 @@ def userUpdate(request, id):
 
         return redirect('booking:user-update-submit', id=id)
 
-    return render(request, '../templates/userUpdate.html', {
+    return render(request, '../templates/user_update.html', {
             'weekdays': weekdays,
             'validateWeekdays': validateWeekdays,
             'delta24': delta24,
@@ -156,7 +156,7 @@ def userUpdate(request, id):
         })
 
 
-def userUpdateSubmit(request, id):
+def user_update_submit(request, id):
     """
     Gets stored data from django session.
     Only shows the times of the day that has not been previously selected.
@@ -212,13 +212,13 @@ def userUpdateSubmit(request, id):
             messages.warning(request, "Please Select A Service!")
         return redirect('booking:user-panel')
 
-    return render(request, '../templates/userUpdateSubmit.html', {
+    return render(request, '../templates/user_update_submit.html', {
         'times': hour,
         'id': id,
     })
 
 
-def deleteBooking(request, id):
+def delete_booking(request, id):
     """
     Takes user input and deletes the selected booking.
     """
