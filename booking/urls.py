@@ -1,5 +1,11 @@
-from . import views
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.urls import path
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Internal:
+from . import views
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 app_name = 'booking'
 urlpatterns = [
@@ -7,6 +13,10 @@ urlpatterns = [
     path('submit-booking/', views.bookingSubmit, name='submit-booking'),
     path('user-panel/', views.userPanel, name='user-panel'),
     path('update-user/<int:id>', views.userUpdate, name='user-update'),
-    path('user-update-submit/<int:id>', views.userUpdateSubmit, name='user-update-submit'),
-    path('booking-delete/<int:id>', views.deleteBooking, name='delete-booking'),
+    path('user-update-submit/<int:id>',
+         views.userUpdateSubmit,
+         name='user-update-submit'),
+    path('booking-delete/<int:id>',
+         views.deleteBooking,
+         name='delete-booking'),
 ]
