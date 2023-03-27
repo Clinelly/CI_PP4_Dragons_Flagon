@@ -11,12 +11,12 @@ from .forms import ContactForm
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-# This will get the user information
+# Gets user information.
 
 
 def get_user_instance(request):
     """
-    retrieves user details if logged in
+    Retrieves user details if logged in.
     """
 
     user_email = request.user.email
@@ -25,21 +25,21 @@ def get_user_instance(request):
 
 
 # Displays the contact form for the user, autofills their email,
-# checks all data is valid before saving it
+# Checks all data is valid before saving it.
 
 
 class ContactMessage(View):
     """
-    This view displays the contact form and if the user
+    Displays the contact form if the user
     is registered and inserts the user email into the
-    email field
+    email field.
     """
     template_name = '../templates/contact.html'
     success_message = 'Your message has been sent.'
 
     def get(self, request, *args, **kwargs):
         """
-        Retrieves users email and inputs into email input
+        Retrieves users email and inputs into email input.
         """
         if request.user.is_authenticated:
             email = request.user.email
@@ -52,7 +52,7 @@ class ContactMessage(View):
     def post(self, request):
         """
         Checks that the provided info is valid format
-        and then posts to database
+        and then posts to database.
         """
         contact_form = ContactForm(data=request.POST)
 
