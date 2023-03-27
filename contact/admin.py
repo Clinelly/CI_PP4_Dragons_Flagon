@@ -1,7 +1,14 @@
-from django.contrib import admin
-from .models import Contact
-from django_summernote.admin import SummernoteModelAdmin
 # Register your models here.
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
+from django.contrib import admin
+from django_summernote.admin import SummernoteModelAdmin
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Internal:
+from .models import Contact
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 @admin.register(Contact)
 class ContactAdmin(SummernoteModelAdmin):
