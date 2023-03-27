@@ -229,6 +229,7 @@ def delete_booking(request, id):
     if request.method == "POST":
         booking.delete()
         return redirect('booking:user-panel')
+        messages.success(request, "Booking Deleted.")
     return render(request, '../templates/booking_delete.html', context)
 
 
