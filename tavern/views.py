@@ -1,10 +1,16 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
-from .models import Review, Gallery, Comment
 from django.http import HttpResponseRedirect, HttpResponse
-from .forms import CommentForm, ReviewForm, ContactForm
 from django.utils.text import slugify
 from django.contrib import messages
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Internal:
+from .models import Review, Gallery, Comment
+from .forms import CommentForm, ReviewForm, ContactForm
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Create your views here.
 
 
@@ -47,7 +53,8 @@ class GalleryDetail(View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Gallery.objects.filter(status=1)
         gallery = get_object_or_404(queryset, slug=slug)
-        comments = gallery.comments.filter(approved=True).order_by('-created_on')
+        comments = gallery.comments.filter(approved=True)\
+            .order_by('-created_on')
         liked = False
         if gallery.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -67,7 +74,8 @@ class GalleryDetail(View):
     def post(self, request, slug, *args, **kwargs):
         queryset = Gallery.objects.filter(status=1)
         gallery = get_object_or_404(queryset, slug=slug)
-        comments = gallery.comments.filter(approved=True).order_by('-created_on')
+        comments = gallery.comments.filter(approved=True)\
+            .order_by('-created_on')
         liked = False
         if gallery.likes.filter(id=self.request.user.id).exists():
             liked = True
