@@ -1,39 +1,46 @@
-<title>Our Gallery</title>
 {% extends "base.html" %}
-
+{% load static %}
+<title>Our Gallery</title>
 {% block content %}
 
 <!-- Image Gallery -->
-<div class="container-fluid bg-warning">
-    <div class="row bg-success justify-content-center">
+<div class="container-fluid">
+    <div class="row justify-content-center">
         {% for gallery in gallery_list %}
-        <div class="card" style="width: 18rem;">
+        <div class="card gallery-card border border-dark border-3" style="width: 18rem;">
             {% if "placeholder" in gallery.featured_image.url %}
-            <img class="card-img-top" src="">
+            <img class="card-img-top"
+                src="https://res.cloudinary.com/dbznc8xql/image/upload/c_scale,h_180,f_auto/v1675444756/dragons_flagon_logo_q9iwoa.jpg"
+                alt="Placeholder image">
             {% else %}
-            <img class="card-img-top" src="{{ gallery.featured_image.url }}">
+            <img class="card-img-top" src="{{ gallery.featured_image.url }}" alt="Uploaded image">
             {% endif %}
-            <div class="card-body">
-                <p class="card-text">
-                    <a href="{% url 'gallery_detail' gallery.slug %}"> 
-                    <h3>{{ gallery.title }}</h3>
-                    <br>
-                    {{ gallery.content }}
+            <div class="card-body text-center">
+                <div class="card-text">
+                    <a href="{% url 'gallery_detail' gallery.slug %}">
+                        <h3>{{ gallery.title }}</h3>
+                        <br>
+                        {{ gallery.content }}
                     </a>
-                    <hr />
-                    {{ gallery.author }} 
-                    <p><i class="far fa-heart"></i>{{ gallery.number_of_likes }}</p>
+                    <hr>
+                    {{ gallery.author }}
+                    <p>
+                        <i class="far fa-heart"></i>{{ gallery.number_of_likes }}
+                    </p>
+
                     {% with gallery.comments.count as total_comments %}
-                    <i class="far fa-comments"></i>
-                    {{ total_comments }}
+                    <p>
+                        <i class="far fa-comments"></i>{{ total_comments }}
+                    </p>
                     {% endwith %}
-                    <hr />
-                </p>
+                    <hr>
+                </div>
             </div>
         </div>
         {% endfor %}
     </div>
 </div>
+
 {% if is_paginated %}
 <nav aria-label="Page navigation">
     <ul class="pagination justify-content-center">
@@ -46,6 +53,5 @@
     </ul>
 </nav>
 {% endif %}
-</div>
 
 {%endblock%}

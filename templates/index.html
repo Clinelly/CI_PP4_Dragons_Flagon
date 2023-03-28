@@ -1,18 +1,18 @@
-<title>Home</title>
 {% extends "base.html" %}
-
+{% load static %}
+<title>Home</title>
 {% block content %}
 
 <!--Hero Image Container-->
-<div id="hero-image" class="container-fluid bg-warning">
-    <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1678369462/bar_smsovg.jpg"
-        class="img-fluid mx-auto d-block" alt="#">
+<div id="hero-image" class="container-fluid">
+    <img src="https://res.cloudinary.com/dbznc8xql/image/upload/f_auto/v1678369462/bar_smsovg.jpg"
+        class="img-fluid mx-auto d-block" alt="The tavern interior">
 </div>
 
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
         <!-- Introduction Section-->
-        <div class="col-lg-6 col-sm-10 bg-success text-center">
+        <div class="col-lg-6 col-sm-10 text-center info-area border border-5 border-dark">
             <h2>Welcome to the Dragon's Flagon!</h2>
             <hr>
             <p>The closest place to Nerdvana you can get to on earth! 
@@ -33,19 +33,19 @@
     </div>
         <!--Public Post Section-->
     <div class="row row d-flex justify-content-center">
-        <div class="col-lg-6 col-sm-10 bg-danger text-center">
+        <div class="col-lg-6 col-sm-10 review-area text-center border border-5 border-dark">
             <h2>What People Say About Us:</h2>
             <div class="row">
                 {% for review in review_list %}
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body review-card">
                             Author: {{ review.author }}
                             <br>
                             {{ review.title }}
                             <hr>
                             {{ review.content }}
-                            <hr />
+                            <hr>
                             <p> {{review.created_on}} </p>
                             <div class="col-1">
                             </div>
