@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'booking',
     'tavern',
     'contact',
+    'django_extensions',
 ]
 
 SITE_ID = 1
@@ -170,3 +171,7 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+GRAPH_MODELS = {
+  'app_labels': ["tavern", "contact", "auth", "booking", "events"],
+}

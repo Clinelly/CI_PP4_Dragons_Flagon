@@ -80,7 +80,7 @@
 
 <details><summary>Epics</summary>
 
-![Epics]
+![Epics]()
 
 </details>
 
@@ -112,10 +112,10 @@
 #### Website pages
 
 #### Database
-
+Database schema created by using pydot and [GraphVizOnline](https://dreampuf.github.io/GraphvizOnline/)
 
 <details><summary>Show diagram</summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/database.png">
 </details>
 
 
