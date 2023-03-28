@@ -172,28 +172,104 @@ The wireframes were created using Balsamiq
 
 
 
-##### Back to [top](#table-of-contents)<hr>
+##### Back to [top](#table-of-contents)
+<hr>
 
 
 ## Validation
 
-The W3C Markup Validation Service
-<details><summary>Home</summary>
-<img src="">
+The W3C Markup Validation Service was usd to validate the HTML code used in the templates. All templates returned clear with no warnings or errors.
+
+<details><summary>Index Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/index.png">
+</details>
+
+<details><summary>Review Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/review_page.png">
+</details>
+
+
+<details><summary>About Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/about.png">
+</details>
+
+<details><summary>Gallery Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/gallery.png">
+</details>
+
+<details><summary>Gallery Detail Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/gallery_detail.png">
+</details>
+
+<details><summary>Contact Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/contact.png">
+</details>
+
+<details><summary>Food Menu Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/food_menu.png">
+</details>
+
+<details><summary>Events Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/event_page.png">
+</details>
+
+<details><summary>Create Event Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/create_event.png">
+</details>
+
+<details><summary>Edit Event Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/edit_event.png">
+</details>
+
+<details><summary>Delete Event Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/delete_event.png">
+</details>
+
+<details><summary>Game List Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/game_list.png">
+</details>
+
+<details><summary>Booking Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/booking.png">
+</details>
+
+<details><summary>Booking Submit Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/booking_submit.png">
+</details>
+
+<details><summary>Booking Submit (Time) Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/booking_submit_time.png">
+</details>
+
+<details><summary>Edit Booking Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/edit_booking.png">
+</details>
+
+<details><summary>Edit Booking (Time) Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/edit_booking_time.png">
+</details>
+
+<details><summary>Delete Booking Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/delete_booking.png">
+</details>
+
+<details><summary>User Panel Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/user_panel.png">
 </details>
 
 <hr>
 
 
 ### CSS Validation
-The W3C Jigsaw CSS Validation Service
+The W3C Jigsaw CSS Validation Service was used to validate the CSS file used in the project. The CSS file returned clear with no errors or warnings.
 
 <details><summary>Style.css</summary>
-<img src="">
-</details><hr>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/css.png">
+</details>
+<hr>
 
 ### JavaScript Validation
-JSHint JS Validation Service
+There are no custom JavaScript files in this project.
 
 
 ### PEP8 Validation
@@ -291,8 +367,86 @@ All custom python files reported as clear with no errors or issues.
 
 ### Lighthouse
 
-Performance, best practices and SEO was tested using Lighthouse.
+Page Performance, Accessibility, Best Practice and SEO were tested using Google Lighthouse.
+<br>
+All templates scored above 90 on Performance and SEO. All Templates scored 83 on Best Practice due to issues Google raised with certain images, cookies and manifests.
 
+<details><summary>Index Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/index.png">
+</details>
+
+<details><summary>Review Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/review_page.png">
+</details>
+
+
+<details><summary>About Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/about.png">
+</details>
+
+<details><summary>Gallery Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/gallery.png">
+</details>
+
+<details><summary>Gallery Detail Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/gallery_detail.png">
+</details>
+
+<details><summary>Contact Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/contact.png">
+</details>
+
+<details><summary>Food Menu Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/food_menu.png">
+</details>
+
+<details><summary>Events Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/event_page.png">
+</details>
+
+<details><summary>Create Event Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/create_event.png">
+</details>
+
+<details><summary>Edit Event Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/edit_event.png">
+</details>
+
+<details><summary>Delete Event Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/delete_event.png">
+</details>
+
+<details><summary>Game List Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/game_list.png">
+</details>
+
+<details><summary>Booking Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/booking.png">
+</details>
+
+<details><summary>Booking Submit Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/booking_submit.png">
+</details>
+
+<details><summary>Booking Submit (Time) Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/booking_submit_time.png">
+</details>
+
+<details><summary>Edit Booking Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/edit_booking.png">
+</details>
+
+<details><summary>Edit Booking (Time) Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/edit_booking_time.png">
+</details>
+
+<details><summary>Delete Booking Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/delete_booking.png">
+</details>
+
+<details><summary>User Panel Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/user_panel.png">
+</details>
 
 <hr>
 

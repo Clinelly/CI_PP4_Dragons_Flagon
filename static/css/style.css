@@ -50,6 +50,18 @@ body {
   text-decoration: none;
 }
 
+.comment-area {
+  background-color: #EF233C;
+}
+
+.comment-form {
+  background-color: #8D99AE
+}
+
+.uploaded-image{
+  width: 100%;
+}
+
 .contact-area{
   background-color: #8D99AE;
 }
