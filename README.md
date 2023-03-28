@@ -154,6 +154,7 @@ The wireframes were created using Balsamiq
 - [Google Fonts](https://fonts.google.com/)
 - [Heroku Platform](https://id.heroku.com/login)
 - [Postgres](https://www.postgresql.org/)
+- [ElephantSQL](https://www.elephantsql.com/)
 - [Summernote](https://summernote.org/)
 - Validation:
   - [WC3 Validator](https://validator.w3.org/)
@@ -341,15 +342,93 @@ WAVE was used to test the websites accessibility.
 ### Heroku Deployment
 
 [Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
+This application has been deployed from Github using Heroku. Here's how:
 
+1. Create an account at heroku.com
+
+2. Create an app. Give it a name such as ci-pp4-dragons-flagon (note: the name must be unique) and select a region. I set mine to Europe.
+
+Heroku now charges for access to it's native postgres resources. I set up my project with [ElephantSQL](https://www.elephantsql.com/)
+
+3. Go to elephantsql.com and create an account.
+
+4. Go to your dashboard.
+
+5. Select 'New Instance'.
+
+6. Set up your plan: 
+  - Give it a name (typically your project name)
+  - Select the Tiny Turtle (free) package.
+  - The Tags field can be left blank.
+
+7. Select a Region (ideally, a data center located near you).
+
+8. Click 'Review'.
+
+9. Check your details are correct and click 'Create Instance'.
+
+10. Return to the dashboard and click on the database instance name.
+
+11. In the URL section, copy the URL to your clipboard.
+
+12. Copy the database URL to your env.py file. It can also be set as an environmental variable in Heroku.
+
+13. Install the plugins dj-database-url and psycopg2.
+
+14. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file.
+
+15. Create a Procfile with the text: web: gunicorn dragonsflagon.wsgi.
+
+16. In the settings.py ensure the connection is to the ElephantSQL database.
+
+17. Ensure debug is set to false in the settings.py file.
+
+18. Add localhost, and ci-pp4-dragons-flagon-clinelly.herokuapp.com to the ALLOWED_HOSTS variable in settings.py.
+
+19. Run "python3 manage.py showmigrations" to check the status of the migrations.
+
+20. Run "python3 manage.py migrate" to migrate the database.
+
+21. Run "python3 manage.py createsuperuser" to create a super/admin user.
+
+22. Install gunicorn and add it to the requirements.txt file using the command pip3 freeze > requirements.txt.
+
+23. Disable collectstatic in Heroku before any code is pushed using the command heroku config:set DISABLE_COLLECTSTATIC=1 -a ci-pp4-dragons-flagon-clinelly.
+
+24. Set the Config Vars in the Heroku app:
+  - Your Elephant SQL Database.
+  - Port 8000.
+  - Your secret key.
+
+25. Connect the app to GitHub, and enable automatic deploys from main if desired.
+
+26. Click deploy to deploy your application to Heroku for the first time.
+
+27. Click on the link provided to access the application.
+
+28. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue.
 <hr>
 
 ### Fork Repository
+In order to fork the repository, you must:
 
+- Go to the GitHub repository.
+- Click on 'Fork' button in upper right hand corner.
+- Select 'Create new fork' from the drop-down menu
 <hr>
 
 ### Clone Repository
+You can clone the repository by following these steps:
+- Going to the GitHub repository.
+- Clicking the 'Code' button, loacted above the file list.
+- Selecting if you prefer to clone using either HTTPS, SSH, or Github CLI.
+- Clicking the copy button to copy the URL to your clipboard.
+- Opening Git Bash.
+- Changing the current working directory to one where you want to clone the directory to.
+- Typing 'git clone' and pasting the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+- Pressing 'Enter' to create your local clone.
 
+The repository can be found here - https://github.com/Clinelly/CI_PP4_Dragons_Flagon
 
 ##### Back to [top](#table-of-contents)<hr>
 
