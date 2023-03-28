@@ -40,10 +40,18 @@ The Dragon's Flagon is a fantasy-themed tavern. It was designed primarily as a s
 <hr>
 
 ### User Goals
-
+- To book a session at the tavern.
+- To edit or delete a created booking.
+- To be kept up-to-date with events.
+- To view posts from the owners.
+- To be able to contact the owners with questions or provide feedback.
 
 ### Site Owner Goals
-
+- To enable users to book sessions at the tavern.
+- To promote the business and attract customers.
+- To keep customers up-to-date with news posts.
+- To advertise events for customers to attend.
+- To have an attractive and responsive website.
 
 <hr>
 
@@ -51,9 +59,18 @@ The Dragon's Flagon is a fantasy-themed tavern. It was designed primarily as a s
 ## User Experience
 
 ### Target Audience
+- Users wishing to book a session at the tavern.
+- New and repeat customers who wish to attend different events.
+- Members of the gaming community who wish to have a social hub.
+- Families looking for a fun place to eat and play.
 
 ### User Requirements and Expectations
-
+- Accessible.
+- Responsive.
+- Key information (contact information & opening times).
+- Social media links.
+- Ease of use.
+- Clean design.
 
 
 ##### Back to [top](#table-of-contents)<hr>
@@ -103,9 +120,17 @@ The Dragon's Flagon is a fantasy-themed tavern. It was designed primarily as a s
 ## Design
 
 ### Colours
-[Coolors.co](https://coolors.co/)
+The colour palette was found on [Coolors.co](https://coolors.co/). I chose a palette with a similar colour-scheme to the main logo of the website.
+Blue buttons draw the eye of the user and uploaded cards have a parchment coloured background to fit the fantasy theme.
+
+<details><summary>View palette</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/palette.png">
+</details>
+
 
 ### Fonts
+
+The font chosen was Medieval Sharp from Google Fonts, as it resembles old-fashioned writing on a scroll. Cursive was chosen as a back-up font. 
 
 ### Structure
 
@@ -370,6 +395,8 @@ All custom python files reported as clear with no errors or issues.
 Page Performance, Accessibility, Best Practice and SEO were tested using Google Lighthouse.
 <br>
 All templates scored above 90 on Performance and SEO. All Templates scored 83 on Best Practice due to issues Google raised with certain images, cookies and manifests.
+<br>
+The Gallery Detail page scored 87 on Accessibility with a warning about a conflict with the button name for the like/dislike feature for the gallery.
 
 <details><summary>Index Page</summary>
 <img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/index.png">
