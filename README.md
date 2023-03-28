@@ -4,7 +4,7 @@
 
 **Developer: Stuart Wall**
 
-💻 [Visit live website]()
+💻 [Visit live website](https://ci-pp4-dragons-flagon-clinelly.herokuapp.com/)
 
 
 
@@ -35,7 +35,7 @@
   - [Acknowledgements](#acknowledgements)
 
 ### About
-
+The Dragon's Flagon is a fantasy-themed tavern. It was designed primarily as a social spot for people to eat, drink, make merry and play a variety of tabletop/card/boardgames.
 
 <hr>
 
@@ -112,7 +112,7 @@
 #### Website pages
 
 #### Database
-Database schema created by using pydot and [GraphVizOnline](https://dreampuf.github.io/GraphvizOnline/)
+Database schema created by using [django-extensions](https://django-extensions.readthedocs.io/en/latest/graph_models.html), pydot and [GraphVizOnline](https://dreampuf.github.io/GraphvizOnline/)
 
 <details><summary>Show diagram</summary>
 <img src="/workspace/CI_PP4_Dragons_Flagon/docs/database.png">
@@ -153,13 +153,11 @@ The wireframes were created using Balsamiq
 - [GitHub](https://github.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [Heroku Platform](https://id.heroku.com/login)
-- [jQuery](https://jquery.com)
 - [Postgres](https://www.postgresql.org/)
 - [Summernote](https://summernote.org/)
 - Validation:
   - [WC3 Validator](https://validator.w3.org/)
   - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
-  - [JShint](https://jshint.com/)
   - [Pycodestyle(PEP8)](https://pep8ci.herokuapp.com/)
   - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
   - [Wave Validator](https://wave.webaim.org/)
@@ -359,15 +357,34 @@ WAVE was used to test the websites accessibility.
 ## Credits
 
 ### Images
+[Dragon’s Flagon logo](https://ih1.redbubble.net/image.1434837373.0468/flat,750x,075,f-pad,750x1000,f8f8f8.jpg)
+Designed and sold on [Redbubble](https://www.redbubble.com/) by [Carl Huber](https://www.redbubble.com/people/carlhuber/shop)
 
-I
+Board Game Images were taken from [BoardGameGeek](https://boardgamegeek.com/)
+
+Tavern Hero Image taken from [DDOPlayers](https://ddoplayers.com/2021/11/25/immersive-dd-inspired-restaurant-and-amusement-center-planned-in-lake-geneva/)
 
 ### Code
+The code for the Events app was inspired by and modified from a tutorial by [Hui Wen]( https://www.huiwenteo.com/normal/2018/07/24/django-calendar.html)
 
+The code for the Booking app was inspired by and modified from a tutorial by [John Abdsho Khosrowabadi](https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78)
 
+The code for writing tests was inspired by a YouTube tutorial on testing by [The Dumbfounds](https://www.youtube.com/playlist?list=PLbpAWbHbi5rMF2j5n6imm0enrSD9eQUaM)
+
+[Code Institute's](https://codeinstitute.net/) Hello Django and I Think Therefore I Blog walkthrough challenges.
+
+[Stack Overflow](https://stackoverflow.com/) helped with answering niche questions.
+
+[Django Documentation](https://docs.djangoproject.com/en/4.1/)
+
+[Bootstrap Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 ##### Back to [top](#table-of-contents)<hr>
 
 ## Acknowledgements
 
 ### Special thanks to the following:
+- My beautiful wife Megan, who's love and support has kept me going.
+- My mentor Mo Shami who continually pushes me to be a better developer.
+- Code Institute's fantastic tutor team, who are the fountain of all knowledge.
+- The class of June '22, for their humour and insight.
