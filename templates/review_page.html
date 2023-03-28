@@ -1,17 +1,20 @@
-<title>Leave a Review</title>
 {% extends "base.html" %}
+<title>Leave a Review</title>
+{% load static %}
 
 {% block content %}
 {% load crispy_forms_tags %}
 {% if user.is_authenticated %}
-<div class="col-12">
-<h3>Leave a Review:</h3>
-<p>Posting as: {{ user.username }}</p>
-<form method="post" style="margin-top: 1.3em;" class="bg-success">
-    {{ review_form | crispy }}
-    {% csrf_token %}
-    <button type="submit" class="btn btn-signup btn-lg bg-danger">Submit</button>
-</form>
+<div class="container-fluid text-center text-white d-flex justify-content-center">
+    <div class="col-8">
+        <h3>Leave a Review:</h3>
+        <p>Posting as: {{ user.username }}</p>
+        <form method="post" style="margin-top: 1.3em;" class="review-frm border border-dark border-5">
+            {{ review_form | crispy }}
+            {% csrf_token %}
+            <button type="submit" class="btn btn-signup btn-lg bg-info">Submit</button>
+        </form>
+    </div>
 </div>
 {% endif %}
 

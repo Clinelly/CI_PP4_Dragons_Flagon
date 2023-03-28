@@ -58,18 +58,56 @@ body {
   background-color: #EF233C
 }
 
+.menu-starter, .menu-pud {
+  background-color: #D90429;
+}
+
+.menu-main, .menu-drink {
+  background-color: #EF233C;
+}
+
+.game-card {
+  background-color: #f3d5b5;
+}
+
+.info-dnd {
+  background-color: #EF233C;
+}
+
+.info-pq {
+  background-color: #D90429;
+}
+
+.info-fnm {
+  background-color: #EF233C;
+}
+
+.cal-contain {
+  background-color: #8D99AE;
+}
+
 .calendar {
   width: 98%;
   margin: auto;
   font-size: 13px;
 }
 
+.calendar a {
+  color: #2B2D42;
+}
+
+.calendar table {
+  border-width: 0;
+  border-spacing: 0;
+}
+
 .calendar tr, .calendar td {
   border: 1px solid black;
+  padding: 0;
 }
 
 .calendar th {
-  padding: 10px;
+  padding: 0;
   text-align: center;
   font-size: 18px;
 }
@@ -119,6 +157,10 @@ a {
   margin: auto;
 }
 
+.review-frm {
+  background-color: #EF233C;
+}
+
 .form input, .form select, .form textarea {
   border-radius: 5px;
   border: 1px solid #17a2b8;
@@ -128,15 +170,15 @@ a {
   width: 100%;
 }
 
-  .footer {
-    background-color: #D90429;
-  }
+.footer {
+  background-color: #D90429;
+}
 
-  .footer a {
-    text-decoration: none;
-    color: #EDF2F4;
-  }
+.footer a {
+  text-decoration: none;
+  color: #EDF2F4;
+}
 
-  .footer a:hover {
-    color: #2B2D42;
-  }
+.footer a:hover {
+  color: #2B2D42;
+}

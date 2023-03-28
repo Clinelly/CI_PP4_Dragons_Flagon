@@ -1,185 +1,197 @@
-<title>Our Games</title>
 {% extends "base.html" %}
-
+{% load static %}
+<title>Our Games</title>
 {% block content %}
 <div class="row">
-    <h2 class="text-center">Board Game Library</h2>
+  <h2 class="text-center text-white">Board Game Library</h2>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/carcassone_unzv0f.webp" class="card-img-top" alt="Carcassone box art">
-            <div class="card-body">
-              <p class="card-text">
-                <strong>Carcassone</strong>
-                <hr>
-                Shape the medieval landscape of France, claiming cities, monasteries and farms.
-                <hr>
-                Players: 2-5
-                <br>
-                Play Time: 30-45 mins
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/catan_ubkc2x.webp" class="card-img-top" alt="Catan box art">
-            <div class="card-body">
-              <p class="card-text">
-                <strong>Catan</strong>
-                <hr>
-                Collect and trade resources to build up the island of Catan in this modern classic.
-                <hr>
-                Players: 3-4
-                <br>
-                Play Time: 60-120 mins
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/pandemic_y9bkzs.webp" class="card-img-top" alt="Pandemic box art">
-            <div class="card-body">
-              <p class="card-text">                
-                <strong>Pandemic</strong>
-                <hr>
-                Your expert team must prevent the world from succumbing to a viral pandemic.
-                <hr>
-                Players: 2-4
-                <br>
-                Play Time: 45 mins
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/mysterium_m1deli.webp" class="card-img-top" alt="Mysterium box art">
-            <div class="card-body">
-              <p class="card-text">                
-                <strong>Mysterium</strong>
-                <hr>
-                Become a psychic and divine spectral visions to solve the murder of a restless ghost.
-                <hr>
-                Players: 2-7
-                <br>
-                Play Time: 45 mins
-              </p>
-            </div>
-          </div>
+  <div class="row">
+    <div class="card game-card border border-dark border-1" style="width: 18rem;">
+      <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/carcassone_unzv0f.webp"
+        class="card-img-top" alt="Carcassone box art">
+      <div class="card-body">
+        <div class="card-text">
+          <strong>Carcassone</strong>
+          <hr>
+          Shape the medieval landscape of France, claiming cities, monasteries and farms.
+          <hr>
+          Players: 2-5
+          <br>
+          Play Time: 30-45 mins
+        </div>
+      </div>
     </div>
-    <div class="row">
-        <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918011/thedragon_flagon_iejbgx.webp" class="card-img-top" alt="Dragon box art">
-            <div class="card-body">
-              <p class="card-text">
-                <strong>The Dragon and Flagon</strong>
-                <hr>
-                Program your thug the best to win the bar fight. With 3D furniture!
-                <hr>
-                Players: 2-8
-                <br>
-                Play Time: 60 mins
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/disneyvillainous_x8052w.webp" class="card-img-top" alt="Villainous box art">
-            <div class="card-body">
-              <p class="card-text">
-                <strong>Disney Villainous</strong>
-                <hr>
-                The villains assemble to face off, race to their goal, and rule the Disney realms.
-                <hr>
-                Players: 2-6
-                <br>
-                Play Time: 50 mins
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918011/wingspan_dvg0hw.webp" class="card-img-top" alt="Wingspan box art">
-            <div class="card-body">
-              <p class="card-text">
-                <strong>Wingspan</strong>
-                <hr>
-                Attract a beautiful and diverse collection of birds to your wildlife preserve.
-                <hr>
-                Players: 1-5
-                <br>
-                Play Time: 40-70 mins
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918011/tickettoride_thcquj.webp" class="card-img-top" alt="Ticket box art">
-            <div class="card-body">
-              <p class="card-text">
-                <strong>Ticket to Ride</strong>
-                <hr>
-                Build your railroad across North America to connect cities and complete tickets.
-                <hr>
-                Players: 2-5
-                <br>
-                Play Time: 30-60 mins
-              </p>
-            </div>
-          </div>
+    <div class="card game-card border border-dark border-" style="width: 18rem;">
+      <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/catan_ubkc2x.webp" class="card-img-top"
+        alt="Catan box art">
+      <div class="card-body">
+        <div class="card-text">
+          <strong>Catan</strong>
+          <hr>
+          Collect and trade resources to build up the island of Catan in this modern classic.
+          <hr>
+          Players: 3-4
+          <br>
+          Play Time: 60-120 mins
+        </div>
+      </div>
     </div>
-    <div class="row">
-        <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/gloomhaven_km0s4i.webp" class="card-img-top" alt="Gloomhaven box art">
-            <div class="card-body">
-              <p class="card-text">
-                <strong>Gloomhaven</strong>
-                <hr>
-                Vanquish monsters with strategic cardplay. Fulfill your quest to leave your legacy!
-                <hr>
-                Players: 1-4
-                <br>
-                Play Time: 60-120 mins
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/7wondersduel_sfxocf.webp" class="card-img-top" alt="Duel box art">
-            <div class="card-body">
-              <p class="card-text">
-                <strong>7 Wonders Duel</strong>
-                <hr>
-                Science? Military? What will you draft to win this head-to-head version of 7 Wonders?
-                <hr>
-                Players: 2
-                <br>
-                Play Time: 30 mins
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918011/quacksquedlinberg_vzovxm.webp" class="card-img-top" alt="Quacks box art">
-            <div class="card-body">
-              <p class="card-text">
-                <strong>The Quacks of Quedlinburg</strong>
-                <hr>
-                Pull ingredients from your stock to make your pot bubble, but hopefully not explode!
-                <hr>
-                Players: 2-4
-                <br>
-                Play Time: 45 mins
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918011/azul_p4itcw.webp" class="card-img-top" alt="Azul box art">
-            <div class="card-body">
-              <p class="card-text">
-                <strong>Azul</strong>
-                <hr>
-                Artfully embellish the walls of your palace by drafting the most beautiful tiles.
-                <hr>
-                Players: 2-4
-                <br>
-                Play Time: 30-45 mins
-              </p>
-            </div>
-          </div>
+    <div class="card game-card border border-dark border-" style="width: 18rem;">
+      <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/pandemic_y9bkzs.webp" class="card-img-top"
+        alt="Pandemic box art">
+      <div class="card-body">
+        <div class="card-text">
+          <strong>Pandemic</strong>
+          <hr>
+          Your expert team must prevent the world from succumbing to a viral pandemic.
+          <hr>
+          Players: 2-4
+          <br>
+          Play Time: 45 mins
+        </div>
+      </div>
     </div>
+    <div class="card game-card border border-dark border-" style="width: 18rem;">
+      <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/mysterium_m1deli.webp"
+        class="card-img-top" alt="Mysterium box art">
+      <div class="card-body">
+        <div class="card-text">
+          <strong>Mysterium</strong>
+          <hr>
+          Become a psychic and divine spectral visions to solve the murder of a restless ghost.
+          <hr>
+          Players: 2-7
+          <br>
+          Play Time: 45 mins
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="card game-card border border-dark border-" style="width: 18rem;">
+      <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918011/thedragon_flagon_iejbgx.webp"
+        class="card-img-top" alt="Dragon box art">
+      <div class="card-body">
+        <div class="card-text">
+          <strong>The Dragon and Flagon</strong>
+          <hr>
+          Program your thug the best to win the bar fight. With 3D furniture!
+          <hr>
+          Players: 2-8
+          <br>
+          Play Time: 60 mins
+        </div>
+      </div>
+    </div>
+    <div class="card game-card border border-dark border-" style="width: 18rem;">
+      <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/disneyvillainous_x8052w.webp"
+        class="card-img-top" alt="Villainous box art">
+      <div class="card-body">
+        <div class="card-text">
+          <strong>Disney Villainous</strong>
+          <hr>
+          The villains assemble to face off, race to their goal, and rule the Disney realms.
+          <hr>
+          Players: 2-6
+          <br>
+          Play Time: 50 mins
+        </div>
+      </div>
+    </div>
+    <div class="card game-card border border-dark border-" style="width: 18rem;">
+      <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918011/wingspan_dvg0hw.webp" class="card-img-top"
+        alt="Wingspan box art">
+      <div class="card-body">
+        <div class="card-text">
+          <strong>Wingspan</strong>
+          <hr>
+          Attract a beautiful and diverse collection of birds to your wildlife preserve.
+          <hr>
+          Players: 1-5
+          <br>
+          Play Time: 40-70 mins
+        </div>
+      </div>
+    </div>
+    <div class="card game-card border border-dark border-" style="width: 18rem;">
+      <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918011/tickettoride_thcquj.webp"
+        class="card-img-top" alt="Ticket box art">
+      <div class="card-body">
+        <div class="card-text">
+          <strong>Ticket to Ride</strong>
+          <hr>
+          Build your railroad across North America to connect cities and complete tickets.
+          <hr>
+          Players: 2-5
+          <br>
+          Play Time: 30-60 mins
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="card game-card border border-dark border-" style="width: 18rem;">
+      <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/gloomhaven_km0s4i.webp"
+        class="card-img-top" alt="Gloomhaven box art">
+      <div class="card-body">
+        <div class="card-text">
+          <strong>Gloomhaven</strong>
+          <hr>
+          Vanquish monsters with strategic cardplay. Fulfill your quest to leave your legacy!
+          <hr>
+          Players: 1-4
+          <br>
+          Play Time: 60-120 mins
+        </div>
+      </div>
+    </div>
+    <div class="card game-card border border-dark border-" style="width: 18rem;">
+      <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918010/7wondersduel_sfxocf.webp"
+        class="card-img-top" alt="Duel box art">
+      <div class="card-body">
+        <div class="card-text">
+          <strong>7 Wonders Duel</strong>
+          <hr>
+          Science? Military? What will you draft to win this head-to-head version of 7 Wonders?
+          <hr>
+          Players: 2
+          <br>
+          Play Time: 30 mins
+        </div>
+      </div>
+    </div>
+    <div class="card game-card border border-dark border-" style="width: 18rem;">
+      <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918011/quacksquedlinberg_vzovxm.webp"
+        class="card-img-top" alt="Quacks box art">
+      <div class="card-body">
+        <div class="card-text">
+          <strong>The Quacks of Quedlinburg</strong>
+          <hr>
+          Pull ingredients from your stock to make your pot bubble, but hopefully not explode!
+          <hr>
+          Players: 2-4
+          <br>
+          Play Time: 45 mins
+        </div>
+      </div>
+    </div>
+    <div class="card game-card border border-dark border-" style="width: 18rem;">
+      <img src="https://res.cloudinary.com/dbznc8xql/image/upload/v1679918011/azul_p4itcw.webp" class="card-img-top"
+        alt="Azul box art">
+      <div class="card-body">
+        <div class="card-text">
+          <strong>Azul</strong>
+          <hr>
+          Artfully embellish the walls of your palace by drafting the most beautiful tiles.
+          <hr>
+          Players: 2-4
+          <br>
+          Play Time: 30-45 mins
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 {%endblock%}
