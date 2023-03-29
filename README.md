@@ -28,7 +28,6 @@
     - [Manual testing](#manual-testing)
     - [Automated testing](#automated-testing)
     - [Tests on various devices](#tests-on-various-devices)
-    - [Browser compatibility](#browser-compatibility)
   - [Bugs](#bugs)
   - [Heroku Deployment](#heroku-deployment)
   - [Credits](#credits)
@@ -780,7 +779,13 @@ WAVE was used to test the websites accessibility.
 | Click on 'Events' link in footer. | Event page loads.  | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_page_test_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/about_page_test_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/gallery_page_test_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/contact_page_test_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/food_menu_test_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/game_page_test_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/event_page_test_1.png">
 </details>
 
 2.	As a User I can use a navbar, footer, and social icons so that I can navigate the site, access menus, and access socials.
@@ -792,7 +797,8 @@ WAVE was used to test the websites accessibility.
 | Scroll down to footer | See social links.  | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_footer_test_2.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_social_test_2.png">
 </details>
 
 3.	As a User I can view the opening hours and contact details so that I know when the business is open and how to contact them via email, phone and socials.
@@ -805,7 +811,9 @@ WAVE was used to test the websites accessibility.
 
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_about_test_3.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/contact_page_locate_test_3.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_social_test_2.png">
 </details>
 
 4.	As a User I can create a booking by selecting a date and time so that I can book a session.
@@ -817,7 +825,10 @@ WAVE was used to test the websites accessibility.
 | Select desired time, click submit. | Booking saved, redirect to home page, message shown to user. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_book_test_4.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_date_test_4.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_time_test_4.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_booking_saved_test_4.png">
 </details>
 
 5.	As a User I can update my booking so that I can choose another available time and date.
@@ -829,7 +840,10 @@ WAVE was used to test the websites accessibility.
 | Select desired time, click submit. | Booking saved, redirect to home page, message shown to user. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_user_panel_test_5.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_edit_test_5.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_edit_time_test_5.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_edit_success_test_5.png">
 </details>
 
 6.	As a User I can delete my booking so that I can cancel my session.
@@ -841,7 +855,10 @@ WAVE was used to test the websites accessibility.
 | Click delete button | Booking deleted, message sent to user. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_user_panel_test_5.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/user_panel_booking_delete_test_6.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_delete_confirm_test_6.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_delete_success_test_6.png">
 </details>
 
 7.	As a user I can view my booking so that I can remind myself of the date and time I have booked.
@@ -852,7 +869,8 @@ WAVE was used to test the websites accessibility.
 | From User Panel, scroll down. | View Booking details. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_user_panel_test_5.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/view_booking_test_7.png">
 </details>
 
 8.	As a User I am notified when I take an action, so that I know my action of creating, editing, or deleting a booking has been successful.
@@ -862,10 +880,10 @@ WAVE was used to test the websites accessibility.
 | See Test 4. | See Test 4. | Works as expected. |
 | See Test 5. | See Test 5. | Works as expected. |
 | See Test 6. | See Test 6. | Works as expected. |
-| Navigate to Contact Page, fill in contact form, click submit. | Contact form submitted, message shown to user. | Works as expected. |
-
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_booking_saved_test_4.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_edit_success_test_5.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_delete_success_test_6.png">
 </details>
 
 10.	As a User I can register an account so that I can access more advanced features of the site.
@@ -876,7 +894,9 @@ WAVE was used to test the websites accessibility.
 | Fill in form, click 'Register' button. | Account created. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_register_test_10.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/register_account_test_10.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/register_success_test_10.png">
 </details>
 
 11.	As a user I can login so that I can book a session, leave a review or comment on a post.
@@ -887,7 +907,9 @@ WAVE was used to test the websites accessibility.
 | Enter username and password. | User logged in and redirected to home page. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_login_test_11.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/login_page_test_11.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/login_success_test_11.png">
 </details>
 
 12.	As a user I can see my login status so that I know if I am logged in or not.
@@ -897,7 +919,7 @@ WAVE was used to test the websites accessibility.
 | Navigate to header. | 'Login' link replaced with 'Logout'. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/header_logout_test_12.png">
 </details>
 
 13.	As a User I can view the site's blog so that I can learn additional information and read articles.
@@ -908,7 +930,9 @@ WAVE was used to test the websites accessibility.
 | On Gallery page, click a blog entry. | Taken to more detailed gallery page. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/gallery_page_test_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/galler_detail_test_13.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/gallery_detail_success_test_13.png">
 </details>
 
 14.	As a User I can view the food, drink and game menus so that I can decide whether visit the business.
@@ -920,7 +944,10 @@ WAVE was used to test the websites accessibility.
 | On Game page, scroll down to view content. | Game menu present. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/food_menu_test_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/game_page_test_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/food_menu_test_14.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/game_library_test_14.png">
 </details>
 
 15.	As a User I cannot book a date in the past so that my booking is valid.
@@ -1107,8 +1134,13 @@ Coverage was used to write a report.
 
 
 
-### Device Testing & Browser compatibility
-
+### Device Testing
+The website was tested the following devices:
+- Apple iPhone 11 Pro
+- Google Pixel 6
+- Samsung Galaxy 
+- Google Acer Chromebook
+- Microsoft Surface Pro
 
 
 
