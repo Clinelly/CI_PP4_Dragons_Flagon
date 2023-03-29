@@ -257,9 +257,26 @@ def delete_booking(request, id):
     """
     Takes user input and deletes the selected booking.
     """
-    booking = TableBooking.objects.get(id=id)
+    booking = TableBooking.objects.get(pk=id)
+    userdatepicked = booking.day
+
+    today = datetime.today()
+    minDate = today.strftime('%Y-%m-%d')
+
+    delta24 = (userdatepicked)\
+        .strftime('%Y-%m-%d') >= (today + timedelta(days=1))\
+        .strftime('%Y-%m-%d')
+
+    weekdays = validWeekday(22)
+
+    validateWeekdays = isWeekdayValid(weekdays)
+
     context = {
-        'booking': booking
+        'booking': booking,
+        'weekdays': weekdays,
+        'validateWeekdays': validateWeekdays,
+        'delta24': delta24,
+        'id': id,
     }
     if request.method == "POST":
         booking.delete()
