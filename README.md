@@ -179,7 +179,6 @@ Database schema created by using [django-extensions](https://django-extensions.r
 <img src="/workspace/CI_PP4_Dragons_Flagon/docs/database.png">
 </details>
 
-
 ##### User Model
 The User Model contains the following:
 - user_id
@@ -255,11 +254,16 @@ The Contact Model contains the following:
 - phone
 
 ### Wireframes
-The wireframes were created using Balsamiq
+Balsamiq was used ahead of development, in order to plan the basic skeleton of the major web-pages.
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/Home_Browser.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/About_Browser.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/Gallery_Browser.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/Contact_Browser.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/Menu_Browser.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/Games_Browser.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/Events_Browser.png">
 </details>
-
 
 ## Technologies Used
 
@@ -596,6 +600,13 @@ All custom python files reported as clear with no errors or issues.
 
 <details><summary>Forms.py</summary>
 <img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Tavern/tavern-forms-py.png">
+</details>
+
+<details><summary>Tests.py</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/tests/tavern_models_test.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/tests/tavern_forms_test.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/tests/tavern_urls_test.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/tests/tavern_views_test.png">
 </details>
 
 <hr><summary>Booking</summary><hr>
@@ -1169,6 +1180,10 @@ WAVE was used to test the websites accessibility.
 Automated testing was used to test the Tavern app using the inbuilt test modules.
 Coverage was used to write a report.
 
+<details><summary></summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/auto_test/tavern_tests.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/auto_test/tavern_coverage_report.png">
+</details>
 
 
 ### Device Testing
