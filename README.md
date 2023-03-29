@@ -159,6 +159,21 @@ The font chosen was Medieval Sharp from Google Fonts, as it resembles old-fashio
 ### Structure
 
 #### Website pages
+The website was designed alongside standard principles to ensure users would be familiar with the layout. 
+The header contains a navbar allowing users to navigate the main pages and to register/login. The navbar collapses to a menu on smaller screens.
+A footer runs along the bottom of the webpages, promoting the website's social media links and more niche webpages.
+
+Overall, the website has the following pages:
+- A Home Page, providing the user with a brief description of the business. Buttons take the user to the Booking page and the Events page. Cards display user reviews and a button underneath takes users to the Review Submission page.
+- An About Page, which provides the user more in-depth details about the website and the services it offers.
+- The Gallery Page; which functions as a blog, allowing the site admins to publish photos/articles to the users. Clicking on a post enables users to comment on the posts.
+- The Contact Page allows users to contact the site owners directly and provides direct contact details and a map to the business location.
+- The Food & Drink page gives users a sample of what food/drink the tavern provides.
+- The Games page provides users with a list of games the tavern has to offer.
+- The Events page provides information about the regular events that take place at the tavern. A calendar provides users with dates and event names. Clicking on an event provides further details. Site admins can update/delete events.
+- The User Panel page can be accessed from the header. It provides users with information about their bookings and their account information. By clicking on their booking, users can update or delete them.
+- The Booking page can be accessed from the home page and allows users to book a session at the tavern.
+- The Review Submission page is accessed from the home page and allows users to submit a review about their experience.
 
 #### Database
 Database schema created by using [django-extensions](https://django-extensions.readthedocs.io/en/latest/graph_models.html), pydot and [GraphVizOnline](https://dreampuf.github.io/GraphvizOnline/)
