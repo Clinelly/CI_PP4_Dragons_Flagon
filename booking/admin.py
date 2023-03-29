@@ -14,3 +14,4 @@ from .models import TableBooking
 class ReviewAdmin(SummernoteModelAdmin):
     list_display = ('user', 'day', 'time_booked')
     search_fields = ['user', 'day', 'time', ]
+    list_filter = ('user', 'day', 'time_booked', 'time')

@@ -1,9 +1,11 @@
-<title>Error 404</title>
 {% extends "base.html" %}
-
+{% load static %}
+<title>Error 404</title>
 {% block content %}
 
-<h1>OOPS!</h1>
-<P>The page you are looking for cannot be found. Please try again.</P>
-
+<div class="container-fluid text-center text-white">
+    <h2>OOPS!</h2>
+    <p>The page you are looking for cannot be found. Please try again.</p>
+    <a class="btn btn-info" href="{% url 'home' %}">Return to home</a>
+</div>
 {%endblock%}

@@ -107,13 +107,11 @@ The Dragon's Flagon is a fantasy-themed tavern. It was designed primarily as a s
 24.	As an Admin / Authorised User I can create, read, update and delete blog posts so that I can provide information and updates to the users. (Must Have).
 25.	As an Admin / Authorised User I can search through bookings, blogs, and events so that I can find the information I am looking for. (Should Have).
 26.	As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day (Should Have).
-27.	As an Admin / Authorised User, I can moderate reviews/comments to keep a friendly online presence and maintain a professional website. (Should Have).
+27.	As an Admin / Authorised User, I can moderate comments to keep a friendly online presence and maintain a professional website. (Should Have).
 
 ### Site Owner  
-23.	As a Site Owner I can provide a responsive site for my customers so that they have a good user experience. (Must Have).
-24.	As a Site Owner I can validate data entered into my site so that all submitted data is correct. (Must Have).
-25.	As a Site Owner I can provide a 'Contact Us' page so that users can get in touch with my business. (Must Have).
-26.	As a Site Owner, I can look at feedback provided by users, through reviews, comments and direct contact, so that I can make improvements where necessary. (Must Have)
+28.	As a Site Owner I can provide a 'Contact Us' page so that users can get in touch with my business. (Must Have).
+29.	As a Site Owner, I can look at feedback provided by users, through reviews, comments and direct contact, so that I can make improvements where necessary. (Must Have)
 
 
 ### Kanban, Epics & User Stories
@@ -996,7 +994,8 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| From nav bar, log in as superuser. | Login successful | Works as expected |
+| Visit https://ci-pp4-dragons-flagon-clinelly.herokuapp.com/admin/ | Gain access to back end. | Works as expected |
 
 <details><summary></summary>
 <img src="">
@@ -1006,7 +1005,9 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 21. | See test 21. | Works as expected. |
+| Navigate to 'Table Bookings' under 'Bookings'. | Taken to Booking admin area. | Works as expected. |
+| Click 'add booking', fill in form, click save. | New booking created. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -1016,7 +1017,10 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 21. | See Test 21. | Works as expected. |
+| Navigate to 'Events' under events. | Taken to events admin area. | Works as expected. |
+| Select an event to edit or delete. | Event changed or deleted. | Works as expected. |
+| Click 'add event', fill in form, click save. | New event created. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -1026,7 +1030,10 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 21. | See Test 21. | Works as expected. |
+| Navigate to 'Gallery' under Tavern. | Taken to gallery admin area. | Works as expected. |
+| From Gallery area, can create, read, update and delete blog posts. | Full CRUD functionality for blog posts. | Works as expected. |
+
 
 <details><summary></summary>
 <img src="">
@@ -1036,7 +1043,11 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 21. | See Test 21 | Works as expected. |
+| See Test 22. | See Test 22 | Works as expected. |
+| See Test 23. | See Test 23 | Works as expected. |
+| See Test 24. | See Test 24 | Works as expected. |
+| Above each app, there is a search bar for information. | Search provides detailed information. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -1046,58 +1057,44 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 21. | See Test 21 | Works as expected. |
+| Booking filters shown on screen | Can filter by desired date. | Works as expected.|
 
 <details><summary></summary>
 <img src="">
 </details>
 
-27.	As an Admin / Authorised User, I can moderate reviews/comments to keep a friendly online presence and maintain a professional website.
+27.	As an Admin / Authorised User, I can moderate comments to keep a friendly online presence and maintain a professional website.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 21. | See Test 21.  | Works as expected. |
+| Navigate to Tavern app, click on comments. | Taken to comments section. | Works as intended. |
+| Select comment, click on approve. | Hides comment on site. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
 </details>
 
-
-23.	As a Site Owner I can provide a responsive site for my customers so that they have a good user experience.
+28.	As a Site Owner I can provide a 'Contact Us' page so that users can get in touch with my business.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 1. | See Test 1.  | Works as expected. |
+| Fill in form to contact site. | Contact form submits. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
 </details>
 
-24.	As a Site Owner I can validate data entered into my site so that all submitted data is correct.
+29.	As a Site Owner, I can look at feedback provided by users, through reviews, comments and direct contact, so that I can make improvements where necessary.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
-
-<details><summary></summary>
-<img src="">
-</details>
-
-25.	As a Site Owner I can provide a 'Contact Us' page so that users can get in touch with my business.
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| |  |
-
-<details><summary></summary>
-<img src="">
-</details>
-
-26.	As a Site Owner, I can look at feedback provided by users, through reviews, comments and direct contact, so that I can make improvements where necessary.
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| |  |
+| See Test 18 | See test 18. | Works as expected. |
+| See Test 19 | See test 19. | Works as expected. |
+| See Test 20 | See test 20. | Works as expected. |
+| See Test 28 | See test 28. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -1105,7 +1102,8 @@ WAVE was used to test the websites accessibility.
 
 
 ### Automated testing
-
+Automated testing was used to test the Tavern app using the inbuilt test modules.
+Coverage was used to write a report.
 
 
 
@@ -1121,7 +1119,7 @@ WAVE was used to test the websites accessibility.
 
 | **Bug** | **Fix** |
 | ------- | ------- |
-| |  |
+| |  | |
 
 
 ##### Back to [top](#table-of-contents)<hr>
