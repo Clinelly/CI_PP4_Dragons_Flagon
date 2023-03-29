@@ -308,7 +308,7 @@ def validWeekday(days):
                   'Saturday',
                   'Sunday'}
 
-    today = date.today()
+    today = date.today() + timedelta(days=1)
     weekdays = [str(today + timedelta(days=i)) for i in range(days)
                 if (today + timedelta(days=i)).strftime('%A') in valid_days]
 
