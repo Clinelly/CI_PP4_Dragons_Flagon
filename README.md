@@ -958,7 +958,10 @@ WAVE was used to test the websites accessibility.
 | When creating a booking, select date. | Can only book a selection of days ahead of todays date. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_book_test_4.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_date_test_4.png">
+
+
 </details>
 
 16.	As a User, I can view events posted by the business so that I can decide to visit on certain days.
@@ -971,7 +974,9 @@ WAVE was used to test the websites accessibility.
 | Click on event in calendar to view event details. | Event details shown.  | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/event_page_test_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/event_page_test_16.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/event_calendar_test_16.png">
 </details>
 
 17.	As a user I can see reviews left by other users so that I can see if the business is any good.
@@ -982,7 +987,8 @@ WAVE was used to test the websites accessibility.
 | In review section, click 'Next/Prev' to view paginated reviews. | Paginated reviews shown.  | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_review_test_17.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_review_pg2_test_17.png">
 </details>
 
 18.	As a user I can post a review of my experience so that I can provide feedback of my visit.
@@ -993,7 +999,9 @@ WAVE was used to test the websites accessibility.
 | Fill in form and click submit. | Review posted. | Works as  expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/post_review_test_18.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/post_review_form_test_18.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/post_review_success_test_18.png">
 </details>
 
 19.	As a user, I can comment on blog posts to provide feedback so that I can join a social network.
@@ -1002,8 +1010,12 @@ WAVE was used to test the websites accessibility.
 ------------ | ------------ | ------------ |
 | See Test 13. | See Test 13. | Works as expected. |
 | Fill in comment form. | Comment submitted. | Works as expected. |
+
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/gallery_page_test_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/galler_detail_test_13.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/comment_submit_test_19.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/comment_success_test_19.png">
 </details>
 
 20.	As a user, I can like/unlike blog posts so that I can provide feedback the the site owner on content quality.
@@ -1014,21 +1026,40 @@ WAVE was used to test the websites accessibility.
 | Click 'Heart' icon under blog post. | Icon fills in and number is incremented. | Works as expected.|
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/like_test_20.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/like_success_test_20.png">
 </details>
 
 21.	As an Admin / Authorised User I can log in so that I can access the back end of the site.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| From nav bar, log in as superuser. | Login successful | Works as expected |
+| Visit https://ci-pp4-dragons-flagon-clinelly.herokuapp.com/admin/login/?next=/admin/ and enter superuser credentials. | Login successful | Works as expected |
 | Visit https://ci-pp4-dragons-flagon-clinelly.herokuapp.com/admin/ | Gain access to back end. | Works as expected |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_backend_test_21.png">
 </details>
 
-22.	As an Admin / Authorised User I can manually add a booking so that I can book a table if someone phones, or emails the business.
+22.	As an Admin / Authorised User I can login to add, edit or remove events from the calendar so I can advertise/change new events or cancel old ones.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| See Test 21. | See Test 21. | Works as expected. |
+| Navigate to 'Events' under events. | Taken to events admin area. | Works as expected. |
+| Select an event to edit or delete. | Event changed or deleted. | Works as expected. |
+| Click 'add event', fill in form, click save. | New event created. | Works as expected. |
+<details><summary></summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/add_events_admin_test_22.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/add_events_backend_test_22.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/add_event_save_test_22.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_delete_event_test_22.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/add_event_success_admin_test_22.png">
+</details>
+
+23.	As an Admin / Authorised User I can manually add a booking so that I can book a table if someone phones, or emails the business.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1037,20 +1068,11 @@ WAVE was used to test the websites accessibility.
 | Click 'add booking', fill in form, click save. | New booking created. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
-</details>
-
-23.	As an Admin / Authorised User I can login to add, edit or remove events from the calendar so I can advertise/change new events or cancel old ones.
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| See Test 21. | See Test 21. | Works as expected. |
-| Navigate to 'Events' under events. | Taken to events admin area. | Works as expected. |
-| Select an event to edit or delete. | Event changed or deleted. | Works as expected. |
-| Click 'add event', fill in form, click save. | New event created. | Works as expected. |
-
-<details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_add_booking_test_23.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_add_booking_button_test_23.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_add_booking_form_test_23.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_add_booking_success_test_23.png">
 </details>
 
 24.	As an Admin / Authorised User I can create, read, update and delete blog posts so that I can provide information and updates to the users.
@@ -1063,7 +1085,8 @@ WAVE was used to test the websites accessibility.
 
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_crud_blog_test_24.png">
 </details>
 
 25.	As an Admin / Authorised User I can search through bookings, blogs, and events so that I can find the information I am looking for.
@@ -1077,7 +1100,11 @@ WAVE was used to test the websites accessibility.
 | Above each app, there is a search bar for information. | Search provides detailed information. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/add_events_admin_test_22.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_add_booking_test_23.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_comments_test_24.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_search_bar_test_25.png">
 </details>
 
 26.	As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day.
@@ -1085,10 +1112,13 @@ WAVE was used to test the websites accessibility.
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 | See Test 21. | See Test 21 | Works as expected. |
+| See Test 23. | See Test 23 | Works as expected. |
 | Booking filters shown on screen | Can filter by desired date. | Works as expected.|
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_add_booking_test_23.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_filer_bookings_test_26.png">
 </details>
 
 27.	As an Admin / Authorised User, I can moderate comments to keep a friendly online presence and maintain a professional website.
@@ -1100,7 +1130,9 @@ WAVE was used to test the websites accessibility.
 | Select comment, click on approve. | Hides comment on site. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_comments_test_24.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_comments_crud_test_24.png">
 </details>
 
 28.	As a Site Owner I can provide a 'Contact Us' page so that users can get in touch with my business.
@@ -1111,7 +1143,9 @@ WAVE was used to test the websites accessibility.
 | Fill in form to contact site. | Contact form submits. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/contact_page_test_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/contact_form_test_27.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/contact_message_success_test_27.png">
 </details>
 
 29.	As a Site Owner, I can look at feedback provided by users, through reviews, comments and direct contact, so that I can make improvements where necessary.
@@ -1124,7 +1158,10 @@ WAVE was used to test the websites accessibility.
 | See Test 28 | See test 28. | Works as expected. |
 
 <details><summary></summary>
-<img src="">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/post_review_test_18.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/comment_success_test_19.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/like_success_test_20.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/contact_message_success_test_27.png">
 </details>
 
 
