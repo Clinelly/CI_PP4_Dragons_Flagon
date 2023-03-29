@@ -79,17 +79,41 @@ The Dragon's Flagon is a fantasy-themed tavern. It was designed primarily as a s
 ## User Stories
 
 ### Users
-
-
-
-
-
+1.	As a User I can navigate across the site so that I can move to each feature of the site easily. (Must Have).
+2.	As a User I can use a navbar, footer, and social icons so that I can navigate the site, access menus, and access socials. (Must Have).
+3.	As a User I can view the opening hours and contact details so that I know when the business is open and how to contact them via email, phone and socials. (Must Have).
+4.	As a User I can create a booking by selecting a date and time so that I can book a session. (Must Have).
+5.	As a User I can update my booking so that I can choose another available time and date. (Must Have).
+6.	As a User I can delete my booking so that I can cancel my session. (Must Have).
+7.	As a user I can view my booking so that I can remind myself of the date and time I have booked. (Must Have).
+8.	As a User I am notified when I take an action, so that I know my action of creating, editing, or deleting a booking has been successful. (Must Have).
+9.	As a User I can register when prompted so that I can make a booking if I wish. (Must Have).
+10.	As a User I can register an account so that I can access more advanced features of the site. (Must Have).
+11.	As a user I can login so that I can book a session, leave a review or comment on a post. (Must Have).
+12.	As a user I can see my login status so that I know if I am logged in or not. (Must Have).
+13.	As a User I can view the site's blog so that I can learn additional information and read articles. (Must Have).
+14.	As a User I can view the food, drink and game menus so that I can decide whether visit the business. (Must Have).
+15.	As a User I cannot book a date in the past so that my booking is valid. (Must have).
+16.	As a User, I can view events posted by the business so that I can decide to visit on certain days. (Must Have).
+17.	As a user I can see reviews left by other users so that I can see if the business is any good. (Must Have).
+18.	As a user I can post a review of my experience so that I can provide feedback of my visit. (Must Have).
+19.	As a user, I can comment on blog posts to provide feedback so that I can join a social network. (Must Have).
+20.	As a user, I can like/unlike blog posts so that I can provide feedback the the site owner on content quality. (Should Have).
 
 ### Admin / Authorised User
-
-
+21.	As an Admin / Authorised User I can log in so that I can access the back end of the site. (Must Have).
+22.	As an Admin / Authorised User I can manually add a booking so that I can book a table if someone phones, or emails the business. (Should Have).
+23.	As an Admin / Authorised User I can login to add, edit or remove events from the calendar so I can advertise/change new events or cancel old ones. (Must Have).
+24.	As an Admin / Authorised User I can create, read, update and delete blog posts so that I can provide information and updates to the users. (Must Have).
+25.	As an Admin / Authorised User I can search through bookings, blogs, and events so that I can find the information I am looking for. (Should Have).
+26.	As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day (Should Have).
+27.	As an Admin / Authorised User, I can moderate reviews/comments to keep a friendly online presence and maintain a professional website. (Should Have).
 
 ### Site Owner  
+23.	As a Site Owner I can provide a responsive site for my customers so that they have a good user experience. (Must Have).
+24.	As a Site Owner I can validate data entered into my site so that all submitted data is correct. (Must Have).
+25.	As a Site Owner I can provide a 'Contact Us' page so that users can get in touch with my business. (Must Have).
+26.	As a Site Owner, I can look at feedback provided by users, through reviews, comments and direct contact, so that I can make improvements where necessary. (Must Have)
 
 
 ### Kanban, Epics & User Stories
@@ -145,7 +169,78 @@ Database schema created by using [django-extensions](https://django-extensions.r
 
 
 ##### User Model
+The User Model contains the following:
+- user_id
+- date_joined
+- email
+- first_name
+- last_name
+- is_active
+- is_staff
+- is_superuser
+- last_login
+- password
+- username
 
+##### Review Model
+The Review Model contains the following:
+- review_id
+- author
+- content
+- created_on
+- slug
+- status
+- title
+
+##### Gallery Model
+The Gallery Model contains the following:
+- gallery_id
+- author
+- content
+- created_on
+- featured_image
+- slug
+- status
+- title
+- updated_on
+
+##### Comment Model
+The Comment Model contains the following:
+- comment_id
+- post
+- approved
+- body
+- created_on
+- name
+
+##### TableBooking Model
+The TableBooking Model contains the following:
+- tablebooking_id
+- user
+- day
+- email
+- phone
+- service
+- time
+- time_booked
+
+##### Event Model
+The Event Model contains the following:
+- event_id
+- description
+- end_time
+- start_time
+- title
+
+##### Contact Model
+The Contact Model contains the following:
+- message_id
+- user
+- created_date
+- email
+- message
+- name
+- phone
 
 ### Wireframes
 The wireframes were created using Balsamiq
