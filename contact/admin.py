@@ -15,3 +15,4 @@ class ContactAdmin(SummernoteModelAdmin):
     list_display = ('name', 'email', 'phone')
     search_fields = ['name', 'email', 'phone', 'message']
     summernote_fields = ('message')
+    list_filter = ('name', 'email', 'phone', 'message')

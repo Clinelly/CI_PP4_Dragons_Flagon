@@ -14,3 +14,4 @@ from .models import *
 class ReviewAdmin(SummernoteModelAdmin):
     list_display = ('title', 'description', 'start_time')
     search_fields = ['title', 'description', 'start_time', ]
+    list_filter = ('title', 'description', 'start_time',)
