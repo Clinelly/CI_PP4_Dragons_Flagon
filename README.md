@@ -303,8 +303,176 @@ The wireframes were created using Balsamiq
 
 ## Features
 
-### Home page
+### Header
+Common to all web pages, the header contains the site logo and the navigation bar. The navigation links take the user to the different main pages of the website, the user panel, registration page and the login/logout.
 
+<details><summary>Header</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/header.png">
+</details>
+
+
+### Footer
+Common to all web pages, the footer contains the links to the company's various social media accounts. It also contains links to the secondary web pages.
+
+<details><summary>Footer</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/footer.png">
+</details>
+
+### Home Page
+
+The Home Page contains a Hero Image of the bar interior, a small paragraph about the tavern as well as opening times. Buttons take the user to the Booking page and the Event Page. There is also a section that shows reviews from other users and a button which takes the user to the Review Submission page.
+
+<details><summary>Home Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/home_page_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/home_page_2.png">
+</details>
+
+### About Page
+
+The About page has three sections giving more detail to the user about the business and the services on offer. Buttons take the user to the Food & Drink menu, the Games page and the Events page.
+
+<details><summary>About Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/about_page.png">
+</details>
+
+### Gallery Page
+
+The Gallery page functions as a blog, allowing users to view posts, articles and images uploaded by the site admins/owners. Users can click on a gallery post to view it in more detail.
+
+<details><summary>Gallery Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/gallery_page.png">
+</details>
+
+### Gallery Detail Page
+
+The Gallery Detail page provides users with more detail about the post they have clicked on. There is a section where users can comment on the post and a like/unlike functionality.
+
+<details><summary>Gallery Detail Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/gallery_detail_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/gallery_detail_2.png">
+</details>
+
+### Contact Page
+
+The Contact page allows logged-in users to contact the business directly with questions and feedback. There is a section showing the location of the business on a map as well as external contact details for Guest users.
+
+<details><summary>Contact Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/contact_page_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/contact_page_2.png">
+</details>
+
+### Food Menu Page
+
+The Food and Drink page provides users with a sample menu of what the tavern has to offer so they can make a decision to visit.
+
+<details><summary>Food & Drink</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/food_menu_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/food_menu_2.png">
+</details>
+
+### Game List Page
+
+The Game List page provides users with a selection of board games on offer at the tavern.
+
+<details><summary>Game List</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/game_list_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/game_list_2.png">
+</details>
+
+### Events Page
+
+The Events page has a number of paragraphs outlining the various regular events that the tavern hosts to provide information to the users who make be interested.
+There is also a calendar that shows other events that can be navigated around and updated by site admins.
+
+<details><summary>Events Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/events_page_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/events_page_2.png">
+</details>
+
+### New Event Page
+
+A page that can be navigated to by the site admins from the calendar which allows a new event to be created by filling in the form.
+
+<details><summary>New Event Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/new_event.png">
+</details>
+
+### Edit Event Page
+
+A page that can be navigated to by the site admins from the calendar which allows an existing event to be edited by filling in the form.
+
+<details><summary>Edit Event Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/edit_event.png">
+</details>
+
+### Delete Event Page
+
+A page that can be navigated to by the site admins from the calendar which allows an existing event to be deleted by clicking the button.
+
+<details><summary>Delete Event Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/delete_event.png">
+</details>
+
+### Booking Page
+
+Users can navigate to this page from the Home page. Following the form inputs, users can select their desired date, time and service as well as leave their contact details.
+
+<details><summary>Delete Event Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/create_booking_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/create_booking_2.png">
+</details>
+
+
+### Review Submission Page
+
+Authorised Users can navigate to this page from the Home page. The user can fill out the form and submit a short review about their experience at the Tavern.
+
+<details><summary>Review Submission Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/review_page.png">
+</details>
+
+
+### User Panel
+
+Users that have logged in can access their User Panel from the Header. Here they can find their basic account information as well as any existing bookings they may have.
+
+<details><summary>User Panel Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/user_panel.png">
+</details>
+
+### Edit Booking Page
+
+From the User Panel, users can edit their booking to a different time and date. Following similar forms used to create their booking in the first place.
+
+<details><summary>Edit Booking Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/edit_booking_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/edit_booking_2.png">
+</details>
+
+### Delete Booking Page
+
+From the User Panel, users can delete their booking.
+
+<details><summary>Delete Booking Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/delete_booking.png">
+</details>
+
+### User Registration
+
+From the header, Guest users can register an account by filling in the form and fields.
+
+<details><summary>User Registration Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/registration.png">
+</details>
+
+### Login/Logout
+
+From the header, users with an account can log in using their credentials. Once logged in, they can log out by clicking on the link in the header.
+
+<details><summary>Login/Logout Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/login.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/logout.png">
+</details>
 
 
 ##### Back to [top](#table-of-contents)
