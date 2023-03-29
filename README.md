@@ -769,10 +769,306 @@ WAVE was used to test the websites accessibility.
 
 ### Manual testing
 
+1.	As a User I can navigate across the site so that I can move to each feature of the site easily.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 | |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+2.	As a User I can use a navbar, footer, and social icons so that I can navigate the site, access menus, and access socials.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+3.	As a User I can view the opening hours and contact details so that I know when the business is open and how to contact them via email, phone and socials.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+4.	As a User I can create a booking by selecting a date and time so that I can book a session.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+5.	As a User I can update my booking so that I can choose another available time and date.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+6.	As a User I can delete my booking so that I can cancel my session.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+7.	As a user I can view my booking so that I can remind myself of the date and time I have booked.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+8.	As a User I am notified when I take an action, so that I know my action of creating, editing, or deleting a booking has been successful.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+10.	As a User I can register an account so that I can access more advanced features of the site.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+11.	As a user I can login so that I can book a session, leave a review or comment on a post.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+12.	As a user I can see my login status so that I know if I am logged in or not.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+13.	As a User I can view the site's blog so that I can learn additional information and read articles.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+14.	As a User I can view the food, drink and game menus so that I can decide whether visit the business.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+15.	As a User I cannot book a date in the past so that my booking is valid.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+16.	As a User, I can view events posted by the business so that I can decide to visit on certain days.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+17.	As a user I can see reviews left by other users so that I can see if the business is any good.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+18.	As a user I can post a review of my experience so that I can provide feedback of my visit.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+19.	As a user, I can comment on blog posts to provide feedback so that I can join a social network.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+20.	As a user, I can like/unlike blog posts so that I can provide feedback the the site owner on content quality.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+21.	As an Admin / Authorised User I can log in so that I can access the back end of the site.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+22.	As an Admin / Authorised User I can manually add a booking so that I can book a table if someone phones, or emails the business.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+23.	As an Admin / Authorised User I can login to add, edit or remove events from the calendar so I can advertise/change new events or cancel old ones.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+24.	As an Admin / Authorised User I can create, read, update and delete blog posts so that I can provide information and updates to the users.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+25.	As an Admin / Authorised User I can search through bookings, blogs, and events so that I can find the information I am looking for.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+26.	As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+27.	As an Admin / Authorised User, I can moderate reviews/comments to keep a friendly online presence and maintain a professional website.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+
+23.	As a Site Owner I can provide a responsive site for my customers so that they have a good user experience.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+24.	As a Site Owner I can validate data entered into my site so that all submitted data is correct.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+25.	As a Site Owner I can provide a 'Contact Us' page so that users can get in touch with my business.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
+
+26.	As a Site Owner, I can look at feedback provided by users, through reviews, comments and direct contact, so that I can make improvements where necessary.
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| |  |
+
+<details><summary></summary>
+<img src="">
+</details>
 
 
 ### Automated testing
