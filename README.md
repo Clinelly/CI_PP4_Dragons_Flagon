@@ -773,7 +773,13 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| Click on 'Home' link in nav bar. | Home page loads.  | Works as expected. |
+| Click on 'About' link in nav bar. | About page loads.  | Works as expected. |
+| Click on 'Gallery' link in nav bar. | Gallery page loads.  | Works as expected. |
+| Click on 'Contact' link in nav bar. | Contact page loads.  | Works as expected. |
+| Click on 'Menu' link in footer. | Menu page loads.  | Works as expected. |
+| Click on 'Games' link in footer. | Game page loads.  | Works as expected. |
+| Click on 'Events' link in footer. | Event page loads.  | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -783,7 +789,9 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See test 1 | See test 1 | Works as expected. |
+| Scroll down to footer | See footer.  | Works as expected. |
+| Scroll down to footer | See social links.  | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -793,7 +801,10 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| Navigate to home page, scroll down to welcome section. | See opening times. | Works as expected.|
+| Navigate to contact page, scroll down to 'contact' section. | See opening times. | Works as expected.|
+| See test 2 | See test 2 | Works as expected. |
+
 
 <details><summary></summary>
 <img src="">
@@ -803,7 +814,9 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| Navigate to welcome section on home page, click book button | Taken to booking page. | Works as expected. |
+| Select service and date, enter personal details, click submit | Taken to booking-time page. | Works as expected. |
+| Select desired time, click submit. | Booking saved, redirect to home page, message shown to user. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -813,7 +826,9 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| Navigate to User Panel in header. | Taken to User Panel. | Works as expected. |
+| Select service and date, enter personal details, click submit | Taken to booking-time page. | Works as expected. |
+| Select desired time, click submit. | Booking saved, redirect to home page, message shown to user. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -823,7 +838,9 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 5. | See Test 5. | Works as expected. |
+| Select saved booking, click delete button | Taken to confirm-deletion page. | Works as expected. |
+| Click delete button | Booking deleted, message sent to user. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -833,7 +850,8 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 5. | See Test 5. | Works as expected. |
+| From User Panel, scroll down. | View Booking details. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -843,7 +861,10 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 4. | See Test 4. | Works as expected. |
+| See Test 5. | See Test 5. | Works as expected. |
+| See Test 6. | See Test 6. | Works as expected. |
+| Navigate to Contact Page, fill in contact form, click submit. | Contact form submitted, message shown to user. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -853,7 +874,8 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| Navigate to header, click 'Register'. | Taken to registration page. | Works as expected. |
+| Fill in form, click 'Register' button. | Account created. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -863,7 +885,8 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| Navigate to header, click login. | Taken to login page. | Works as expected. |
+| Enter username and password. | User logged in and redirected to home page. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -873,7 +896,7 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| Navigate to header. | 'Login' link replaced with 'Logout'. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -883,7 +906,8 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 1. | See Test 1. | Works as expected. |
+| On Gallery page, click a blog entry. | Taken to more detailed gallery page. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -893,7 +917,9 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 1. | See Test 1. | Works as expected. |
+| On Food page, scroll down to view content. | Food and drink menus present. | Works as expected. |
+| On Game page, scroll down to view content. | Game menu present. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -903,7 +929,8 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 4 | See Test 4  | Works as expected. |
+| When creating a booking, select date. | Can only book a selection of days ahead of todays date. | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -913,7 +940,10 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 1 | See Test 1  | Works as expected. |
+| On events page, scroll to view event content. | Regular events shown.  | Works as expected. |
+| On events page, scroll to view calendar. | Populated calendar shown.  | Works as expected. |
+| Click on event in calendar to view event details. | Event details shown.  | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -923,7 +953,8 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| On Home page, scroll to review section. | Posted reviews shown.  | Works as expected. |
+| In review section, click 'Next/Prev' to view paginated reviews. | Paginated reviews shown.  | Works as expected. |
 
 <details><summary></summary>
 <img src="">
@@ -933,7 +964,8 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| On Home page, scroll to review section, click 'Leave review' button. | Taken to review submission page. | Works as expected. |
+| Fill in form and click submit. | Review posted. | Works as  expected. |
 
 <details><summary></summary>
 <img src="">
@@ -943,8 +975,8 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
-
+| See Test 13. | See Test 13. | Works as expected. |
+| Fill in comment form. | Comment submitted. | Works as expected. |
 <details><summary></summary>
 <img src="">
 </details>
@@ -953,7 +985,8 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| |  |
+| See Test 13. | See Test 13. | Works as expected. |
+| Click 'Heart' icon under blog post. | Icon fills in and number is incremented. | Works as expected.|
 
 <details><summary></summary>
 <img src="">
