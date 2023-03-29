@@ -8,22 +8,22 @@
 {% block content %}
 
 <h3>{% trans "Sign In" %}</h3>
-<div class="container bg-danger text-center">
+<div class="container bg-white text-center">
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
-      <p>{% blocktrans %}If you have not created an account yet, then please
-        <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+      <p class="fs-5">{% blocktrans %}If you have not created an account yet, then please
+        <a class="text-black" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2 bg-danger">
+    <div class="col-md-8 mt-3 offset-md-2 bg-white">
       <form class="login" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form.as_p }}
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+        <a class="button btn btn-info" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
         <button class="primaryAction btn btn-info" type="submit">{% trans "Sign In" %}</button>
       </form>
     </div>

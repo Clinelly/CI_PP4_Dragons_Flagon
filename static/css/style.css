@@ -16,8 +16,12 @@ body {
   color: #EDF2F4;
 }
 
+.card-body a {
+  color: blue;
+}
+
 .info-area {
-  background-color: #EF233C;
+  background-color: #D90429;
   color: #EDF2F4;
 }
 
