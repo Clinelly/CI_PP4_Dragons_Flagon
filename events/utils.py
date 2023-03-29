@@ -42,7 +42,7 @@ class Calendar(HTMLCalendar):
             start_time__month=self.month
         )
 
-        cal = (f'<table class="calendar">\n')
+        cal = (f'<table class="calendar table-responsive">\n')
         cal += (
             f'{self.formatmonthname(self.year, self.month, withyear=withyear)}'
             f'\n'

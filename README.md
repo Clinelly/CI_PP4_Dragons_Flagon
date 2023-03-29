@@ -116,21 +116,57 @@ The Dragon's Flagon is a fantasy-themed tavern. It was designed primarily as a s
 ### Kanban, Epics & User Stories
 
 
-<details><summary>Epics</summary>
+<details><summary>Epics & User Stories</summary>
 
-![Epics]()
+#### Core Site Functionality
+- As a User I can navigate across the site so that I can move to each feature of the site easily. (Must have)
+- As a User I can use a navbar, footer, and social icons so that I can navigate the site, access menus, and access socials. (Must have)
+- As a User I can view the opening hours and contact details so that I know when the business is open and how to contact them via email, phone and socials (Must have)
+- As a User I can I am notified so that I know my action of creation, edit, or deletion of a booking has been successful (Must have)
+- As a user I can login so that I can book a session. (Must have)
+- As a user I can see my login status so that I know if I am logged in or not. (Must have)
+- As a User I can view the site's blog so that I can learn additional information and read articles (Should have)
+- As a User I can view the food and drink menu so that I can decide whether to eat at the business (Must have)
+- As a User, I can view events posted by the business. (Must Have)
+- As a user I can see reviews left by other users (Must have).
+- As a user, I can comment on blog posts to provide feedback and join the discussion (must have).
+- As a user, I can like/unlike blog posts (should have)
+- As a Site Owner I can provide a fully responsive site for my customers so that they have a good user experience (Must have)
+- As a Site Owner, I can look at feedback provided by users so that I can make improvements where necessary.
 
-</details>
+#### Admin Functionality
+-	As an Admin / Authorised User I can log in so that I can access the back end of the site (Must have)
+-	As an Admin / Authorised User I can manually add a booking so that I can book a table if someone phones, or emails the business (Should have)
+-	As an Admin I can login to add or remove events from the calendar. (Must have)
+-	As an Admin I can create, read, update and delete blog posts so that I can provide information and updates to the users. (Must have)
+-	As an Admin / Authorised User I can search through bookings, so that I can find the information I am looking for (Should have)
+-	As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day (Should have).
+-	As an admin/authorised user, I can moderate reviews/comments. (Should have)
 
-<details><summary>User Stories</summary>
+#### CRUD Functionality
+-	As a User I can create a booking by selecting a date and time so that I can book a session. (Must have)
+-	As a User I can update my booking so that I can choose another available time and date (Must have)
+-	As a User I can delete my booking so that I can cancel my session (Must have)
+-	As a user I can view my booking so that I can remind myself of the date and time I have booked (Must have)
+-	As a user I can post a review of my experience. (Must have)
 
-![User stories]()
+#### Authentication functionality
+-	As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors (Must have)
+-	As a Site Owner I can provide a contact us page so that users can get in touch with my business (Must have)
+-	As a User I can register as prompted so that I can make a booking if I wish. (Must have)
+-	As a User I can register to create an account so that I can access more advanced features of the site. (Must have)
+-	As a User I cannot book a date in the past so that my booking is valid (Must have)
 
 </details>
 
 <details><summary>Kanban</summary>
 
-![Kanban finish]()
+<details><summary>Finished Kanban</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/kanban/kanban_1.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/kanban/kanban_2.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/kanban/kanban_3.png">
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/kanban/kanban_4.png">
+</details>
 
 </details>
 
