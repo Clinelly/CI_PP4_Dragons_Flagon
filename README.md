@@ -1239,8 +1239,28 @@ The website was tested the following devices:
 
 | **Bug** | **Fix** |
 | ------- | ------- |
-| |  | |
+| CSS file not loading.| Fixed typo in settings file. |
+| URLs in templates not working correctly. | Empty string in Paths.py arguments. Typed in correct URL paths. |
+| Reviews not showing. | Empty string in Paths.py arguments. Typed in correct URL paths. |
+| Phone number input in booking causing data error. | Change model type field. |
+| Template footer displaying inside calendar table. | Missing table closing tag. Changed Python code to generate correctly. |
+| Possible to book a table session in the past. | Change python code to only allow date selections 24hrs ahead. |
+| Unable to delete events. | Fixed typo in event views when passing context to template.|
 
+## Bugs to be Fixed
+
+| **Bug** | **Attempted Fix** |
+| ------- | ------- |
+| Calendar responsiveness on mobile sub-par. | Changed Bootstrap class to hide on smaller devices. |
+| Reviews cannot be hidden unless deleted by admin. | Set up approval feature in admin.py. |
+| Gallery blog posts display 'p' tags. | Attemped to change tags in template. Workaround is to post blog via admin 'Code View' and remove excess tags there.|
+
+
+## Possible Future Features
+ - Like/Unlike functionality to reviews.
+ - Fully responsive event calendar.
+ - Edit account information.
+ - Remove bookings from user panel after date is passed.
 
 ##### Back to [top](#table-of-contents)<hr>
 
