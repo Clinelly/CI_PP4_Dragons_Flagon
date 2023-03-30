@@ -1,11 +1,8 @@
 # The Dragon's Flagon | Gaming Tavern
 
-![Am I Responsive]()
-
 **Developer: Stuart Wall**
 
 💻 [Visit live website](https://ci-pp4-dragons-flagon-clinelly.herokuapp.com/)
-
 
 
 ## Table of Contents
