@@ -40,11 +40,11 @@
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="card">
                         <div class="card-body review-card">
-                            Author: {{ review.author }}
+                            Author: {{ review.author|safe }}
                             <br>
-                            {{ review.title }}
+                            {{ review.title|safe }}
                             <hr>
-                            {{ review.content }}
+                            {{ review.content|safe }}
                             <hr>
                             <p> {{review.created_on}} </p>
                             <div class="col-1">
