@@ -18,9 +18,9 @@
             <div class="card-body text-center">
                 <div class="card-text">
                     <a href="{% url 'gallery_detail' gallery.slug %}">
-                        <h3>{{ gallery.title }}</h3>
+                        <h3>{{ gallery.title|safe }}</h3>
                         <br>
-                        {{ gallery.content }}
+                        <p>{{ gallery.content|safe }}</p>
                     </a>
                     <hr>
                     {{ gallery.author }}

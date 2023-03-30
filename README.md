@@ -812,7 +812,7 @@ WAVE was used to test the main webpages accessibility. I had issues with Heroku 
 </details>
 
 <details><summary>Gallery Detail Page</summary>
-Two contrast errors were shown, due to the slight difference in tones from a liked/unliked item or a blog post with no comments on.
+Two contrast errors were shown, due to the slight difference in tones from a liked/unliked item or a blog post with no comments on. I attempted to mitigate by increasing the font size.
 <img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_gallery_details.png">
 </details>
 
@@ -1284,14 +1284,15 @@ The website was tested the following devices:
 | Template footer displaying inside calendar table. | Missing table closing tag. Changed Python code to generate correctly. |
 | Possible to book a table session in the past. | Change python code to only allow date selections 24hrs ahead. |
 | Unable to delete events. | Fixed typo in event views when passing context to template.|
+| Gallery blog posts display 'p' tags. | This is due to the line break being rendered. Added 'safe' to django generated content.|
 
 ## Bugs to be Fixed
 
-| **Bug** | **Attempted Fix** |
+| **Bug** | **Attempted Fix** | **Work-around**|
 | ------- | ------- |
-| Calendar responsiveness on mobile sub-par. | Changed Bootstrap class to hide on smaller devices. |
-| Reviews cannot be hidden unless deleted by admin. | Set up approval feature in admin.py. |
-| Gallery blog posts display 'p' tags. | Attemped to change tags in template. Workaround is to post blog via admin 'Code View' and remove excess tags there.|
+| Calendar responsiveness on mobile sub-par.| Attempted generating 'table-responsive' class in the table elements around surround with 'container-fluid' class| Changed Bootstrap class to hide on smaller devices. |
+| Reviews cannot be hidden unless deleted by admin. | Attempted Set up approval feature in admin.py, using statuses in models.py | Not critical - admin will have to moderate content via deletion for the moment. |
+
 
 
 ## Possible Future Features
