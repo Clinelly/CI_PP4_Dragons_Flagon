@@ -4,7 +4,6 @@
 
 💻 [Visit live website](https://ci-pp4-dragons-flagon-clinelly.herokuapp.com/)
 
-
 ## Table of Contents
   - [About](#about)
   - [User Goals](#user-goals)
@@ -311,7 +310,6 @@ Balsamiq was used ahead of development, in order to plan the basic skeleton of t
 
 ### Libraries & Tools
 
-- [Am I Responsive](http://ami.responsivedesign.is/)
 - [Balsamiq](https://balsamiq.com/)
 - [Bootstrap v5.2](https://getbootstrap.com/)
 - [Cloudinary](https://cloudinary.com/)
@@ -797,7 +795,50 @@ The Gallery Detail page scored 87 on Accessibility with a warning about a confli
 <hr>
 
 ### Wave
-WAVE was used to test the websites accessibility.
+WAVE was used to test the main webpages accessibility. I had issues with Heroku not connecting to the WAVE webpage and was unable to test any webpages that required authentication.
+
+6 Errors were shown due to empty links in the footer. Instead of text, I used Font Awesome icons for the Social Media links.
+
+<details><summary>Home Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_index_page.png">
+</details>
+
+<details><summary>About Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_about_page.png">
+</details>
+
+<details><summary>Gallery Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_gallery_page.png">
+</details>
+
+<details><summary>Gallery Detail Page</summary>
+Two contrast errors were shown, due to the slight difference in tones from a liked/unliked item or a blog post with no comments on.
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_gallery_details.png">
+</details>
+
+<details><summary>Contact Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_contact_page.png">
+</details>
+
+<details><summary>Menu Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_food_page.png">
+</details>
+
+<details><summary>Games Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_game_page.png">
+</details>
+
+<details><summary>Events Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_events_page.png">
+</details>
+
+<details><summary>Sign Up Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_register_page.png">
+</details>
+
+<details><summary>Login Page</summary>
+<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_login_page.png">
+</details>
 
 
 ##### Back to [top](#table-of-contents)<hr>
