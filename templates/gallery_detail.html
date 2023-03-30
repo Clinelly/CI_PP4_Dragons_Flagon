@@ -44,21 +44,21 @@
                             <form class="d-inline" action="{% url 'gallery_like' gallery.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
-                                <button type="submit" name="gallery_id" value="{{gallery.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+                                <button type="submit" name="gallery_id" value="{{gallery.slug}}" class="fs-4 btn-like"><i class="fas fa-heart"></i></button>
                                 {% else %}
-                                <button type="submit" name="gallery_id" value="{{gallery.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
+                                <button type="submit" name="gallery_id" value="{{gallery.slug}}" class="fs-4 btn-like"><i class="far fa-heart"></i></button>
                                 {% endif %}
                             </form>
                             {% else %}
                             <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
                         <!-- The number of likes goes before the closing strong tag -->
-                        <span class="text-secondary">{{ gallery.number_of_likes }} </span>
+                        <span class="text-secondary fs-5">{{ gallery.number_of_likes }} </span>
                     </div>
                     <div class="col-1 m-1">
                         {% with comments.count as total_comments %}
                         <strong class="text-secondary">
-                            <i class="far fa-comments"></i>
+                            <i class="fs-4 far fa-comments"></i>
                             <!-- Our total_comments variable goes before the closing strong tag -->
                             {{ total_comments }}
                         </strong>
