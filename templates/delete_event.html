@@ -2,11 +2,10 @@
 {% load static %}
 <title>Delete Event</title>
 {% block content %}
+
+{% if user.is_superuser %}
 <div class="row text-center text-white">
-    <h2>Delete Event at the Dragon's Flagon</h2>
-</div>
-<div class="clearfix">
-    <a class="btn btn-info left" href="{% url 'events:calendar' %}">Return to Calendar </a>
+  <h2>Delete Event at the Dragon's Flagon</h2>
 </div>
 <div class="container text-center text-white">
   Title: {{ event.title}}
@@ -17,15 +16,32 @@
   <br>
   End Time: {{ event.end_time }}
 </div>
+<div class="clearfix">
+  <a class="btn btn-info left" href="{% url 'events:calendar' %}">Return to Calendar </a>
+</div>
+
+<form action="{% url 'events:event_delete' event_id=event.id %}" method="post">
+  {% csrf_token %}
+  <table class="form form-table">
+    <tr>
+      <td colspan="1"><button type="submit" class="btn btn-info right"> Delete </button></td>
+    </tr>
+
+  </table>
+</form>
 
 
-  <form action="{% url 'events:event_delete' event_id=event.id %}" method="post">
-    {% csrf_token %}
-    <table class="form form-table">
-      {% if user.is_superuser %}
-      <tr><td colspan="1"><button type="submit" class="btn btn-info right"> Delete </button></td></tr>
-      {% endif %}
-    </table>
-  </form>
+{% else %}
+<div class="container text-center text-white">
+  <h2>Event Details</h2>
+  Title: {{ event.title}}
+  <br>
+  Description: {{ event.description }}
+  <br>
+  Start Time: {{ event.start_time }}
+  <br>
+  End Time: {{ event.end_time }}
+</div>
 
+{% endif %}
 {% endblock %}
