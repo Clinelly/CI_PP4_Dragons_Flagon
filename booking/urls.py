@@ -9,14 +9,14 @@ from . import views
 
 app_name = 'booking'
 urlpatterns = [
-    path('table-booking/', views.booking, name='booking'),
-    path('submit-booking/', views.booking_submit, name='submit-booking'),
     path('user-panel/', views.user_panel, name='user-panel'),
-    path('update-user/<int:id>', views.user_update, name='user-update'),
-    path('user-update-submit/<int:id>',
-         views.user_update_submit,
-         name='user-update-submit'),
+    path('booking_form/', views.booking_new, name='booking-form'),
+    path('booking-edit/<int:booking_id>',
+         views.booking_edit,
+         name='edit-booking'),
     path('booking-delete/<int:id>',
-         views.delete_booking,
+         views.booking_delete,
          name='delete-booking'),
+
+
 ]
