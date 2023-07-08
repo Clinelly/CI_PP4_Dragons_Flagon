@@ -32,7 +32,7 @@ DEBUG = 'DEV' in os.environ
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['ci-pp4-dragons-flagon-clinelly.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['ci-pp4-dragons-flagon-clinelly.herokuapp.com', 'localhost', '8000-clinelly-cipp4dragonsfl-lh3oiriqbw1.ws-eu101.gitpod.io']
 
 
 # Application definition
