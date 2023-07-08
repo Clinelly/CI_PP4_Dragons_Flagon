@@ -177,7 +177,7 @@ The colour palette was found on [Coolors.co](https://coolors.co/). I chose a pal
 Blue buttons draw the eye of the user and uploaded cards have a parchment coloured background to fit the fantasy theme.
 
 <details><summary>View palette</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/palette.png">
+<img src="docs/palette.png">
 </details>
 
 
@@ -208,7 +208,7 @@ Overall, the website has the following pages:
 Database schema created by using [django-extensions](https://django-extensions.readthedocs.io/en/latest/graph_models.html), pydot and [GraphVizOnline](https://dreampuf.github.io/GraphvizOnline/)
 
 <details><summary>Show diagram</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/database.png">
+<img src="docs/database.png">
 </details>
 
 ##### User Model
@@ -288,13 +288,13 @@ The Contact Model contains the following:
 ### Wireframes
 Balsamiq was used ahead of development, in order to plan the basic skeleton of the major web-pages.
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/Home_Browser.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/About_Browser.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/Gallery_Browser.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/Contact_Browser.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/Menu_Browser.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/Games_Browser.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Wireframes/Events_Browser.png">
+<img src="docs/Wireframes/Home_Browser.png">
+<img src="docs/Wireframes/About_Browser.png">
+<img src="docs/Wireframes/Gallery_Browser.png">
+<img src="docs/Wireframes/Contact_Browser.png">
+<img src="docs/Wireframes/Menu_Browser.png">
+<img src="docs/Wireframes/Games_Browser.png">
+<img src="docs/Wireframes/Events_Browser.png">
 </details>
 
 ## Technologies Used
@@ -339,7 +339,7 @@ Balsamiq was used ahead of development, in order to plan the basic skeleton of t
 Common to all web pages, the header contains the site logo and the navigation bar. The navigation links take the user to the different main pages of the website, the user panel, registration page and the login/logout.
 
 <details><summary>Header</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/header.png">
+<img src="docs/Features/header.png">
 </details>
 
 
@@ -347,7 +347,7 @@ Common to all web pages, the header contains the site logo and the navigation ba
 Common to all web pages, the footer contains the links to the company's various social media accounts. It also contains links to the secondary web pages.
 
 <details><summary>Footer</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/footer.png">
+<img src="docs/Features/footer.png">
 </details>
 
 ### Home Page
@@ -355,8 +355,8 @@ Common to all web pages, the footer contains the links to the company's various 
 The Home Page contains a Hero Image of the bar interior, a small paragraph about the tavern as well as opening times. Buttons take the user to the Booking page and the Event Page. There is also a section that shows reviews from other users and a button which takes the user to the Review Submission page.
 
 <details><summary>Home Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/home_page_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/home_page_2.png">
+<img src="docs/Features/home_page_1.png">
+<img src="docs/Features/home_page_2.png">
 </details>
 
 ### About Page
@@ -364,7 +364,7 @@ The Home Page contains a Hero Image of the bar interior, a small paragraph about
 The About page has three sections giving more detail to the user about the business and the services on offer. Buttons take the user to the Food & Drink menu, the Games page and the Events page.
 
 <details><summary>About Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/about_page.png">
+<img src="docs/Features/about_page.png">
 </details>
 
 ### Gallery Page
@@ -372,7 +372,7 @@ The About page has three sections giving more detail to the user about the busin
 The Gallery page functions as a blog, allowing users to view posts, articles and images uploaded by the site admins/owners. Users can click on a gallery post to view it in more detail.
 
 <details><summary>Gallery Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/gallery_page.png">
+<img src="docs/Features/gallery_page.png">
 </details>
 
 ### Gallery Detail Page
@@ -380,8 +380,8 @@ The Gallery page functions as a blog, allowing users to view posts, articles and
 The Gallery Detail page provides users with more detail about the post they have clicked on. There is a section where users can comment on the post and a like/unlike functionality.
 
 <details><summary>Gallery Detail Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/gallery_detail_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/gallery_detail_2.png">
+<img src="docs/Features/gallery_detail_1.png">
+<img src="docs/Features/gallery_detail_2.png">
 </details>
 
 ### Contact Page
@@ -389,8 +389,8 @@ The Gallery Detail page provides users with more detail about the post they have
 The Contact page allows logged-in users to contact the business directly with questions and feedback. There is a section showing the location of the business on a map as well as external contact details for Guest users.
 
 <details><summary>Contact Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/contact_page_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/contact_page_2.png">
+<img src="docs/Features/contact_page_1.png">
+<img src="docs/Features/contact_page_2.png">
 </details>
 
 ### Food Menu Page
@@ -398,8 +398,8 @@ The Contact page allows logged-in users to contact the business directly with qu
 The Food and Drink page provides users with a sample menu of what the tavern has to offer so they can make a decision to visit.
 
 <details><summary>Food & Drink</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/food_menu_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/food_menu_2.png">
+<img src="docs/Features/food_menu_1.png">
+<img src="docs/Features/food_menu_2.png">
 </details>
 
 ### Game List Page
@@ -407,8 +407,8 @@ The Food and Drink page provides users with a sample menu of what the tavern has
 The Game List page provides users with a selection of board games on offer at the tavern.
 
 <details><summary>Game List</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/game_list_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/game_list_2.png">
+<img src="docs/Features/game_list_1.png">
+<img src="docs/Features/game_list_2.png">
 </details>
 
 ### Events Page
@@ -417,8 +417,8 @@ The Events page has a number of paragraphs outlining the various regular events 
 There is also a calendar that shows other events that can be navigated around and updated by site admins.
 
 <details><summary>Events Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/events_page_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/events_page_2.png">
+<img src="docs/Features/events_page_1.png">
+<img src="docs/Features/events_page_2.png">
 </details>
 
 ### New Event Page
@@ -426,7 +426,7 @@ There is also a calendar that shows other events that can be navigated around an
 A page that can be navigated to by the site admins from the calendar which allows a new event to be created by filling in the form.
 
 <details><summary>New Event Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/new_event.png">
+<img src="docs/Features/new_event.png">
 </details>
 
 ### Edit Event Page
@@ -434,7 +434,7 @@ A page that can be navigated to by the site admins from the calendar which allow
 A page that can be navigated to by the site admins from the calendar which allows an existing event to be edited by filling in the form.
 
 <details><summary>Edit Event Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/edit_event.png">
+<img src="docs/Features/edit_event.png">
 </details>
 
 ### Delete Event Page
@@ -442,7 +442,7 @@ A page that can be navigated to by the site admins from the calendar which allow
 A page that can be navigated to by the site admins from the calendar which allows an existing event to be deleted by clicking the button.
 
 <details><summary>Delete Event Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/delete_event.png">
+<img src="docs/Features/delete_event.png">
 </details>
 
 ### Booking Page
@@ -450,8 +450,8 @@ A page that can be navigated to by the site admins from the calendar which allow
 Users can navigate to this page from the Home page. Following the form inputs, users can select their desired date, time and service as well as leave their contact details.
 
 <details><summary>Delete Event Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/create_booking_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/create_booking_2.png">
+<img src="docs/Features/create_booking_1.png">
+<img src="docs/Features/create_booking_2.png">
 </details>
 
 
@@ -460,7 +460,7 @@ Users can navigate to this page from the Home page. Following the form inputs, u
 Authorised Users can navigate to this page from the Home page. The user can fill out the form and submit a short review about their experience at the Tavern.
 
 <details><summary>Review Submission Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/review_page.png">
+<img src="docs/Features/review_page.png">
 </details>
 
 
@@ -469,7 +469,7 @@ Authorised Users can navigate to this page from the Home page. The user can fill
 Users that have logged in can access their User Panel from the Header. Here they can find their basic account information as well as any existing bookings they may have.
 
 <details><summary>User Panel Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/user_panel.png">
+<img src="docs/Features/user_panel.png">
 </details>
 
 ### Edit Booking Page
@@ -477,8 +477,8 @@ Users that have logged in can access their User Panel from the Header. Here they
 From the User Panel, users can edit their booking to a different time and date. Following similar forms used to create their booking in the first place.
 
 <details><summary>Edit Booking Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/edit_booking_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/edit_booking_2.png">
+<img src="docs/Features/edit_booking_1.png">
+<img src="docs/Features/edit_booking_2.png">
 </details>
 
 ### Delete Booking Page
@@ -486,7 +486,7 @@ From the User Panel, users can edit their booking to a different time and date. 
 From the User Panel, users can delete their booking.
 
 <details><summary>Delete Booking Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/delete_booking.png">
+<img src="docs/Features/delete_booking.png">
 </details>
 
 ### User Registration
@@ -494,7 +494,7 @@ From the User Panel, users can delete their booking.
 From the header, Guest users can register an account by filling in the form and fields.
 
 <details><summary>User Registration Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/registration.png">
+<img src="docs/Features/registration.png">
 </details>
 
 ### Login/Logout
@@ -502,8 +502,8 @@ From the header, Guest users can register an account by filling in the form and 
 From the header, users with an account can log in using their credentials. Once logged in, they can log out by clicking on the link in the header.
 
 <details><summary>Login/Logout Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/login.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/Features/logout.png">
+<img src="docs/Features/login.png">
+<img src="docs/Features/logout.png">
 </details>
 
 
@@ -516,80 +516,80 @@ From the header, users with an account can log in using their credentials. Once 
 The W3C Markup Validation Service was usd to validate the HTML code used in the templates. All templates returned clear with no warnings or errors.
 
 <details><summary>Index Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/index.png">
+<img src="docs/validation/html/index.png">
 </details>
 
 <details><summary>Review Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/review_page.png">
+<img src="docs/validation/html/review_page.png">
 </details>
 
 
 <details><summary>About Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/about.png">
+<img src="docs/validation/html/about.png">
 </details>
 
 <details><summary>Gallery Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/gallery.png">
+<img src="docs/validation/html/gallery.png">
 </details>
 
 <details><summary>Gallery Detail Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/gallery_detail.png">
+<img src="docs/validation/html/gallery_detail.png">
 </details>
 
 <details><summary>Contact Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/contact.png">
+<img src="docs/validation/html/contact.png">
 </details>
 
 <details><summary>Food Menu Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/food_menu.png">
+<img src="docs/validation/html/food_menu.png">
 </details>
 
 <details><summary>Events Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/event_page.png">
+<img src="docs/validation/html/event_page.png">
 </details>
 
 <details><summary>Create Event Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/create_event.png">
+<img src="docs/validation/html/create_event.png">
 </details>
 
 <details><summary>Edit Event Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/edit_event.png">
+<img src="docs/validation/html/edit_event.png">
 </details>
 
 <details><summary>Delete Event Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/delete_event.png">
+<img src="docs/validation/html/delete_event.png">
 </details>
 
 <details><summary>Game List Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/game_list.png">
+<img src="docs/validation/html/game_list.png">
 </details>
 
 <details><summary>Booking Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/booking.png">
+<img src="docs/validation/html/booking.png">
 </details>
 
 <details><summary>Booking Submit Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/booking_submit.png">
+<img src="docs/validation/html/booking_submit.png">
 </details>
 
 <details><summary>Booking Submit (Time) Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/booking_submit_time.png">
+<img src="docs/validation/html/booking_submit_time.png">
 </details>
 
 <details><summary>Edit Booking Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/edit_booking.png">
+<img src="docs/validation/html/edit_booking.png">
 </details>
 
 <details><summary>Edit Booking (Time) Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/edit_booking_time.png">
+<img src="docs/validation/html/edit_booking_time.png">
 </details>
 
 <details><summary>Delete Booking Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/delete_booking.png">
+<img src="docs/validation/html/delete_booking.png">
 </details>
 
 <details><summary>User Panel Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/html/user_panel.png">
+<img src="docs/validation/html/user_panel.png">
 </details>
 
 <hr>
@@ -599,7 +599,7 @@ The W3C Markup Validation Service was usd to validate the HTML code used in the 
 The W3C Jigsaw CSS Validation Service was used to validate the CSS file used in the project. The CSS file returned clear with no errors or warnings.
 
 <details><summary>Style.css</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/css.png">
+<img src="docs/validation/css.png">
 </details>
 <hr>
 
@@ -614,97 +614,97 @@ All custom python files reported as clear with no errors or issues.
 <hr><summary>Tavern</summary><hr>
 
 <details><summary>Admin.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Tavern/tavern-admin-py.png">
+<img src="docs/validation/Tavern/tavern-admin-py.png">
 </details>
 
 <details><summary>Models.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Tavern/tavern-models-py.png">
+<img src="docs/validation/Tavern/tavern-models-py.png">
 </details>
 
 <details><summary>Urls.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Tavern/tavern-urls-py.png">
+<img src="docs/validation/Tavern/tavern-urls-py.png">
 </details>
 
 <details><summary>Views.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Tavern/tavern-views-py.png">
+<img src="docs/validation/Tavern/tavern-views-py.png">
 </details>
 
 <details><summary>Forms.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Tavern/tavern-forms-py.png">
+<img src="docs/validation/Tavern/tavern-forms-py.png">
 </details>
 
 <details><summary>Tests.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/tests/tavern_models_test.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/tests/tavern_forms_test.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/tests/tavern_urls_test.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/tests/tavern_views_test.png">
+<img src="docs/validation/tests/tavern_models_test.png">
+<img src="docs/validation/tests/tavern_forms_test.png">
+<img src="docs/validation/tests/tavern_urls_test.png">
+<img src="docs/validation/tests/tavern_views_test.png">
 </details>
 
 <hr><summary>Booking</summary><hr>
 
 <details><summary>Admin.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Booking/booking-admin-py.png">
+<img src="docs/validation/Booking/booking-admin-py.png">
 </details>
 
 <details><summary>Models.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Booking/booking-models-py.png">
+<img src="docs/validation/Booking/booking-models-py.png">
 </details>
 
 <details><summary>Urls.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Booking/booking-urls-py.png">
+<img src="docs/validation/Booking/booking-urls-py.png">
 </details>
 
 <details><summary>Views.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Booking/booking-views-py.png">
+<img src="docs/validation/Booking/booking-views-py.png">
 </details>
 
 <hr><summary>Contact</summary><hr>
 
 <details><summary>Admin.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Contact/contact-admin-py.png">
+<img src="docs/validation/Contact/contact-admin-py.png">
 </details>
 
 <details><summary>Models.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Contact/contact-models-py.png">
+<img src="docs/validation/Contact/contact-models-py.png">
 </details>
 
 <details><summary>Urls.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Contact/contact-urls-py.png">
+<img src="docs/validation/Contact/contact-urls-py.png">
 </details>
 
 <details><summary>Views.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Contact/contact-views-py.png">
+<img src="docs/validation/Contact/contact-views-py.png">
 </details>
 
 <details><summary>Forms.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Contact/contact-forms-py.png">
+<img src="docs/validation/Contact/contact-forms-py.png">
 </details>
 
 
 <hr><summary>Events</summary><hr>
 
 <details><summary>Admin.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Events/events-admin-py.png">
+<img src="docs/validation/Events/events-admin-py.png">
 </details>
 
 <details><summary>Models.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Events/events-models-py.png">
+<img src="docs/validation/Events/events-models-py.png">
 </details>
 
 <details><summary>Urls.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Events/events-urls-py.png">
+<img src="docs/validation/Events/events-urls-py.png">
 </details>
 
 <details><summary>Views.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Events/events-views-py.png">
+<img src="docs/validation/Events/events-views-py.png">
 </details>
 
 <details><summary>Forms.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Events/events-forms-py.png">
+<img src="docs/validation/Events/events-forms-py.png">
 </details>
 
 <details><summary>Utils.py</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Events/events-utils-py.png">
+<img src="docs/validation/Events/events-utils-py.png">
 </details>
 
 ### Lighthouse
@@ -716,80 +716,80 @@ All templates scored above 90 on Performance and SEO. All Templates scored 83 on
 The Gallery Detail page scored 87 on Accessibility with a warning about a conflict with the button name for the like/dislike feature for the gallery.
 
 <details><summary>Index Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/index.png">
+<img src="docs/validation/Lighthouse/index.png">
 </details>
 
 <details><summary>Review Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/review_page.png">
+<img src="docs/validation/Lighthouse/review_page.png">
 </details>
 
 
 <details><summary>About Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/about.png">
+<img src="docs/validation/Lighthouse/about.png">
 </details>
 
 <details><summary>Gallery Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/gallery.png">
+<img src="docs/validation/Lighthouse/gallery.png">
 </details>
 
 <details><summary>Gallery Detail Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/gallery_detail.png">
+<img src="docs/validation/Lighthouse/gallery_detail.png">
 </details>
 
 <details><summary>Contact Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/contact.png">
+<img src="docs/validation/Lighthouse/contact.png">
 </details>
 
 <details><summary>Food Menu Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/food_menu.png">
+<img src="docs/validation/Lighthouse/food_menu.png">
 </details>
 
 <details><summary>Events Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/event_page.png">
+<img src="docs/validation/Lighthouse/event_page.png">
 </details>
 
 <details><summary>Create Event Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/create_event.png">
+<img src="docs/validation/Lighthouse/create_event.png">
 </details>
 
 <details><summary>Edit Event Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/edit_event.png">
+<img src="docs/validation/Lighthouse/edit_event.png">
 </details>
 
 <details><summary>Delete Event Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/delete_event.png">
+<img src="docs/validation/Lighthouse/delete_event.png">
 </details>
 
 <details><summary>Game List Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/game_list.png">
+<img src="docs/validation/Lighthouse/game_list.png">
 </details>
 
 <details><summary>Booking Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/booking.png">
+<img src="docs/validation/Lighthouse/booking.png">
 </details>
 
 <details><summary>Booking Submit Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/booking_submit.png">
+<img src="docs/validation/Lighthouse/booking_submit.png">
 </details>
 
 <details><summary>Booking Submit (Time) Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/booking_submit_time.png">
+<img src="docs/validation/Lighthouse/booking_submit_time.png">
 </details>
 
 <details><summary>Edit Booking Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/edit_booking.png">
+<img src="docs/validation/Lighthouse/edit_booking.png">
 </details>
 
 <details><summary>Edit Booking (Time) Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/edit_booking_time.png">
+<img src="docs/validation/Lighthouse/edit_booking_time.png">
 </details>
 
 <details><summary>Delete Booking Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/delete_booking.png">
+<img src="docs/validation/Lighthouse/delete_booking.png">
 </details>
 
 <details><summary>User Panel Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/Lighthouse/user_panel.png">
+<img src="docs/validation/Lighthouse/user_panel.png">
 </details>
 
 <hr>
@@ -800,44 +800,44 @@ WAVE was used to test the main webpages accessibility. I had issues with Heroku 
 6 Errors were shown due to empty links in the footer. Instead of text, I used Font Awesome icons for the Social Media links.
 
 <details><summary>Home Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_index_page.png">
+<img src="docs/validation/wave/wave_index_page.png">
 </details>
 
 <details><summary>About Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_about_page.png">
+<img src="docs/validation/wave/wave_about_page.png">
 </details>
 
 <details><summary>Gallery Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_gallery_page.png">
+<img src="docs/validation/wave/wave_gallery_page.png">
 </details>
 
 <details><summary>Gallery Detail Page</summary>
 Two contrast errors were shown, due to the slight difference in tones from a liked/unliked item or a blog post with no comments on. I attempted to mitigate by increasing the font size.
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_gallery_details.png">
+<img src="docs/validation/wave/wave_gallery_details.png">
 </details>
 
 <details><summary>Contact Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_contact_page.png">
+<img src="docs/validation/wave/wave_contact_page.png">
 </details>
 
 <details><summary>Menu Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_food_page.png">
+<img src="docs/validation/wave/wave_food_page.png">
 </details>
 
 <details><summary>Games Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_game_page.png">
+<img src="docs/validation/wave/wave_game_page.png">
 </details>
 
 <details><summary>Events Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_events_page.png">
+<img src="docs/validation/wave/wave_events_page.png">
 </details>
 
 <details><summary>Sign Up Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_register_page.png">
+<img src="docs/validation/wave/wave_register_page.png">
 </details>
 
 <details><summary>Login Page</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/validation/wave/wave_login_page.png">
+<img src="docs/validation/wave/wave_login_page.png">
 </details>
 
 
@@ -864,13 +864,13 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Click on 'Events' link in footer. | Event page loads.  | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_page_test_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/about_page_test_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/gallery_page_test_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/contact_page_test_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/food_menu_test_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/game_page_test_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/event_page_test_1.png">
+<img src="docs/manual_test/home_page_test_1.png">
+<img src="docs/manual_test/about_page_test_1.png">
+<img src="docs/manual_test/gallery_page_test_1.png">
+<img src="docs/manual_test/contact_page_test_1.png">
+<img src="docs/manual_test/food_menu_test_1.png">
+<img src="docs/manual_test/game_page_test_1.png">
+<img src="docs/manual_test/event_page_test_1.png">
 </details>
 
 2.	As a User I can use a navbar, footer, and social icons so that I can navigate the site, access menus, and access socials.
@@ -882,8 +882,8 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Scroll down to footer | See social links.  | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_footer_test_2.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_social_test_2.png">
+<img src="docs/manual_test/home_footer_test_2.png">
+<img src="docs/manual_test/home_social_test_2.png">
 </details>
 
 3.	As a User I can view the opening hours and contact details so that I know when the business is open and how to contact them via email, phone and socials.
@@ -896,9 +896,9 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_about_test_3.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/contact_page_locate_test_3.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_social_test_2.png">
+<img src="docs/manual_test/home_about_test_3.png">
+<img src="docs/manual_test/contact_page_locate_test_3.png">
+<img src="docs/manual_test/home_social_test_2.png">
 </details>
 
 4.	As a User I can create a booking by selecting a date and time so that I can book a session.
@@ -910,10 +910,10 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Select desired time, click submit. | Booking saved, redirect to home page, message shown to user. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_book_test_4.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_date_test_4.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_time_test_4.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_booking_saved_test_4.png">
+<img src="docs/manual_test/home_book_test_4.png">
+<img src="docs/manual_test/booking_date_test_4.png">
+<img src="docs/manual_test/booking_time_test_4.png">
+<img src="docs/manual_test/home_booking_saved_test_4.png">
 </details>
 
 5.	As a User I can update my booking so that I can choose another available time and date.
@@ -925,10 +925,10 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Select desired time, click submit. | Booking saved, redirect to home page, message shown to user. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_user_panel_test_5.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_edit_test_5.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_edit_time_test_5.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_edit_success_test_5.png">
+<img src="docs/manual_test/home_user_panel_test_5.png">
+<img src="docs/manual_test/booking_edit_test_5.png">
+<img src="docs/manual_test/booking_edit_time_test_5.png">
+<img src="docs/manual_test/booking_edit_success_test_5.png">
 </details>
 
 6.	As a User I can delete my booking so that I can cancel my session.
@@ -940,10 +940,10 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Click delete button | Booking deleted, message sent to user. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_user_panel_test_5.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/user_panel_booking_delete_test_6.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_delete_confirm_test_6.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_delete_success_test_6.png">
+<img src="docs/manual_test/home_user_panel_test_5.png">
+<img src="docs/manual_test/user_panel_booking_delete_test_6.png">
+<img src="docs/manual_test/booking_delete_confirm_test_6.png">
+<img src="docs/manual_test/booking_delete_success_test_6.png">
 </details>
 
 7.	As a user I can view my booking so that I can remind myself of the date and time I have booked.
@@ -954,8 +954,8 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | From User Panel, scroll down. | View Booking details. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_user_panel_test_5.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/view_booking_test_7.png">
+<img src="docs/manual_test/home_user_panel_test_5.png">
+<img src="docs/manual_test/view_booking_test_7.png">
 </details>
 
 8.	As a User I am notified when I take an action, so that I know my action of creating, editing, or deleting a booking has been successful.
@@ -966,9 +966,9 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | See Test 5. | See Test 5. | Works as expected. |
 | See Test 6. | See Test 6. | Works as expected. |
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_booking_saved_test_4.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_edit_success_test_5.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_delete_success_test_6.png">
+<img src="docs/manual_test/home_booking_saved_test_4.png">
+<img src="docs/manual_test/booking_edit_success_test_5.png">
+<img src="docs/manual_test/booking_delete_success_test_6.png">
 </details>
 
 10.	As a User I can register an account so that I can access more advanced features of the site.
@@ -979,9 +979,9 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Fill in form, click 'Register' button. | Account created. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_register_test_10.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/register_account_test_10.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/register_success_test_10.png">
+<img src="docs/manual_test/home_register_test_10.png">
+<img src="docs/manual_test/register_account_test_10.png">
+<img src="docs/manual_test/register_success_test_10.png">
 </details>
 
 11.	As a user I can login so that I can book a session, leave a review or comment on a post.
@@ -992,9 +992,9 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Enter username and password. | User logged in and redirected to home page. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_login_test_11.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/login_page_test_11.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/login_success_test_11.png">
+<img src="docs/manual_test/home_login_test_11.png">
+<img src="docs/manual_test/login_page_test_11.png">
+<img src="docs/manual_test/login_success_test_11.png">
 </details>
 
 12.	As a user I can see my login status so that I know if I am logged in or not.
@@ -1004,7 +1004,7 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Navigate to header. | 'Login' link replaced with 'Logout'. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/header_logout_test_12.png">
+<img src="docs/manual_test/header_logout_test_12.png">
 </details>
 
 13.	As a User I can view the site's blog so that I can learn additional information and read articles.
@@ -1015,9 +1015,9 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | On Gallery page, click a blog entry. | Taken to more detailed gallery page. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/gallery_page_test_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/galler_detail_test_13.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/gallery_detail_success_test_13.png">
+<img src="docs/manual_test/gallery_page_test_1.png">
+<img src="docs/manual_test/galler_detail_test_13.png">
+<img src="docs/manual_test/gallery_detail_success_test_13.png">
 </details>
 
 14.	As a User I can view the food, drink and game menus so that I can decide whether visit the business.
@@ -1029,10 +1029,10 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | On Game page, scroll down to view content. | Game menu present. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/food_menu_test_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/game_page_test_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/food_menu_test_14.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/game_library_test_14.png">
+<img src="docs/manual_test/food_menu_test_1.png">
+<img src="docs/manual_test/game_page_test_1.png">
+<img src="docs/manual_test/food_menu_test_14.png">
+<img src="docs/manual_test/game_library_test_14.png">
 </details>
 
 15.	As a User I cannot book a date in the past so that my booking is valid.
@@ -1043,8 +1043,8 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | When creating a booking, select date. | Can only book a selection of days ahead of todays date. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_book_test_4.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/booking_date_test_4.png">
+<img src="docs/manual_test/home_book_test_4.png">
+<img src="docs/manual_test/booking_date_test_4.png">
 
 
 </details>
@@ -1059,9 +1059,9 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Click on event in calendar to view event details. | Event details shown.  | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/event_page_test_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/event_page_test_16.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/event_calendar_test_16.png">
+<img src="docs/manual_test/event_page_test_1.png">
+<img src="docs/manual_test/event_page_test_16.png">
+<img src="docs/manual_test/event_calendar_test_16.png">
 </details>
 
 17.	As a user I can see reviews left by other users so that I can see if the business is any good.
@@ -1072,8 +1072,8 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | In review section, click 'Next/Prev' to view paginated reviews. | Paginated reviews shown.  | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_review_test_17.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/home_review_pg2_test_17.png">
+<img src="docs/manual_test/home_review_test_17.png">
+<img src="docs/manual_test/home_review_pg2_test_17.png">
 </details>
 
 18.	As a user I can post a review of my experience so that I can provide feedback of my visit.
@@ -1084,9 +1084,9 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Fill in form and click submit. | Review posted. | Works as  expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/post_review_test_18.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/post_review_form_test_18.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/post_review_success_test_18.png">
+<img src="docs/manual_test/post_review_test_18.png">
+<img src="docs/manual_test/post_review_form_test_18.png">
+<img src="docs/manual_test/post_review_success_test_18.png">
 </details>
 
 19.	As a user, I can comment on blog posts to provide feedback so that I can join a social network.
@@ -1097,10 +1097,10 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Fill in comment form. | Comment submitted. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/gallery_page_test_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/galler_detail_test_13.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/comment_submit_test_19.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/comment_success_test_19.png">
+<img src="docs/manual_test/gallery_page_test_1.png">
+<img src="docs/manual_test/galler_detail_test_13.png">
+<img src="docs/manual_test/comment_submit_test_19.png">
+<img src="docs/manual_test/comment_success_test_19.png">
 </details>
 
 20.	As a user, I can like/unlike blog posts so that I can provide feedback the the site owner on content quality.
@@ -1111,8 +1111,8 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Click 'Heart' icon under blog post. | Icon fills in and number is incremented. | Works as expected.|
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/like_test_20.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/like_success_test_20.png">
+<img src="docs/manual_test/like_test_20.png">
+<img src="docs/manual_test/like_success_test_20.png">
 </details>
 
 21.	As an Admin / Authorised User I can log in so that I can access the back end of the site.
@@ -1123,8 +1123,8 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Visit https://ci-pp4-dragons-flagon-clinelly.herokuapp.com/admin/ | Gain access to back end. | Works as expected |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_backend_test_21.png">
+<img src="docs/manual_test/admin_login_test_21.png">
+<img src="docs/manual_test/admin_backend_test_21.png">
 </details>
 
 22.	As an Admin / Authorised User I can login to add, edit or remove events from the calendar so I can advertise/change new events or cancel old ones.
@@ -1136,12 +1136,12 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Select an event to edit or delete. | Event changed or deleted. | Works as expected. |
 | Click 'add event', fill in form, click save. | New event created. | Works as expected. |
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/add_events_admin_test_22.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/add_events_backend_test_22.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/add_event_save_test_22.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_delete_event_test_22.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/add_event_success_admin_test_22.png">
+<img src="docs/manual_test/admin_login_test_21.png">
+<img src="docs/manual_test/add_events_admin_test_22.png">
+<img src="docs/manual_test/add_events_backend_test_22.png">
+<img src="docs/manual_test/add_event_save_test_22.png">
+<img src="docs/manual_test/admin_delete_event_test_22.png">
+<img src="docs/manual_test/add_event_success_admin_test_22.png">
 </details>
 
 23.	As an Admin / Authorised User I can manually add a booking so that I can book a table if someone phones, or emails the business.
@@ -1153,11 +1153,11 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Click 'add booking', fill in form, click save. | New booking created. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_add_booking_test_23.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_add_booking_button_test_23.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_add_booking_form_test_23.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_add_booking_success_test_23.png">
+<img src="docs/manual_test/admin_login_test_21.png">
+<img src="docs/manual_test/admin_add_booking_test_23.png">
+<img src="docs/manual_test/admin_add_booking_button_test_23.png">
+<img src="docs/manual_test/admin_add_booking_form_test_23.png">
+<img src="docs/manual_test/admin_add_booking_success_test_23.png">
 </details>
 
 24.	As an Admin / Authorised User I can create, read, update and delete blog posts so that I can provide information and updates to the users.
@@ -1170,8 +1170,8 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_crud_blog_test_24.png">
+<img src="docs/manual_test/admin_login_test_21.png">
+<img src="docs/manual_test/admin_crud_blog_test_24.png">
 </details>
 
 25.	As an Admin / Authorised User I can search through bookings, blogs, and events so that I can find the information I am looking for.
@@ -1185,11 +1185,11 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Above each app, there is a search bar for information. | Search provides detailed information. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/add_events_admin_test_22.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_add_booking_test_23.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_comments_test_24.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_search_bar_test_25.png">
+<img src="docs/manual_test/admin_login_test_21.png">
+<img src="docs/manual_test/add_events_admin_test_22.png">
+<img src="docs/manual_test/admin_add_booking_test_23.png">
+<img src="docs/manual_test/admin_comments_test_24.png">
+<img src="docs/manual_test/admin_search_bar_test_25.png">
 </details>
 
 26.	As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day.
@@ -1201,9 +1201,9 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Booking filters shown on screen | Can filter by desired date. | Works as expected.|
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_add_booking_test_23.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_filer_bookings_test_26.png">
+<img src="docs/manual_test/admin_login_test_21.png">
+<img src="docs/manual_test/admin_add_booking_test_23.png">
+<img src="docs/manual_test/admin_filer_bookings_test_26.png">
 </details>
 
 27.	As an Admin / Authorised User, I can moderate comments to keep a friendly online presence and maintain a professional website.
@@ -1215,9 +1215,9 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Select comment, click on approve. | Hides comment on site. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_login_test_21.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_comments_test_24.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/admin_comments_crud_test_24.png">
+<img src="docs/manual_test/admin_login_test_21.png">
+<img src="docs/manual_test/admin_comments_test_24.png">
+<img src="docs/manual_test/admin_comments_crud_test_24.png">
 </details>
 
 28.	As a Site Owner I can provide a 'Contact Us' page so that users can get in touch with my business.
@@ -1228,9 +1228,9 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | Fill in form to contact site. | Contact form submits. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/contact_page_test_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/contact_form_test_27.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/contact_message_success_test_27.png">
+<img src="docs/manual_test/contact_page_test_1.png">
+<img src="docs/manual_test/contact_form_test_27.png">
+<img src="docs/manual_test/contact_message_success_test_27.png">
 </details>
 
 29.	As a Site Owner, I can look at feedback provided by users, through reviews, comments and direct contact, so that I can make improvements where necessary.
@@ -1243,10 +1243,10 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 | See Test 28 | See test 28. | Works as expected. |
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/post_review_test_18.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/comment_success_test_19.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/like_success_test_20.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/manual_test/contact_message_success_test_27.png">
+<img src="docs/manual_test/post_review_test_18.png">
+<img src="docs/manual_test/comment_success_test_19.png">
+<img src="docs/manual_test/like_success_test_20.png">
+<img src="docs/manual_test/contact_message_success_test_27.png">
 </details>
 
 
@@ -1255,8 +1255,8 @@ Automated testing was used to test the Tavern app using the inbuilt test modules
 Coverage was used to write a report.
 
 <details><summary></summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/auto_test/tavern_tests.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/auto_test/tavern_coverage_report.png">
+<img src="docs/auto_test/tavern_tests.png">
+<img src="docs/auto_test/tavern_coverage_report.png">
 </details>
 
 
