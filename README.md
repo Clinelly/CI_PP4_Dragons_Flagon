@@ -158,10 +158,10 @@ The Dragon's Flagon is a fantasy-themed tavern. It was designed primarily as a s
 <details><summary>Kanban</summary>
 
 <details><summary>Finished Kanban</summary>
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/kanban/kanban_1.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/kanban/kanban_2.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/kanban/kanban_3.png">
-<img src="/workspace/CI_PP4_Dragons_Flagon/docs/kanban/kanban_4.png">
+<img src="docs/kanban/kanban_1.png">
+<img src="docs/kanban/kanban_2.png">
+<img src="docs/kanban/kanban_3.png">
+<img src="docs/kanban/kanban_4.png">
 </details>
 
 </details>
