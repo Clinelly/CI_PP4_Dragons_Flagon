@@ -18,5 +18,4 @@ urlpatterns = [
          views.booking_delete,
          name='delete-booking'),
 
-
 ]

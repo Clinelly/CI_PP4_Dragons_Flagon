@@ -12,6 +12,6 @@ from .models import *
 
 @admin.register(Event)
 class ReviewAdmin(SummernoteModelAdmin):
-    list_display = ('title', 'description', 'start_time')
-    search_fields = ['title', 'description', 'start_time', ]
-    list_filter = ('title', 'description', 'start_time',)
+    list_display = ('user', 'title', 'description', 'start_time',)
+    search_fields = ['user', 'title', 'description', 'start_time', ]
+    list_filter = ('user', 'title', 'description', 'start_time',)

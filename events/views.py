@@ -8,6 +8,8 @@ from django.views import generic
 from django.urls import reverse
 from django.utils.safestring import mark_safe
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required, user_passes_test
+from django.core.exceptions import PermissionDenied
 import calendar
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Internal:
@@ -55,11 +57,15 @@ def next_month(d):
 
 
 def event_new(request, event_id=None):
+    user = request.user
     instance = Event()
     if event_id:
         instance = get_object_or_404(Event, pk=event_id)
     else:
         instance = Event()
+
+    if instance.user != request.user and not request.user.is_superuser:
+        raise PermissionDenied()
 
     form = EventForm(request.POST or None, instance=instance)
     if request.POST and form.is_valid():
@@ -95,7 +101,11 @@ def event(request, event_id=None):
 
 
 def event_delete(request, event_id):
+    user = request.user
     event = get_object_or_404(Event, id=event_id)
+
+    if event.user != request.user and not request.user.is_superuser:
+        raise PermissionDenied()
 
     if request.method == 'POST':
         event.delete()
@@ -107,3 +117,11 @@ def event_delete(request, event_id):
         'event': event
     }
     return render(request, 'delete_event.html', context)
+
+
+def handle_permission_denied(request, exception):
+    return render(request, '403.html', status=403)
+
+
+# 403 handler
+handler403 = handle_permission_denied

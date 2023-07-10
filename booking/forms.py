@@ -10,7 +10,7 @@ from .models import TableBooking
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-# The contact form for the user to send a message to the business
+# The form for creating and editing a booking.
 
 
 class BookingForm(forms.ModelForm):
