@@ -14,7 +14,6 @@ from .models import TableBooking
 
 
 class BookingForm(forms.ModelForm):
-
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
@@ -27,13 +26,7 @@ class BookingForm(forms.ModelForm):
 
     class Meta:
         model = TableBooking
-        fields = (
-            'email',
-            'phone',
-            'day',
-            'time',
-            'service'
-            )
+        fields = ('email', 'phone', 'day', 'time', 'service')
         widgets = {
-            'day': forms.TextInput(attrs={'type': 'date'}),
+            'day': forms.DateInput(attrs={'type': 'date'}),
         }
