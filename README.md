@@ -569,20 +569,14 @@ The W3C Markup Validation Service was usd to validate the HTML code used in the 
 </details>
 
 <details><summary>Booking Submit Page</summary>
-<img src="docs/validation/html/booking_submit.png">
+<img src="docs/validation/html/html_booking_validation.png">
 </details>
 
-<details><summary>Booking Submit (Time) Page</summary>
-<img src="docs/validation/html/booking_submit_time.png">
-</details>
 
 <details><summary>Edit Booking Page</summary>
-<img src="docs/validation/html/edit_booking.png">
+<img src="docs/validation/html/html_edit_booking_validation.png">
 </details>
 
-<details><summary>Edit Booking (Time) Page</summary>
-<img src="docs/validation/html/edit_booking_time.png">
-</details>
 
 <details><summary>Delete Booking Page</summary>
 <img src="docs/validation/html/delete_booking.png">
@@ -769,19 +763,11 @@ The Gallery Detail page scored 87 on Accessibility with a warning about a confli
 </details>
 
 <details><summary>Booking Submit Page</summary>
-<img src="docs/validation/Lighthouse/booking_submit.png">
-</details>
-
-<details><summary>Booking Submit (Time) Page</summary>
-<img src="docs/validation/Lighthouse/booking_submit_time.png">
+<img src="docs/validation/Lighthouse/lighthouse_booking_validation.png">
 </details>
 
 <details><summary>Edit Booking Page</summary>
-<img src="docs/validation/Lighthouse/edit_booking.png">
-</details>
-
-<details><summary>Edit Booking (Time) Page</summary>
-<img src="docs/validation/Lighthouse/edit_booking_time.png">
+<img src="docs/validation/Lighthouse/lighthouse_booking_edit_validation.png">
 </details>
 
 <details><summary>Delete Booking Page</summary>
@@ -906,13 +892,12 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 | Navigate to welcome section on home page, click book button | Taken to booking page. | Works as expected. |
-| Select service and date, enter personal details, click submit | Taken to booking-time page. | Works as expected. |
-| Select desired time, click submit. | Booking saved, redirect to home page, message shown to user. | Works as expected. |
+| Select service and date, enter personal detail, select desired times, click submit | Booking created, redirected to home page. | Works as expected. |
+
 
 <details><summary></summary>
 <img src="docs/manual_test/home_book_test_4.png">
-<img src="docs/manual_test/booking_date_test_4.png">
-<img src="docs/manual_test/booking_time_test_4.png">
+<img src="docs/manual_test/user_story_4_man_test_create_booking.png">
 <img src="docs/manual_test/home_booking_saved_test_4.png">
 </details>
 
@@ -921,13 +906,12 @@ Two contrast errors were shown, due to the slight difference in tones from a lik
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 | Navigate to User Panel in header. | Taken to User Panel. | Works as expected. |
-| Select service and date, enter personal details, click submit | Taken to booking-time page. | Works as expected. |
-| Select desired time, click submit. | Booking saved, redirect to home page, message shown to user. | Works as expected. |
+| Select edit booking. | Taken to exisitng booking. | Works as expected. |
+| Select service and date, enter personal detail, select desired times, click submit | Booking created, redirected to home page. | Works as expected. |
 
 <details><summary></summary>
 <img src="docs/manual_test/home_user_panel_test_5.png">
-<img src="docs/manual_test/booking_edit_test_5.png">
-<img src="docs/manual_test/booking_edit_time_test_5.png">
+<img src="docs/manual_test/user_story_5_man_test_edit_booking.png">
 <img src="docs/manual_test/booking_edit_success_test_5.png">
 </details>
 
